@@ -19,8 +19,8 @@ IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=59,64,69
-BackgroundNormal=29,34,39
+BackgroundAlternate=23,23,23
+BackgroundNormal=17,17,17
 DecorationFocus=30,146,255
 DecorationHover=61,174,230
 ForegroundActive=246,116,0
@@ -61,8 +61,8 @@ ForegroundPositive=17,209,22
 ForegroundVisited=61,174,230
 
 [Colors:View]
-BackgroundAlternate=59,64,69
-BackgroundNormal=59,64,69
+BackgroundAlternate=23,23,23
+BackgroundNormal=0,0,0
 DecorationFocus=30,146,255
 DecorationHover=61,174,230
 ForegroundActive=246,116,0
@@ -75,8 +75,8 @@ ForegroundPositive=17,209,22
 ForegroundVisited=61,174,230
 
 [Colors:Window]
-BackgroundAlternate=59,64,69
-BackgroundNormal=49,54,59
+BackgroundAlternate=23,23,23
+BackgroundNormal=0,0,0
 DecorationFocus=30,146,255
 DecorationHover=61,174,230
 ForegroundActive=246,116,0
@@ -89,8 +89,8 @@ ForegroundPositive=17,209,22
 ForegroundVisited=61,174,230
 
 [Colors:Complementary]
-BackgroundAlternate=59,64,69
-BackgroundNormal=49,54,59
+BackgroundAlternate=23,23,23
+BackgroundNormal=17,17,17
 DecorationFocus=30,146,255
 DecorationHover=61,174,230
 ForegroundActive=246,116,0
@@ -103,12 +103,12 @@ ForegroundPositive=17,209,22
 ForegroundVisited=61,174,230
 
 [General]
-ColorScheme=Plasma Next
-Name=Plasma Next
+ColorScheme=Breeze Seven
+Name=Breeze Seven
 shadeSortColumn=true
 
 [KDE]
-contrast=7
+contrast=1
 
 [WM]
 activeBackground=61,174,230
@@ -117,3 +117,4 @@ activeForeground=252,252,252
 inactiveBackground=123,124,126
 inactiveBlend=123,124,126
 inactiveForeground=252,252,252
+minimizedForeground=252,252,252

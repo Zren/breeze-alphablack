@@ -1,62 +1,14 @@
 [Desktop Entry]
-Name=Breeze Dark
-Name[ar]=نسيم داكن
-Name[ca]=Brisa fosca
-Name[cs]=Breeze Tmavé
-Name[da]=Breeze Dark
-Name[de]=Breeze-Dunkel
-Name[en_GB]=Breeze Dark
-Name[es]=Brisa oscuro
-Name[fi]=Breeze Dark
-Name[fr]=Breeze foncé
-Name[gd]=Dorch-oiteag
-Name[gl]=Breeze escuro
-Name[hu]=Breeze Dark
-Name[ia]=Brisa obscure
-Name[it]=Brezza scuro
-Name[ko]=어두운 Breeze
-Name[lt]=Breeze tamsi
-Name[nb]=Mørk bris
-Name[nds]=Breeze düüster
-Name[nl]=Breeze Dark
-Name[nn]=Bris (mørk)
-Name[pl]=Ciemna bryza
-Name[pt]=Brisa Escura
-Name[pt_BR]=Breeze Dark
-Name[ru]=Breeze, тёмный вариант
-Name[sk]=Tmavý vánok
-Name[sl]=Sapica (temna)
-Name[sr]=Поветарац тамни
-Name[sr@ijekavian]=Поветарац тамни
-Name[sr@ijekavianlatin]=Povetarac tamni
-Name[sr@latin]=Povetarac tamni
-Name[sv]=Breeze mörk
-Name[tr]=Esintili Koyu
-Name[uk]=Темна Breeze
-Name[x-test]=xxBreeze Darkxx
-Name[zh_CN]=暗色微风
-Name[zh_TW]=Breeze Dark
+Name=Breeze Seven
 
 
-X-KDE-PluginInfo-Author=KDE Visual Design Group
-X-KDE-PluginInfo-Email=kde-artists@kde.org
-X-KDE-PluginInfo-Name=breeze-dark
-X-KDE-PluginInfo-Version=0.9.7
-X-KDE-PluginInfo-Website=http://plasma.kde.org
+X-KDE-PluginInfo-Author=KDE Visual Design Group + Zren
+X-KDE-PluginInfo-Email=zrenfire@gmail.com
+X-KDE-PluginInfo-Name=breeze-seven
+X-KDE-PluginInfo-Version=41
+X-KDE-PluginInfo-Website=https://github.com/Zren/
 X-KDE-PluginInfo-Category=
 X-KDE-PluginInfo-Depends=
 X-KDE-PluginInfo-License=LGPL
 X-KDE-PluginInfo-EnabledByDefault=true
 X-Plasma-API=5.0
-
-[Wallpaper]
-defaultWallpaperTheme=Next
-defaultFileSuffix=.png
-defaultWidth=1920
-defaultHeight=1080
-
-[ContrastEffect]
-enabled=true
-contrast=0.2
-intensity=0.4
-saturation=1.7
