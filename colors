@@ -103,18 +103,20 @@ ForegroundPositive=17,209,22
 ForegroundVisited=61,174,230
 
 [General]
-ColorScheme=Breeze Seven
-Name=Breeze Seven
+ColorScheme=Breeze AlphaBlack
+Name=Breeze AlphaBlack
 shadeSortColumn=true
 
 [KDE]
 contrast=1
 
 [WM]
-activeBackground=61,174,230
-activeBlend=252,252,252
-activeForeground=252,252,252
-inactiveBackground=123,124,126
-inactiveBlend=123,124,126
-inactiveForeground=252,252,252
-minimizedForeground=252,252,252
+activeBackground=0,0,0
+activeBlend=17,17,17
+activeFont=Noto Sans,10,-1,5,50,0,0,0,0,0
+activeForeground=239,240,241
+inactiveBackground=8,8,8
+inactiveBlend=75,71,67
+inactiveForeground=189,195,199
+frame=0,0,0
+inactiveFrame=8,8,8
