@@ -1,6 +1,6 @@
 ### Panel Color
 
-Edit `[Colors:Window] BackgroundNormal=0,0,0` in the `colors` file.
+Edit `BackgroundNormal=0,0,0` under `[Colors:Window]` in the `colors` file.
 
 ### Window Decorations
 
