@@ -1,3 +1,9 @@
+### Panel Color
+
+Edit `[Colors:Window] BackgroundNormal=0,0,0` in the `colors` file.
+
+### Window Decorations
+
 To color the the default breeze window decorations (window titlebars). You can either:
 
 1. Download a custom window decoration.
