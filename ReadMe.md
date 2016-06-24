@@ -17,7 +17,7 @@ Breeze Light theme with minor improvements and a black panel/titlebar.
 
 First go to: `~/.local/share/plasma/desktoptheme/breeze-alphablack/`.
 
-Note that to apply the your changes to the theme, you'll need to apply another theme, then switch back to this theme since it doesn't detect when the theme files change.
+Note: To apply the your changes to the theme, you'll need to apply another theme, then switch back to this theme since it doesn't detect when the theme files change.
 
 ### Panel Color
 
