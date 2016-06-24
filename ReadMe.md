@@ -1,3 +1,22 @@
+# Breeze AlphaBlack
+
+Breeze Light theme with minor improvements and a black panel/titlebar.
+
+## Screenshots
+
+![](http://kdelook.org/CONTENT/content-pre1/175800-1.png)
+
+## Install
+
+* System Settings > Desktop Theme
+* Get New Themes...
+* Search for "Breeze AlphaBlack"
+* Go to the [Window Decorations](#window-decorations) configuration to theme the title
+
+## Customize
+
+* Go to: `~/.local/share/plasma/desktoptheme/breeze-alphablack/`
+
 ### Panel Color
 
 Edit `BackgroundNormal=0,0,0` under `[Colors:Window]` in the `colors` file.
