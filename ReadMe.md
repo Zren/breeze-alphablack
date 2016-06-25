@@ -15,15 +15,21 @@ Breeze Light theme with minor improvements and a black panel/titlebar.
 
 ## Customize Theme
 
+### Panel Color + Window Decorations
+
+Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/setthemecolor.py $(python2 ~/.local/share/plasma/desktoptheme/breeze-alphablack/choosecolor.py)` which will display a color picker for you to choose your theme color.
+
+Or run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/setthemecolor.py 255,255,255` where 255,255,255 is your desired RGB color.
+
+### Panel Color (Manually)
+
 First go to: `~/.local/share/plasma/desktoptheme/breeze-alphablack/`.
 
 Note: To apply the your changes to the theme, you'll need to apply another theme, then switch back to this theme since it doesn't detect when the theme files change.
 
-### Panel Color
-
 Edit `BackgroundNormal=0,0,0` under `[Colors:Window]` in the `colors` file.
 
-### Window Decorations
+### Window Decorations (Manually)
 
 To color the the default breeze window decorations (window titlebars). You can either:
 
