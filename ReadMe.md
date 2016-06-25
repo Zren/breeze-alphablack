@@ -10,14 +10,14 @@ Breeze Light theme with minor improvements and a black panel/titlebar.
 
 * System Settings > Desktop Theme
 * Get New Themes...
-* Search for "Breeze AlphaBlack"
-* Go to the [Window Decorations](#window-decorations) configuration to theme the title
+* Search for "Breeze AlphaBlack", install it, then apply it.
+* If you want the breeze window decorations in black, run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/setthemecolor.py 0,0,0`
 
 ## Customize Theme
 
 ### Panel Color + Window Decorations
 
-[![](https://thumbs.gfycat.com/SizzlingSecondaryBovine-size_restricted.gif)](https://zippy.gfycat.com/SizzlingSecondaryBovine.webm)
+Video: https://zippy.gfycat.com/SizzlingSecondaryBovine.webm
 
 Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/setthemecolor.py $(python2 ~/.local/share/plasma/desktoptheme/breeze-alphablack/choosecolor.py)` which will display a color picker for you to choose your theme color.
 

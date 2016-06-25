@@ -39,6 +39,7 @@ def setThemeColor(newColor='0,0,0'):
 	config['WM']['activeBackground'] = newColor
 	config['WM']['inactiveBackground'] = newColor
 	config['WM']['frame'] = newColor
+	config['WM']['inactiveFrame'] = newColor
 	config.save()
 
 	#filename = os.path.abspath(os.path.expanduser('~/Code/colors'))
