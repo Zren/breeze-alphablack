@@ -32,7 +32,29 @@ def printHelp():
 	print("\t[red/green/blue] are integers from 0-255")
 	print("\tEg: python3 setthemecolor.py 0,0,0")
 
+def limit(minVal, val, maxVal):
+	return min(max(minVal, val), maxVal)
+
+def limitColor(val):
+	return limit(0, val, 255)
+
+def deltaColor(colorStr, delta):
+	r, g, b = map(int, colorStr.split(','))
+	if max(r, g, b) >= 128:
+		d = -delta
+	else:
+		d = delta
+	return '{},{},{}'.format(limitColor(r+d), limitColor(g+d), limitColor(b+d))
+
 def setThemeColor(newColor='0,0,0'):
+
+	altColor = deltaColor(newColor, 23)
+	compColor = deltaColor(newColor, 17)
+
+	print('BackgroundNormal: {}'.format(newColor))
+	print('BackgroundAlternate: {}'.format(altColor))
+	print('Complementary.BackgroundNormal: {}'.format(compColor))
+
 	#filename = os.path.abspath(os.path.expanduser('~/Code/kdeglobals'))
 	filename = os.path.abspath(os.path.expanduser('~/.config/kdeglobals'))
 	config = KdeConfig(filename)
@@ -45,7 +67,14 @@ def setThemeColor(newColor='0,0,0'):
 	#filename = os.path.abspath(os.path.expanduser('~/Code/colors'))
 	filename = os.path.abspath(os.path.expanduser('~/.local/share/plasma/desktoptheme/breeze-alphablack/colors'))
 	config = KdeConfig(filename)
+	config['Colors:Button']['BackgroundNormal'] = compColor
+	config['Colors:Button']['BackgroundAlternate'] = altColor
+	config['Colors:View']['BackgroundNormal'] = newColor
+	config['Colors:View']['BackgroundAlternate'] = altColor
 	config['Colors:Window']['BackgroundNormal'] = newColor
+	config['Colors:Window']['BackgroundAlternate'] = altColor
+	config['Colors:Complementary']['BackgroundNormal'] = compColor
+	config['Colors:Complementary']['BackgroundAlternate'] = altColor
 	config.save()
 
 	# Switch to another theme and back to apply the changes to breeze-alphablack.
@@ -64,10 +93,7 @@ def setThemeColor(newColor='0,0,0'):
 if __name__ == '__main__':
 	if len(sys.argv) >= 2:
 		try:
-			r,g,b = map(int, sys.argv[1].split(','))
-			print("Red", r)
-			print("Green", g)
-			print("Blue", b)
+			r, g, b = map(int, sys.argv[1].split(','))
 			newColor = "{},{},{}".format(r, g, b)
 			setThemeColor(newColor)
 		except Exception as e:
