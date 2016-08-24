@@ -24,7 +24,7 @@ Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/setthemecolor.
 
 Video: https://zippy.gfycat.com/SizzlingSecondaryBovine.webm
 
-Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/setthemecolor.py $(python2 ~/.local/share/plasma/desktoptheme/breeze-alphablack/choosecolor.py)` which will display a color picker for you to choose your theme color.
+Run `sh ~/.local/share/plasma/desktoptheme/breeze-alphablack/themeeditor` which will display a color picker for you to choose your theme color.
 
 ### Panel Color (Manually)
 
