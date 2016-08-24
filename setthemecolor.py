@@ -48,6 +48,7 @@ def deltaColor(colorStr, delta):
 
 def setThemeColor(newColor='0,0,0'):
 
+	textColor = '255,255,255'
 	altColor = deltaColor(newColor, 23)
 	compColor = deltaColor(newColor, 17)
 
@@ -62,6 +63,8 @@ def setThemeColor(newColor='0,0,0'):
 	config['WM']['inactiveBackground'] = newColor
 	config['WM']['frame'] = newColor
 	config['WM']['inactiveFrame'] = newColor
+	config['WM']['activeForeground'] = textColor
+	config['WM']['inactiveForeground'] = textColor
 	config.save()
 
 	#filename = os.path.abspath(os.path.expanduser('~/Code/colors'))
