@@ -15,32 +15,26 @@ Breeze Light theme with minor improvements and a black panel/titlebar.
 
 ## Customize Theme
 
-### Panel Color + Window Decorations
+#### Color Picker (installs `qml`)
+
+Video: https://streamable.com/kcv1
+
+Run `sh ~/.local/share/plasma/desktoptheme/breeze-alphablack/themeeditor` which will display a color picker for you to choose your theme color.
+
+
+### Panel Color + Window Decorations (Just `python3`)
 
 Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/setthemecolor.py 255,255,255` where 255,255,255 is your desired RGB color.
 
 
-#### Color Picker
-
-Video: https://zippy.gfycat.com/SizzlingSecondaryBovine.webm
-
-Run `sh ~/.local/share/plasma/desktoptheme/breeze-alphablack/themeeditor` which will display a color picker for you to choose your theme color.
-
-### Panel Color (Manually)
-
-First go to: `~/.local/share/plasma/desktoptheme/breeze-alphablack/`.
-
-Note: To apply the your changes to the theme, you'll need to apply another theme, then switch back to this theme since it doesn't detect when the theme files change.
-
-Edit `BackgroundNormal=0,0,0` under `[Colors:Window]` in the `colors` file.
-
-### Window Decorations (Manually)
+## Window Decorations
 
 To color the the default breeze window decorations (window titlebars). You can either:
 
 1. Download a custom window decoration.
-2. Use the System Settings > Colors > Colors section to color the titlebar background/foreground. You will not be able to color the frame color (bottom/left/right of the windw) from this menu.
-3. Add/set the following values in your `~/.config/kdeglobals` file.
+2. Use the Color Picker script above.
+3. Use the System Settings > Colors > Colors section to color the titlebar background/foreground. You will not be able to color the frame color (bottom/left/right of the window) from this menu.
+4. Add/set the following values in your `~/.config/kdeglobals` file to set the borders to black (when using the breeze window decorations).
 
 	[WM]
 	activeBackground=0,0,0
@@ -53,5 +47,3 @@ To color the the default breeze window decorations (window titlebars). You can e
 	frame=0,0,0
 	inactiveFrame=8,8,8
 
-
-Note that #3 allows you to set the frame color (to black).
