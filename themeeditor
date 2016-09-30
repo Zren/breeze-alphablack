@@ -1,9 +1,10 @@
 #!/bin/bash
 
-if [ -z "$(which python2)" ]; then
-	sudo apt install python2
-fi
 if [ -z "$(which python3)" ]; then
 	sudo apt install python3
 fi
-python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/setthemecolor.py $(python2 ~/.local/share/plasma/desktoptheme/breeze-alphablack/choosecolor.py)
+if [ -z "$(which qmlscene)" ]; then
+	echo "Need to setup qmlscene (Qt)"
+	exit 1
+fi
+qmlscene ~/.local/share/plasma/desktoptheme/breeze-alphablack/ThemeEditor.qml

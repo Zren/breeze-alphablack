@@ -90,8 +90,8 @@ def setThemeColor(newColor='0,0,0'):
 		config['Theme']['name'] = 'breeze-dark'
 		config.save()
 		time.sleep(1)
-		config['Theme']['name'] = 'breeze-alphablack'
-		config.save()
+	config['Theme']['name'] = 'breeze-alphablack'
+	config.save()
 
 if __name__ == '__main__':
 	if len(sys.argv) >= 2:
