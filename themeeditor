@@ -3,8 +3,8 @@
 if [ -z "$(which python3)" ]; then
 	sudo apt install python3
 fi
-if [ -z "$(which qmlscene)" ]; then
-	echo "Need to setup qmlscene (Qt)"
-	exit 1
+if [ -z "$(which qml)" ]; then
+	sudo apt install qml
 fi
-qmlscene ~/.local/share/plasma/desktoptheme/breeze-alphablack/ThemeEditor.qml
+
+qml ~/.local/share/plasma/desktoptheme/breeze-alphablack/ThemeEditor.qml

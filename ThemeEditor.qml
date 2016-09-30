@@ -11,6 +11,7 @@ Window {
 	height: 400
 	x: (Screen.width - width) / 2
 	y: (Screen.height - height) / 2
+	visible: true
 
 	property color themeAccentColor: "#000000"
 
