@@ -4,7 +4,7 @@ Breeze Light theme with minor improvements and a black panel/titlebar.
 
 ## Screenshots
 
-![](http://kdelook.org/CONTENT/content-pre1/175800-1.png)
+![](https://cn.pling.com/img//hive/content-pre1/175800-1.png)
 
 ## Install
 
