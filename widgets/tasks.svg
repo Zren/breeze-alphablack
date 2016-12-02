@@ -3256,11 +3256,11 @@
        height="13"
        width="2"
        id="rect4945-9-2"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        class="ColorScheme-Text" />
     <rect
        class="ColorScheme-Text"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        id="rect4949-9-2"
        width="1"
        height="13"
@@ -3283,11 +3283,11 @@
        height="13"
        width="2"
        id="rect4945-8"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        class="ColorScheme-Text" />
     <rect
        class="ColorScheme-Text"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        id="rect4949-5"
        width="1"
        height="13"
@@ -3310,7 +3310,7 @@
        height="13"
        width="27"
        id="rect4957-0"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        class="ColorScheme-Text" />
   </g>
   <g
@@ -3383,13 +3383,13 @@
        height="2"
        width="26"
        id="rect4997-2-6"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        transform="scale(1,-1)"
        class="ColorScheme-Text" />
     <rect
        class="ColorScheme-Text"
        transform="scale(1,-1)"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        id="rect4999-0-5"
        width="26"
        height="1"
@@ -3413,10 +3413,10 @@
        height="2"
        width="2"
        id="rect5003-5-6-8"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        class="ColorScheme-Text" />
     <path
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
        id="path3643"
        class="ColorScheme-Text" />
@@ -3438,10 +3438,10 @@
        height="2"
        width="2"
        id="rect5003-5-6-8-5"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        class="ColorScheme-Text" />
     <path
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
        id="path3643-6"
        class="ColorScheme-Text" />
@@ -3455,11 +3455,11 @@
        height="13"
        width="2"
        id="rect4945-9-2-46"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        class="ColorScheme-Text" />
     <rect
        class="ColorScheme-Text"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        id="rect4949-9-2-8"
        width="1"
        height="13"
@@ -3482,11 +3482,11 @@
        height="13"
        width="2"
        id="rect4945-8-3"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        class="ColorScheme-Text" />
     <rect
        class="ColorScheme-Text"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        id="rect4949-5-7"
        width="1"
        height="13"
@@ -3509,7 +3509,7 @@
        height="13"
        width="27"
        id="rect4957-0-98"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        class="ColorScheme-Text" />
   </g>
   <g
@@ -3582,13 +3582,13 @@
        height="2"
        width="26"
        id="rect4997-2-6-16"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        transform="scale(1,-1)"
        class="ColorScheme-Text" />
     <rect
        class="ColorScheme-Text"
        transform="scale(1,-1)"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        id="rect4999-0-5-1"
        width="26"
        height="0.99999988"
@@ -3612,10 +3612,10 @@
        height="2"
        width="2"
        id="rect5003-5-6-8-4"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        class="ColorScheme-Text" />
     <path
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
        id="path3643-75"
        class="ColorScheme-Text" />
@@ -3637,10 +3637,10 @@
        height="2"
        width="2"
        id="rect5003-5-6-8-5-1"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        class="ColorScheme-Text" />
     <path
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
        id="path3643-6-5"
        class="ColorScheme-Text" />
@@ -3654,11 +3654,11 @@
        height="13"
        width="2"
        id="rect4945-9-2-4-1-8-0"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        class="ColorScheme-Text" />
     <rect
        class="ColorScheme-Text"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        id="rect4949-9-2-9-0-6-0"
        width="1"
        height="13"
@@ -3694,7 +3694,7 @@
        height="13"
        width="27"
        id="rect4957-0-5-7-4-43"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        class="ColorScheme-Text" />
   </g>
   <g
@@ -3714,13 +3714,13 @@
        height="2"
        width="26"
        id="rect4997-3-9-4-2-7"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        transform="scale(1,-1)"
        class="ColorScheme-Text" />
     <rect
        class="ColorScheme-Text"
        transform="scale(1,-1)"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        id="rect4999-2-9-0-6-1"
        width="26"
        height="0.99999988"
@@ -3776,13 +3776,13 @@
        height="2"
        width="26"
        id="rect4997-2-6-2-7-7-7"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        transform="scale(1,-1)"
        class="ColorScheme-Text" />
     <rect
        class="ColorScheme-Text"
        transform="scale(1,-1)"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        id="rect4999-0-5-7-0-9-6"
        width="26"
        height="0.99999988"
@@ -3814,10 +3814,10 @@
        height="2"
        width="2"
        id="rect5003-5-6-8-9-3-4-7"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        class="ColorScheme-Text" />
     <path
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
        id="path3643-1-0-7-47"
        class="ColorScheme-Text" />
@@ -3839,10 +3839,10 @@
        height="2"
        width="2"
        id="rect5003-5-6-8-5-7-4-2-33"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        class="ColorScheme-Text" />
     <path
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
        id="path3643-6-3-5-7-19"
        class="ColorScheme-Text" />
@@ -3856,11 +3856,11 @@
        height="13"
        width="2"
        id="rect4945-9-2-4-1-8-0-7"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        class="ColorScheme-Text" />
     <rect
        class="ColorScheme-Text"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        id="rect4949-9-2-9-0-6-0-1"
        width="1"
        height="13"
@@ -3896,7 +3896,7 @@
        height="13"
        width="27"
        id="rect4957-0-5-7-4-43-5"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        class="ColorScheme-Text" />
   </g>
   <g
@@ -3916,13 +3916,13 @@
        height="2"
        width="26"
        id="rect4997-3-9-4-2-7-5"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        transform="scale(1,-1)"
        class="ColorScheme-Text" />
     <rect
        class="ColorScheme-Text"
        transform="scale(1,-1)"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        id="rect4999-2-9-0-6-1-9"
        width="26"
        height="0.99999988"
@@ -3978,13 +3978,13 @@
        height="2"
        width="26"
        id="rect4997-2-6-2-7-7-7-0"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        transform="scale(1,-1)"
        class="ColorScheme-Text" />
     <rect
        class="ColorScheme-Text"
        transform="scale(1,-1)"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        id="rect4999-0-5-7-0-9-6-4"
        width="26"
        height="0.99999988"
@@ -4016,10 +4016,10 @@
        height="2"
        width="2"
        id="rect5003-5-6-8-9-3-4-7-0"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        class="ColorScheme-Text" />
     <path
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
        id="path3643-1-0-7-47-6"
        class="ColorScheme-Text" />
@@ -4041,10 +4041,10 @@
        height="2"
        width="2"
        id="rect5003-5-6-8-5-7-4-2-33-8"
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        class="ColorScheme-Text" />
     <path
-       style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
+       style="fill:none;stroke:none"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
        id="path3643-6-3-5-7-19-0"
        class="ColorScheme-Text" />
