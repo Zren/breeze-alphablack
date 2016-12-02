@@ -5,39 +5,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    viewBox="0 0 144 126"
    version="1.0"
    height="126"
    width="144"
-   id="svg2"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="tasks.svgz">
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1021"
-     id="namedview752"
-     showgrid="true"
-     inkscape:zoom="5.2976888"
-     inkscape:cx="113.38203"
-     inkscape:cy="56.829021"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg2">
-    <inkscape:grid
-       id="grid3729"
-       type="xygrid" />
-  </sodipodi:namedview>
+   id="svg2">
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -46,7 +18,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
       <cc:Work
          rdf:about="">
@@ -103,14 +75,14 @@
       .ColorScheme-PositiveText {
         color:#27ae60;
       }
-    </style>
-    <style
-       id="tasks-colors"
-       type="text/css">
-      .ColorScheme-Attention {
-        color:#f67400;
-      }
-    </style>
+  </style>
+  <style
+     id="tasks-colors"
+     type="text/css">
+    .ColorScheme-Attention {
+      color:#f67400;
+    }
+  </style>
   </defs>
   <g
      transform="matrix(-1,0,0,-1,36,50)"
@@ -473,8 +445,7 @@
        class="ColorScheme-ButtonHover"
        id="path3643-64"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
-       style="opacity:0.33999999;fill:currentColor;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
+       style="opacity:0.33999999;fill:currentColor;fill-opacity:1;stroke:none" />
   </g>
   <g
      transform="matrix(0,1,1,0,13,49)"
@@ -499,8 +470,7 @@
        class="ColorScheme-ButtonHover"
        id="path3643-6-2"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
-       style="opacity:0.33999999;fill:currentColor;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
+       style="opacity:0.33999999;fill:currentColor;fill-opacity:1;stroke:none" />
   </g>
   <g
      transform="matrix(-1,0,0,-1,36,113)"
@@ -694,8 +664,7 @@
        id="path3643-6-35"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
        class="ColorScheme-Attention"
-       style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
+       style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none" />
   </g>
   <g
      transform="matrix(-1,0,0,1,72,13)"
@@ -1058,8 +1027,7 @@
        class="ColorScheme-ButtonHover"
        id="path3643-64-2"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
-       style="opacity:0.33999999;fill:currentColor;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
+       style="opacity:0.33999999;fill:currentColor;fill-opacity:1;stroke:none" />
   </g>
   <g
      transform="matrix(0,-1,1,0,49,98)"
@@ -1084,8 +1052,7 @@
        class="ColorScheme-ButtonHover"
        id="path3643-6-2-6"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
-       style="opacity:0.33999999;fill:currentColor;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
+       style="opacity:0.33999999;fill:currentColor;fill-opacity:1;stroke:none" />
   </g>
   <g
      transform="matrix(-1,0,0,1,72,76)"
@@ -1451,8 +1418,7 @@
        class="ColorScheme-ButtonFocus"
        id="path3643-1-0-7"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
-       style="opacity:0.00319998;fill:currentColor;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
+       style="opacity:0.00319998;fill:currentColor;fill-opacity:1;stroke:none" />
   </g>
   <g
      transform="matrix(0,1,-1,0,94,6)"
@@ -1477,8 +1443,7 @@
        class="ColorScheme-ButtonFocus"
        id="path3643-6-3-5-7"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
-       style="opacity:0.00319998;fill:currentColor;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
+       style="opacity:0.00319998;fill:currentColor;fill-opacity:1;stroke:none" />
   </g>
   <g
      transform="matrix(-1,0,0,0.84615385,107,57.846153)"
@@ -1655,8 +1620,7 @@
        class="ColorScheme-ButtonHover"
        id="path3643-1-0-7-4"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
-       style="opacity:0.33999999;fill:currentColor;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
+       style="opacity:0.33999999;fill:currentColor;fill-opacity:1;stroke:none" />
   </g>
   <g
      transform="matrix(0,1,-1,0,94,48)"
@@ -1681,8 +1645,7 @@
        class="ColorScheme-ButtonHover"
        id="path3643-6-3-5-7-5"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
-       style="opacity:0.33999999;fill:currentColor;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
+       style="opacity:0.33999999;fill:currentColor;fill-opacity:1;stroke:none" />
   </g>
   <g
      transform="matrix(-1,0,0,0.84615385,107,78.846153)"
@@ -2051,8 +2014,7 @@
        class="ColorScheme-ButtonFocus"
        id="path3643-1-0-7-9"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
-       style="opacity:0.00319998;fill:currentColor;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
+       style="opacity:0.00319998;fill:currentColor;fill-opacity:1;stroke:none" />
   </g>
   <g
      transform="matrix(0,1,1,0,122.00001,6)"
@@ -2077,8 +2039,7 @@
        class="ColorScheme-ButtonFocus"
        id="path3643-6-3-5-7-8"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
-       style="opacity:0.00319998;fill:currentColor;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
+       style="opacity:0.00319998;fill:currentColor;fill-opacity:1;stroke:none" />
   </g>
   <g
      transform="matrix(1,0,0,0.84615385,109.00001,57.846153)"
@@ -2255,8 +2216,7 @@
        class="ColorScheme-ButtonHover"
        id="path3643-1-0-7-4-9"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
-       style="opacity:0.33999999;fill:currentColor;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
+       style="opacity:0.33999999;fill:currentColor;fill-opacity:1;stroke:none" />
   </g>
   <g
      transform="matrix(0,1,1,0,122.00001,48)"
@@ -2281,8 +2241,7 @@
        class="ColorScheme-ButtonHover"
        id="path3643-6-3-5-7-5-7"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
-       style="opacity:0.33999999;fill:currentColor;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
+       style="opacity:0.33999999;fill:currentColor;fill-opacity:1;stroke:none" />
   </g>
   <g
      transform="matrix(1,0,0,0.84615385,109.00001,78.846153)"
@@ -2459,8 +2418,7 @@
        id="path3643-1-0-7-8-1"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
        class="ColorScheme-Attention"
-       style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
+       style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none" />
   </g>
   <g
      transform="matrix(0,1,1,0,122.00001,69)"
@@ -2485,8 +2443,7 @@
        id="path3643-6-3-5-7-1-9"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
        class="ColorScheme-Attention"
-       style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
+       style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none" />
   </g>
   <g
      transform="matrix(-1,0,0,-1,36,28.999999)"
@@ -2660,8 +2617,7 @@
        id="path3643-1-9"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
        class="ColorScheme-PositiveText"
-       style="opacity:0.31000001;fill:currentColor;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
+       style="opacity:0.31000001;fill:currentColor;fill-opacity:1;stroke:none" />
   </g>
   <g
      transform="matrix(0,1,1,0,13,-14)"
@@ -2686,8 +2642,7 @@
        id="path3643-6-3-7"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
        class="ColorScheme-PositiveText"
-       style="opacity:0.31000001;fill:currentColor;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
+       style="opacity:0.31000001;fill:currentColor;fill-opacity:1;stroke:none" />
   </g>
   <g
      transform="matrix(-1,0,0,1,72,-8.000001)"
@@ -2861,8 +2816,7 @@
        id="path3643-1-0-3"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
        class="ColorScheme-PositiveText"
-       style="opacity:0.31000001;fill:currentColor;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
+       style="opacity:0.31000001;fill:currentColor;fill-opacity:1;stroke:none" />
   </g>
   <g
      transform="matrix(0,-1,1,0,49,35)"
@@ -2887,8 +2841,7 @@
        id="path3643-6-3-5-2"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
        class="ColorScheme-PositiveText"
-       style="opacity:0.31000001;fill:currentColor;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
+       style="opacity:0.31000001;fill:currentColor;fill-opacity:1;stroke:none" />
   </g>
   <g
      transform="matrix(-1,0,0,0.84615385,106.99999,-5.153847)"
@@ -3065,8 +3018,7 @@
        id="path3643-1-0-7-94"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
        class="ColorScheme-PositiveText"
-       style="opacity:0.31000001;fill:currentColor;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
+       style="opacity:0.31000001;fill:currentColor;fill-opacity:1;stroke:none" />
   </g>
   <g
      transform="matrix(0,1,-1,0,94,-15)"
@@ -3091,8 +3043,7 @@
        id="path3643-6-3-5-7-2"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
        class="ColorScheme-PositiveText"
-       style="opacity:0.31000001;fill:currentColor;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
+       style="opacity:0.31000001;fill:currentColor;fill-opacity:1;stroke:none" />
   </g>
   <g
      transform="matrix(1,0,0,0.84615385,109,-5.153848)"
@@ -3269,8 +3220,7 @@
        id="path3643-1-0-7-9-0"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
        class="ColorScheme-PositiveText"
-       style="opacity:0.31000001;fill:currentColor;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
+       style="opacity:0.31000001;fill:currentColor;fill-opacity:1;stroke:none" />
   </g>
   <g
      transform="matrix(0,1,1,0,122,-15)"
@@ -3295,8 +3245,7 @@
        id="path3643-6-3-5-7-8-5"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
        class="ColorScheme-PositiveText"
-       style="opacity:0.31000001;fill:currentColor;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
+       style="opacity:0.31000001;fill:currentColor;fill-opacity:1;stroke:none" />
   </g>
   <g
      id="minimized-left"
@@ -3467,7 +3416,6 @@
        style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
        class="ColorScheme-Text" />
     <path
-       inkscape:connector-curvature="0"
        style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
        id="path3643"
@@ -3493,7 +3441,6 @@
        style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
        class="ColorScheme-Text" />
     <path
-       inkscape:connector-curvature="0"
        style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
        id="path3643-6"
@@ -3668,7 +3615,6 @@
        style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
        class="ColorScheme-Text" />
     <path
-       inkscape:connector-curvature="0"
        style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
        id="path3643-75"
@@ -3694,7 +3640,6 @@
        style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
        class="ColorScheme-Text" />
     <path
-       inkscape:connector-curvature="0"
        style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
        id="path3643-6-5"
@@ -3872,7 +3817,6 @@
        style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
        class="ColorScheme-Text" />
     <path
-       inkscape:connector-curvature="0"
        style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
        id="path3643-1-0-7-47"
@@ -3898,7 +3842,6 @@
        style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
        class="ColorScheme-Text" />
     <path
-       inkscape:connector-curvature="0"
        style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
        id="path3643-6-3-5-7-19"
@@ -4076,7 +4019,6 @@
        style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
        class="ColorScheme-Text" />
     <path
-       inkscape:connector-curvature="0"
        style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
        id="path3643-1-0-7-47-6"
@@ -4102,7 +4044,6 @@
        style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
        class="ColorScheme-Text" />
     <path
-       inkscape:connector-curvature="0"
        style="fill:currentColor;fill-opacity:0.16000001;stroke:none"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
        id="path3643-6-3-5-7-19-0"
@@ -4110,72 +4051,43 @@
   </g>
   <g
      transform="matrix(1.2222222,0,0,1.2222222,-97,-16.777778)"
-     id="group-expander-bottom"><path
-   id="path4927"
-   d="m 211.5,89.000002 a 4.4999957,4.5000003 0 0 0 -4.5,4.5 4.4999957,4.5000003 0 0 0 4.5,4.5 4.4999957,4.5000003 0 0 0 4.5,-4.5 4.4999957,4.5000003 0 0 0 -4.5,-4.5 z"
-   style="opacity:0.25;fill:#000000;fill-opacity:1;stroke:none"
-   inkscape:connector-curvature="0" />
-<path
-   id="path603"
-   style="opacity:0.25;fill:#000000;fill-opacity:1;stroke:none"
-   d=""
-   inkscape:connector-curvature="0" />
-
-
-
-
-
-
-
-
-
-         d=&quot;M 211.5,89 A 4.5,4.5 0 0 0 207,93.5 4.5,4.5 0 0 0 211.5,98 4.5,4.5 0 0 0 216,93.5 4.5,4.5 0 0 0 211.5,89 Z&quot;
-         id=&quot;path4929&quot;
-         inkscape:connector-curvature=&quot;0&quot; /&gt;
-      <path
-   style="fill:#2ecc71;fill-opacity:1;stroke:none"
-   d="m 211.50001,89.818184 a 3.6818164,3.6818182 0 0 0 -3.68182,3.681818 3.6818164,3.6818182 0 0 0 3.68182,3.681818 3.6818164,3.6818182 0 0 0 3.68182,-3.681818 3.6818164,3.6818182 0 0 0 -3.68182,-3.681818 z"
-   id="path4931"
-   inkscape:connector-curvature="0" />
-<path
-   id="path4930"
-   d="m 210.67561,91.045464 9.7e-4,1.630631 -1.63462,0.01145 0.007,1.626089 1.63908,0.0091 -0.006,1.634313 1.62575,-0.005 0.007,-1.631618 1.63976,-2.7e-5 0,-1.632877 -1.64636,0 0.0204,-1.642077 z"
-   style="opacity:0.25;fill:#000000;fill-opacity:1;stroke:none"
-   inkscape:connector-curvature="0" />
-<path
-   style="fill:#ffffff;fill-opacity:1;stroke:none"
-   d="m 211.08482,91.454555 9.7e-4,1.630633 -1.63474,0.01145 0.007,0.807899 1.6392,0.0091 -0.006,1.634319 0.8077,-0.005 0.007,-1.631624 1.63951,-2.7e-5 0,-0.814687 -1.64611,0 0.0204,-1.642079 z"
-   id="path4949"
-   inkscape:connector-curvature="0" />
-</g>
+     id="group-expander-bottom">
+    <path
+       id="path4927"
+       d="m 211.5,89.000002 a 4.4999957,4.5000003 0 0 0 -4.5,4.5 4.4999957,4.5000003 0 0 0 4.5,4.5 4.4999957,4.5000003 0 0 0 4.5,-4.5 4.4999957,4.5000003 0 0 0 -4.5,-4.5 z"
+       style="opacity:0.25;fill:#000000;fill-opacity:1;stroke:none" />
+    <path
+       style="fill:#2ecc71;fill-opacity:1;stroke:none"
+       d="m 211.50001,89.818184 a 3.6818164,3.6818182 0 0 0 -3.68182,3.681818 3.6818164,3.6818182 0 0 0 3.68182,3.681818 3.6818164,3.6818182 0 0 0 3.68182,-3.681818 3.6818164,3.6818182 0 0 0 -3.68182,-3.681818 z"
+       id="path4931" />
+    <path
+       id="path4930"
+       d="m 210.67561,91.045464 9.7e-4,1.630631 -1.63462,0.01145 0.007,1.626089 1.63908,0.0091 -0.006,1.634313 1.62575,-0.005 0.007,-1.631618 1.63976,-2.7e-5 0,-1.632877 -1.64636,0 0.0204,-1.642077 z"
+       style="opacity:0.25;fill:#000000;fill-opacity:1;stroke:none" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       d="m 211.08482,91.454555 9.7e-4,1.630633 -1.63474,0.01145 0.007,0.807899 1.6392,0.0091 -0.006,1.634319 0.8077,-0.005 0.007,-1.631624 1.63951,-2.7e-5 0,-0.814687 -1.64611,0 0.0204,-1.642079 z"
+       id="path4949" />
+  </g>
   <g
      id="group-expander-left"
      transform="matrix(1.2222222,0,0,1.2222222,-74.999995,-16.777778)">
     <path
        style="opacity:0.25;fill:#000000;fill-opacity:1;stroke:none"
        d="m 211.5,89.000002 a 4.4999957,4.5000003 0 0 0 -4.5,4.5 4.4999957,4.5000003 0 0 0 4.5,4.5 4.4999957,4.5000003 0 0 0 4.5,-4.5 4.4999957,4.5000003 0 0 0 -4.5,-4.5 z"
-       id="path4934"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:url(#radialGradient4857);fill-opacity:1;stroke:none"
-       d="M 211.5,89 A 4.5,4.5 0 0 0 207,93.5 4.5,4.5 0 0 0 211.5,98 4.5,4.5 0 0 0 216,93.5 4.5,4.5 0 0 0 211.5,89 z"
-       id="path4936"
-       inkscape:connector-curvature="0" />
+       id="path4934" />
     <path
        id="path4938"
        d="m 211.50001,89.818184 a 3.6818164,3.6818182 0 0 0 -3.68182,3.681818 3.6818164,3.6818182 0 0 0 3.68182,3.681818 3.6818164,3.6818182 0 0 0 3.68182,-3.681818 3.6818164,3.6818182 0 0 0 -3.68182,-3.681818 z"
-       style="fill:#2ecc71;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
+       style="fill:#2ecc71;fill-opacity:1;stroke:none" />
     <path
        style="opacity:0.25;fill:#000000;fill-opacity:1;stroke:none"
        d="m 210.67561,91.045464 9.7e-4,1.630631 -1.63462,0.01145 0.007,1.626089 1.63908,0.0091 -0.006,1.634313 1.62575,-0.005 0.007,-1.631618 1.63976,-2.7e-5 0,-1.632877 -1.64636,0 0.0204,-1.642077 z"
-       id="path4940"
-       inkscape:connector-curvature="0" />
+       id="path4940" />
     <path
        id="path4942"
        d="m 211.08482,91.454555 9.7e-4,1.630633 -1.63474,0.01145 0.007,0.807899 1.6392,0.0091 -0.006,1.634319 0.8077,-0.005 0.007,-1.631624 1.63951,-2.7e-5 0,-0.814687 -1.64611,0 0.0204,-1.642079 z"
-       style="fill:#ffffff;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
+       style="fill:#ffffff;fill-opacity:1;stroke:none" />
   </g>
   <g
      id="group-expander-top"
@@ -4183,28 +4095,19 @@
     <path
        style="opacity:0.25;fill:#000000;fill-opacity:1;stroke:none"
        d="m 211.5,89.000002 a 4.4999957,4.5000003 0 0 0 -4.5,4.5 4.4999957,4.5000003 0 0 0 4.5,4.5 4.4999957,4.5000003 0 0 0 4.5,-4.5 4.4999957,4.5000003 0 0 0 -4.5,-4.5 z"
-       id="path4946"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:url(#radialGradient4857);fill-opacity:1;stroke:none"
-       d="M 211.5,89 A 4.5,4.5 0 0 0 207,93.5 4.5,4.5 0 0 0 211.5,98 4.5,4.5 0 0 0 216,93.5 4.5,4.5 0 0 0 211.5,89 z"
-       id="path4948"
-       inkscape:connector-curvature="0" />
+       id="path4946" />
     <path
        id="path4950"
        d="m 211.50001,89.818184 a 3.6818164,3.6818182 0 0 0 -3.68182,3.681818 3.6818164,3.6818182 0 0 0 3.68182,3.681818 3.6818164,3.6818182 0 0 0 3.68182,-3.681818 3.6818164,3.6818182 0 0 0 -3.68182,-3.681818 z"
-       style="fill:#2ecc71;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
+       style="fill:#2ecc71;fill-opacity:1;stroke:none" />
     <path
        style="opacity:0.25;fill:#000000;fill-opacity:1;stroke:none"
        d="m 210.67561,91.045464 9.7e-4,1.630631 -1.63462,0.01145 0.007,1.626089 1.63908,0.0091 -0.006,1.634313 1.62575,-0.005 0.007,-1.631618 1.63976,-2.7e-5 0,-1.632877 -1.64636,0 0.0204,-1.642077 z"
-       id="path4952"
-       inkscape:connector-curvature="0" />
+       id="path4952" />
     <path
        id="path4954"
        d="m 211.08482,91.454555 9.7e-4,1.630633 -1.63474,0.01145 0.007,0.807899 1.6392,0.0091 -0.006,1.634319 0.8077,-0.005 0.007,-1.631624 1.63951,-2.7e-5 0,-0.814687 -1.64611,0 0.0204,-1.642079 z"
-       style="fill:#ffffff;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
+       style="fill:#ffffff;fill-opacity:1;stroke:none" />
   </g>
   <g
      transform="matrix(1.2222222,0,0,1.2222222,-74.999995,1.222222)"
@@ -4212,28 +4115,19 @@
     <path
        id="path4958"
        d="m 211.5,89.000002 a 4.4999957,4.5000003 0 0 0 -4.5,4.5 4.4999957,4.5000003 0 0 0 4.5,4.5 4.4999957,4.5000003 0 0 0 4.5,-4.5 4.4999957,4.5000003 0 0 0 -4.5,-4.5 z"
-       style="opacity:0.25;fill:#000000;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
-    <path
-       id="path4960"
-       d="M 211.5,89 A 4.5,4.5 0 0 0 207,93.5 4.5,4.5 0 0 0 211.5,98 4.5,4.5 0 0 0 216,93.5 4.5,4.5 0 0 0 211.5,89 z"
-       style="fill:url(#radialGradient4857);fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
+       style="opacity:0.25;fill:#000000;fill-opacity:1;stroke:none" />
     <path
        style="fill:#2ecc71;fill-opacity:1;stroke:none"
        d="m 211.50001,89.818184 a 3.6818164,3.6818182 0 0 0 -3.68182,3.681818 3.6818164,3.6818182 0 0 0 3.68182,3.681818 3.6818164,3.6818182 0 0 0 3.68182,-3.681818 3.6818164,3.6818182 0 0 0 -3.68182,-3.681818 z"
-       id="path4962"
-       inkscape:connector-curvature="0" />
+       id="path4962" />
     <path
        id="path4964"
        d="m 210.67561,91.045464 9.7e-4,1.630631 -1.63462,0.01145 0.007,1.626089 1.63908,0.0091 -0.006,1.634313 1.62575,-0.005 0.007,-1.631618 1.63976,-2.7e-5 0,-1.632877 -1.64636,0 0.0204,-1.642077 z"
-       style="opacity:0.25;fill:#000000;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
+       style="opacity:0.25;fill:#000000;fill-opacity:1;stroke:none" />
     <path
        style="fill:#ffffff;fill-opacity:1;stroke:none"
        d="m 211.08482,91.454555 9.7e-4,1.630633 -1.63474,0.01145 0.007,0.807899 1.6392,0.0091 -0.006,1.634319 0.8077,-0.005 0.007,-1.631624 1.63951,-2.7e-5 0,-0.814687 -1.64611,0 0.0204,-1.642079 z"
-       id="path4966"
-       inkscape:connector-curvature="0" />
+       id="path4966" />
   </g>
   <g
      id="normal-left"
