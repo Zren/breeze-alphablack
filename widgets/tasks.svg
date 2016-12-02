@@ -103,7 +103,14 @@
       .ColorScheme-PositiveText {
         color:#27ae60;
       }
-</style>
+    </style>
+    <style
+       id="tasks-colors"
+       type="text/css">
+      .ColorScheme-Attention {
+        color:#f67400;
+      }
+    </style>
   </defs>
   <g
      transform="matrix(-1,0,0,-1,36,50)"
@@ -499,7 +506,7 @@
      transform="matrix(-1,0,0,-1,36,113)"
      id="attention-left">
     <rect
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect4945-9-2-6"
        width="2"
@@ -512,7 +519,7 @@
        height="13"
        width="1"
        id="rect4949-9-2-3"
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none" />
     <rect
        style="fill:none;stroke:none"
@@ -526,7 +533,7 @@
      transform="translate(0,76)"
      id="attention-right">
     <rect
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect4945-8-0"
        width="2"
@@ -539,7 +546,7 @@
        height="13"
        width="1"
        id="rect4949-5-3"
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none" />
     <rect
        style="fill:none;stroke:none"
@@ -553,7 +560,7 @@
      transform="matrix(0.96296296,0,0,1,0.185185,83.9)"
      id="attention-center">
     <rect
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect4957-0-9"
        width="27"
@@ -566,7 +573,7 @@
      transform="matrix(1,0,0,-1,0,114)">
     <rect
        transform="scale(1,-1)"
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.66000001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect4997-3-90"
        width="26"
@@ -579,7 +586,7 @@
        height="0.99999988"
        width="26"
        id="rect4999-2-8"
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.66000001;fill:currentColor;fill-opacity:1;stroke:none"
        transform="scale(1,-1)" />
   </g>
@@ -594,7 +601,7 @@
        id="rect4369-7-5-09-7-1"
        style="fill:none;stroke:none" />
     <rect
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.66000001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect5003-5-7-25"
        width="3"
@@ -614,7 +621,7 @@
        style="fill:none;stroke:none"
        transform="scale(1,-1)" />
     <rect
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.66000001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect5003-7-0"
        width="3"
@@ -627,7 +634,7 @@
      transform="matrix(-1,0,0,1,36,75)">
     <rect
        transform="scale(1,-1)"
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect4997-2-6-9"
        width="26"
@@ -640,7 +647,7 @@
        height="0.99999988"
        width="26"
        id="rect4999-0-5-5"
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        transform="scale(1,-1)" />
   </g>
@@ -656,7 +663,7 @@
        style="fill:none;stroke:none"
        transform="scale(1,-1)" />
     <rect
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect5003-5-6-8-7"
        width="3"
@@ -676,7 +683,7 @@
        style="fill:none;stroke:none"
        transform="scale(1,-1)" />
     <rect
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect5003-5-6-8-5-4"
        width="2"
@@ -686,7 +693,7 @@
     <path
        id="path3643-6-35"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        inkscape:connector-curvature="0" />
   </g>
@@ -1084,7 +1091,7 @@
      transform="matrix(-1,0,0,1,72,76)"
      id="north-attention-left">
     <rect
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect4945-9-2-6-7"
        width="2"
@@ -1097,7 +1104,7 @@
        height="13"
        width="1"
        id="rect4949-9-2-3-6"
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none" />
     <rect
        style="fill:none;stroke:none"
@@ -1111,7 +1118,7 @@
      transform="matrix(1,0,0,-1,36,113)"
      id="north-attention-right">
     <rect
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect4945-8-0-2"
        width="2"
@@ -1124,7 +1131,7 @@
        height="13"
        width="1"
        id="rect4949-5-3-9"
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none" />
     <rect
        style="fill:none;stroke:none"
@@ -1138,7 +1145,7 @@
      transform="matrix(0.96296296,0,0,-1,36.185185,105.1)"
      id="north-attention-center">
     <rect
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect4957-0-9-4"
        width="27"
@@ -1151,7 +1158,7 @@
      transform="translate(36,75)">
     <rect
        transform="scale(1,-1)"
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.66000001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect4997-3-90-9"
        width="26"
@@ -1164,7 +1171,7 @@
        height="0.99999988"
        width="26"
        id="rect4999-2-8-6"
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.66000001;fill:currentColor;fill-opacity:1;stroke:none"
        transform="scale(1,-1)" />
   </g>
@@ -1179,7 +1186,7 @@
        id="rect4369-7-5-09-7-1-0"
        style="fill:none;stroke:none" />
     <rect
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.66000001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect5003-5-7-25-3"
        width="3"
@@ -1199,7 +1206,7 @@
        style="fill:none;stroke:none"
        transform="scale(1,-1)" />
     <rect
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.66000001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect5003-7-0-4"
        width="3"
@@ -1212,7 +1219,7 @@
      transform="matrix(-1,0,0,-1,72,114)">
     <rect
        transform="scale(1,-1)"
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect4997-2-6-9-7"
        width="26"
@@ -1225,7 +1232,7 @@
        height="0.99999988"
        width="26"
        id="rect4999-0-5-5-7"
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        transform="scale(1,-1)" />
   </g>
@@ -1241,7 +1248,7 @@
        style="fill:none;stroke:none"
        transform="scale(1,-1)" />
     <rect
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect5003-5-6-8-7-0"
        width="3"
@@ -1261,7 +1268,7 @@
        style="fill:none;stroke:none"
        transform="scale(1,-1)" />
     <rect
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect5003-5-6-8-5-4-8"
        width="3"
@@ -1681,7 +1688,7 @@
      transform="matrix(-1,0,0,0.84615385,107,78.846153)"
      id="west-attention-left">
     <rect
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect4945-9-2-4-1-8-8"
        width="2"
@@ -1694,14 +1701,14 @@
        height="13"
        width="1"
        id="rect4949-9-2-9-0-6-1"
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none" />
   </g>
   <g
      transform="matrix(1,0,0,-0.84615385,73.000002,110.15384)"
      id="west-attention-right">
     <rect
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.66000001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect4945-8-1-3-0-0"
        width="2"
@@ -1714,14 +1721,14 @@
        height="13"
        width="1"
        id="rect4949-5-5-6-8-7"
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.66000001;fill:currentColor;fill-opacity:1;stroke:none" />
   </g>
   <g
      transform="matrix(1.0370294,0,0,-0.84615385,70.814665,103.46923)"
      id="west-attention-center">
     <rect
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect4957-0-5-7-4-8"
        width="27"
@@ -1742,7 +1749,7 @@
        transform="matrix(0,1,1,0,0,0)" />
     <rect
        transform="scale(1,-1)"
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect4997-3-9-4-2-6"
        width="26"
@@ -1755,7 +1762,7 @@
        height="0.99999988"
        width="26"
        id="rect4999-2-9-0-6-4"
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        transform="scale(1,-1)" />
   </g>
@@ -1771,7 +1778,7 @@
        style="fill:none;stroke:none"
        transform="matrix(0,-1,-1,0,0,0)" />
     <rect
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.66000001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect5003-5-7-5-0-9-23"
        width="3"
@@ -1783,7 +1790,7 @@
      transform="translate(73.000007,82)"
      id="west-attention-bottomright">
     <rect
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.66000001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect5003-7-6-8-3-0"
        width="3"
@@ -1804,7 +1811,7 @@
      transform="matrix(-1.0769152,0,0,-1,109.38439,115)">
     <rect
        transform="scale(1,-1)"
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect4997-2-6-2-7-7-54"
        width="26"
@@ -1817,7 +1824,7 @@
        height="0.99999988"
        width="26"
        id="rect4999-0-5-7-0-9-55"
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        transform="scale(1,-1)" />
     <rect
@@ -1841,7 +1848,7 @@
        style="fill:none;stroke:none"
        transform="scale(-1,1)" />
     <rect
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect5003-5-6-8-9-3-4-6"
        width="3"
@@ -1861,7 +1868,7 @@
        style="fill:none;stroke:none"
        transform="scale(1,-1)" />
     <rect
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect5003-5-6-8-5-7-4-2-7"
        width="3"
@@ -2281,7 +2288,7 @@
      transform="matrix(1,0,0,0.84615385,109.00001,78.846153)"
      id="east-attention-right">
     <rect
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect4945-9-2-4-1-8-8-0"
        width="2"
@@ -2294,14 +2301,14 @@
        height="13"
        width="1"
        id="rect4949-9-2-9-0-6-1-4"
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none" />
   </g>
   <g
      transform="matrix(-1,0,0,-0.84615385,143.00001,110.15384)"
      id="east-attention-left">
     <rect
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.66000001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect4945-8-1-3-0-0-7"
        width="2"
@@ -2314,14 +2321,14 @@
        height="13"
        width="1"
        id="rect4949-5-5-6-8-7-7"
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.66000001;fill:currentColor;fill-opacity:1;stroke:none" />
   </g>
   <g
      transform="matrix(-1.0370294,0,0,-0.84615385,145.18534,103.46923)"
      id="east-attention-center">
     <rect
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect4957-0-5-7-4-8-2"
        width="27"
@@ -2342,7 +2349,7 @@
        transform="matrix(0,1,1,0,0,0)" />
     <rect
        transform="scale(1,-1)"
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect4997-3-9-4-2-6-4"
        width="26"
@@ -2355,7 +2362,7 @@
        height="0.99999988"
        width="26"
        id="rect4999-2-9-0-6-4-0"
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        transform="scale(1,-1)" />
   </g>
@@ -2371,7 +2378,7 @@
        style="fill:none;stroke:none"
        transform="matrix(0,-1,-1,0,0,0)" />
     <rect
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.66000001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect5003-5-7-5-0-9-23-7"
        width="3"
@@ -2383,7 +2390,7 @@
      transform="matrix(-1,0,0,1,143,82)"
      id="east-attention-bottomleft">
     <rect
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.66000001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect5003-7-6-8-3-0-5"
        width="3"
@@ -2404,7 +2411,7 @@
      transform="matrix(1.0769152,0,0,-1,106.61562,115)">
     <rect
        transform="scale(1,-1)"
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect4997-2-6-2-7-7-54-5"
        width="26"
@@ -2417,7 +2424,7 @@
        height="0.99999988"
        width="26"
        id="rect4999-0-5-7-0-9-55-3"
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        transform="scale(1,-1)" />
     <rect
@@ -2441,7 +2448,7 @@
        style="fill:none;stroke:none"
        transform="scale(-1,1)" />
     <rect
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect5003-5-6-8-9-3-4-6-7"
        width="2"
@@ -2451,7 +2458,7 @@
     <path
        id="path3643-1-0-7-8-1"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        inkscape:connector-curvature="0" />
   </g>
@@ -2467,7 +2474,7 @@
        style="fill:none;stroke:none"
        transform="scale(1,-1)" />
     <rect
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        id="rect5003-5-6-8-5-7-4-2-7-0"
        width="2"
@@ -2477,7 +2484,7 @@
     <path
        id="path3643-6-3-5-7-1-9"
        d="m 34,18 0,2 0,1 -3,0 0,-1 2,0 0,-2 z"
-       class="ColorScheme-NeutralText"
+       class="ColorScheme-Attention"
        style="opacity:0.16600001;fill:currentColor;fill-opacity:1;stroke:none"
        inkscape:connector-curvature="0" />
   </g>
