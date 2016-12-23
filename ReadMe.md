@@ -49,3 +49,7 @@ To color the the default breeze window decorations (window titlebars). You can e
 	frame=0,0,0
 	inactiveFrame=8,8,8
 
+## Misc
+
+* Wiki for Editing Desktop Themes  
+  https://techbase.kde.org/Development/Tutorials/Plasma5/ThemeDetails
