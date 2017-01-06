@@ -38,16 +38,18 @@ To color the the default breeze window decorations (window titlebars). You can e
 3. Use the System Settings > Colors > Colors section to color the titlebar background/foreground. You will not be able to color the frame color (bottom/left/right of the window) from this menu.
 4. Add/set the following values in your `~/.config/kdeglobals` file to set the borders to black (when using the breeze window decorations).
 
-    [WM]
-    activeBackground=0,0,0
-    activeBlend=17,17,17
-    activeFont=Noto Sans,10,-1,5,50,0,0,0,0,0
-    activeForeground=239,240,241
-    inactiveBackground=8,8,8
-    inactiveBlend=75,71,67
-    inactiveForeground=189,195,199
-    frame=0,0,0
-    inactiveFrame=8,8,8
+```ini
+[WM]
+activeBackground=0,0,0
+activeBlend=17,17,17
+activeFont=Noto Sans,10,-1,5,50,0,0,0,0,0
+activeForeground=239,240,241
+inactiveBackground=8,8,8
+inactiveBlend=75,71,67
+inactiveForeground=189,195,199
+frame=0,0,0
+inactiveFrame=8,8,8
+```
 
 ## Misc
 
