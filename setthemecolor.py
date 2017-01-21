@@ -46,8 +46,21 @@ def deltaColor(colorStr, delta):
 		d = delta
 	return '{},{},{}'.format(limitColor(r+d), limitColor(g+d), limitColor(b+d))
 
-def setThemeColor(newColor='0,0,0'):
+def reloadTheme():
+	# Switch to another theme and back to apply the changes to breeze-alphablack.
+	#filename = os.path.abspath(os.path.expanduser('~/Code/plasmarc'))
+	filename = os.path.abspath(os.path.expanduser('~/.config/plasmarc'))
+	config = KdeConfig(filename)
 
+	# Make sure we're not already in the process of changing the theme.
+	if config['Theme']['name'] == 'breeze-alphablack':
+		config['Theme']['name'] = 'breeze-dark'
+		config.save()
+		time.sleep(1)
+	config['Theme']['name'] = 'breeze-alphablack'
+	config.save()
+
+def setThemeColor(newColor='0,0,0'):
 	textColor = '255,255,255'
 	altColor = deltaColor(newColor, 23)
 	compColor = deltaColor(newColor, 17)
@@ -80,18 +93,8 @@ def setThemeColor(newColor='0,0,0'):
 	config['Colors:Complementary']['BackgroundAlternate'] = altColor
 	config.save()
 
-	# Switch to another theme and back to apply the changes to breeze-alphablack.
-	#filename = os.path.abspath(os.path.expanduser('~/Code/plasmarc'))
-	filename = os.path.abspath(os.path.expanduser('~/.config/plasmarc'))
-	config = KdeConfig(filename)
+	reloadTheme()
 
-	# Make sure we're not already in the process of changing the theme.
-	if config['Theme']['name'] == 'breeze-alphablack':
-		config['Theme']['name'] = 'breeze-dark'
-		config.save()
-		time.sleep(1)
-	config['Theme']['name'] = 'breeze-alphablack'
-	config.save()
 
 if __name__ == '__main__':
 	if len(sys.argv) >= 2:

@@ -17,6 +17,11 @@ https://store.kde.org/p/1084931/
 
 ## Customize Theme
 
+#### Panel Opacity
+
+Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/setpanelopacity.py 0.75` where 0.75 means the panel is 75% visible.
+
+
 #### Color Picker (installs `qml`)
 
 Video: https://streamable.com/kcv1
