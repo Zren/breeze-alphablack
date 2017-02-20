@@ -23,8 +23,9 @@ def buildFromTemplate(inFilename, outFilename, **kwargs):
 
 
 def setPanelOpacity(newOpacity=0.6):
-	inFilename = '_templates/panel-background.svg'
-	outFilename = os.path.abspath(os.path.expanduser('~/.local/share/plasma/desktoptheme/breeze-alphablack/widgets/panel-background.svgz'))
+	themeDir = os.path.dirname(os.path.realpath(__file__))
+	inFilename = os.path.join(themeDir, '_templates/panel-background.svg')
+	outFilename = os.path.join(themeDir, 'widgets/panel-background.svgz')
 	buildFromTemplate(inFilename, outFilename, **{
 		'{{panelOpacity}}': str(newOpacity),
 	})
