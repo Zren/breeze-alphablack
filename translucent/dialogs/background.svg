@@ -15,7 +15,7 @@
    id="svg3642"
    sodipodi:version="0.32"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="background.svgz"
+   sodipodi:docname="background.svg"
    inkscape:output_extension="org.inkscape.output.svgz.inkscape"
    version="1.0">
   <sodipodi:namedview
@@ -25,16 +25,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.4715623"
-     inkscape:cx="130.00441"
-     inkscape:cy="68.242579"
+     inkscape:zoom="15"
+     inkscape:cx="103.86275"
+     inkscape:cy="109.57916"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
-     inkscape:window-width="956"
-     inkscape:window-height="1017"
-     inkscape:window-x="960"
+     inkscape:window-width="1920"
+     inkscape:window-height="1021"
+     inkscape:window-x="0"
      inkscape:window-y="0"
      width="148px"
      height="148px"
@@ -43,7 +43,7 @@
      guidetolerance="25"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-maximized="0">
+     inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
        id="grid3357"
@@ -675,12 +675,12 @@
     </g>
     <g
        id="top"
-       transform="matrix(0.5517241,0,0,2,88.793113,-240)">
+       transform="matrix(0.5517241,0,0,1.9997023,88.793113,-239.96159)">
       <path
          id="path2667"
          class="ColorScheme-Background"
          style="fill:currentColor;fill-opacity:0.9"
-         d="m 4,127 0,2 58,0 0,-2 c -0.02169,-6.7e-4 -0.04064,0 -0.0625,0 l -57.875,0 C 4.040639,127 4.021694,126.99933 4,127 z"
+         d="m 4,127 0,2 58,0 0,-2 c -0.02169,-6.7e-4 -0.04064,0 -0.0625,0 l -57.875,0 C 4.040639,127 4.021694,126.99933 4,127 Z"
          inkscape:connector-curvature="0" />
       <path
          id="path5283"
@@ -708,7 +708,7 @@
     </g>
     <g
        id="left"
-       transform="matrix(-2,0,0,-2.4615385,215.00059,367.53847)">
+       transform="matrix(-1.9997028,0,0,-2.4615385,214.98157,367.53847)">
       <path
          id="path3177"
          class="ColorScheme-Background"
@@ -736,7 +736,7 @@
     </g>
     <g
        id="right"
-       transform="matrix(2,0,0,2.4615385,-0.9999899,-299.53847)">
+       transform="matrix(1.9997028,0,0,2.4615385,-0.98156486,-299.53847)">
       <path
          id="path2679"
          class="ColorScheme-Background"
@@ -769,7 +769,7 @@
     </g>
     <g
        id="bottom"
-       transform="matrix(0,2,-2.4615385,0,440.53847,-74.000594)">
+       transform="matrix(0,1.9997028,-2.4615385,0,440.53847,-73.981575)">
       <path
          id="path3169"
          class="ColorScheme-Background"
@@ -777,15 +777,15 @@
          d="m 62,129 0,13 2,0 c 6.68e-4,-0.0217 0,-0.0406 0,-0.0625 l 0,-12.875 c 0,-0.0219 6.68e-4,-0.0408 0,-0.0625 l -2,0 z"
          inkscape:connector-curvature="0" />
       <path
-         id="path3171" 
+         id="path3171"
          class="ColorScheme-Background"
          style="fill:currentColor;fill-opacity:0.9"
          d="m 63.500223,129 0,13 0.5,0 c 1.67e-4,-0.0217 0,-0.0406 0,-0.0625 l 0,-12.875 c 0,-0.0219 1.67e-4,-0.0408 0,-0.0625 l -0.5,0 z"
          inkscape:connector-curvature="0" />
     </g>
     <g
-       id="bottomright">
-       transform="matrix(0,-2,-2,0,381,58)">
+       id="bottomright"
+       transform="matrix(-2,0,0,-2,130.93333,308)">
       <path
          id="path3185"
          class="ColorScheme-Background"
@@ -796,7 +796,7 @@
          id="path3187"
          class="ColorScheme-Background"
          style="fill:currentColor;fill-opacity:0.9"
-         d="m 4,127 c -1.0913545,0.0336 -1.9663915,0.90865 -2,2 l 0.5,0 c 0,-0.78125 0.671875,-1.5 1.5,-1.5 L 4,127 z"
+         d="m 4,127 c -1.0913545,0.0336 -1.9663915,0.90865 -2,2 l 0.5,0 c 0,-0.78125 0.671875,-1.5 1.5,-1.5 L 4,127 Z"
          sodipodi:nodetypes="ccccc"
          inkscape:connector-curvature="0" />
     </g>
