@@ -117,7 +117,11 @@ def roundIfNeeded(a):
 		return a
 
 def applyTranslate(el, dx, dy):
-	if el.name == 'rect':
+	if el.name == 'g':
+		transformChildren(el, applyTranslate, dx, dy)
+	elif el.name == 'path':
+		applyMatrixToPath(el, 1, 0, 0, 1, dx, dy)
+	elif el.name == 'rect':
 		applyTranslateToRect(el, dx, dy)
 	else:
 		raise Exception("Cannot applyTranslate to <{}>".format(el.name))
