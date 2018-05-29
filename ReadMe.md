@@ -17,14 +17,37 @@ https://store.kde.org/p/1084931/
 
 ## Customize Theme
 
+### "AlphaBlack Control" Widget
+
+![](https://i.imgur.com/TYxCBnc.jpg)
+
+v10 introduced an accompying widget to easily change the theme's accent color, panel opacity, or change the taskbar to look a bit more like Windows 10.
+
+You can [download the widget here](https://store.kde.org/p/1237963/), or install it via the GUI:
+
+1. Right click the Panel > Add Widgets
+2. Get New Widgets > Download
+3. Search for "AlphaBlack Control" and install it.
+
+After installing, the widget should appear in your system tray. If you lock your widgets, it will hide in the system tray popup.
+
+
+### Command Line
+
 #### Panel Opacity
 
 Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/setpanelopacity.py 0.75` where 0.75 means the panel is 75% visible.
 
 
-### Panel Color + Window Decorations (Just `python3`)
+#### Panel Color + Window Decorations (Just `python3`)
 
 Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/setthemecolor.py 255,255,255` where 255,255,255 is your desired RGB color.
+
+
+#### Task Manager Theme
+
+Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/settasksvg.py outside` where 'outside' draws the line on the edge of the screen like Windows 10, or 'inside' like Breeze.
+
 
 
 ## Window Decorations
