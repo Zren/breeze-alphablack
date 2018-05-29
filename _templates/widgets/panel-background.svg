@@ -296,6 +296,7 @@
        height="5"
        x="0"
        y="904.36218" />
+    {{noPanelPadding}}
     <g
        id="top">
       <rect
@@ -402,30 +403,37 @@
     <rect
        style="fill:#ff00ff;fill-opacity:1;stroke:none"
        id="hint-top-margin"
-       width="4"
-       height="1.9999769"
+       width="{{panelPadding}}"
+       height="{{panelPadding}}"
+       x="33"
+       y="910.36218" />
+    <rect
+       style="fill:#ff00ff;fill-opacity:1;stroke:none"
+       id="south-hint-top-margin"
+       width="{{panelPadding}}"
+       height="{{panelPadding}}"
        x="33"
        y="910.36218" />
     <rect
        y="952.36218"
        x="33"
-       height="2.0000231"
-       width="4"
+       height="{{panelPadding}}"
+       width="{{panelPadding}}"
        id="hint-bottom-margin"
        style="fill:#ff00ff;fill-opacity:1;stroke:none" />
     <rect
        y="-56.999985"
        x="930.36218"
-       height="1.9999847"
-       width="3.9999769"
+       height="{{panelPadding}}"
+       width="{{panelPadding}}"
        id="hint-right-margin"
        style="fill:#ff00ff;fill-opacity:1;stroke:none"
        transform="matrix(0,1,-1,0,0,0)" />
     <rect
        style="fill:#ff00ff;fill-opacity:1;stroke:none"
        id="hint-left-margin"
-       width="4"
-       height="2.0000019"
+       width="{{panelPadding}}"
+       height="{{panelPadding}}"
        x="930.36218"
        y="-14.999996"
        transform="matrix(0,1,-1,0,0,0)" />
