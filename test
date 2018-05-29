@@ -1,0 +1,5 @@
+#!/bin/bash
+
+rm ~/.cache/plasma-svgelements-breeze-alphablack_*
+rm ~/.cache/plasma_theme_breeze-alphablack_*.kcache
+killall plasmashell; kstart5 plasmashell
