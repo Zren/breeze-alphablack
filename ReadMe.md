@@ -22,13 +22,6 @@ https://store.kde.org/p/1084931/
 Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/setpanelopacity.py 0.75` where 0.75 means the panel is 75% visible.
 
 
-#### Color Picker (installs `qml`)
-
-Video: https://streamable.com/kcv1
-
-Run `sh ~/.local/share/plasma/desktoptheme/breeze-alphablack/themeeditor` which will display a color picker for you to choose your theme color.
-
-
 ### Panel Color + Window Decorations (Just `python3`)
 
 Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/setthemecolor.py 255,255,255` where 255,255,255 is your desired RGB color.
