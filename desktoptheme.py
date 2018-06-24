@@ -119,6 +119,7 @@ class BreezeAlphaBlack(DesktopTheme):
 	def themeConfig(self):
 		filename = os.path.join(self.themeDir, 'config.ini')
 		config = KdeConfig(filename)
+		config.default('dialog', 'opacity', 0.9)
 		config.default('theme', 'accentColor', '#000000')
 		config.default('panel', 'opacity', 0.9)
 		config.default('panel', 'padding', 2)
@@ -140,6 +141,19 @@ class BreezeAlphaBlack(DesktopTheme):
 					for a, b in kwargs.items():
 						line = line.replace(a, b)
 					fout.write(line)
+
+	def renderDialogBackground(self, config):
+		self.renderTemplate('dialogs/background.svg', **{
+			'{{fillOpacity}}': str(config.getProp('dialog.opacity')),
+		})
+
+	def setDialogOpacity(self, newOpacity=0.9):
+		config = self.themeConfig()
+		config.set('dialog', 'opacity', newOpacity)
+		self.renderDialogBackground(config)
+		config.save()
+		self.clearCache() # Not really necessary
+		self.reloadTheme()
 
 	def renderPanel(self, config):
 		# inFilename = os.path.join(self.themeDir, '_templates/panel-background.svg')
