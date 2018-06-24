@@ -120,10 +120,10 @@ class BreezeAlphaBlack(DesktopTheme):
 		filename = os.path.join(self.themeDir, 'config.ini')
 		config = KdeConfig(filename)
 		config.default('dialog', 'opacity', 0.9)
-		config.default('theme', 'accentColor', '#000000')
 		config.default('panel', 'opacity', 0.9)
 		config.default('panel', 'padding', 2)
 		config.default('panel', 'taskStyle', 'inside')
+		config.default('theme', 'accentColor', '#000000')
 		return config
 
 	def useTemplate(self, inPath, outPath):
