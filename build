@@ -15,9 +15,11 @@ zip -r $filename \
 	metadata.desktop \
 	readconfig.py \
 	ReadMe.md \
+	setdialogopacity.py \
 	setpanelopacity.py \
+	settasksvg.py \
 	setthemecolor.py \
-	settasksvg.py
+	setwidgetopacity.py
 
 # mv ${filename} _releases/${filename}
 echo "md5: $(md5sum $filename | awk '{ print $1 }')"
