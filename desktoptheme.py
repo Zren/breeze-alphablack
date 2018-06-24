@@ -135,6 +135,8 @@ class BreezeAlphaBlack(DesktopTheme):
 	def renderTemplate(self, templatePath, **kwargs):
 		inFilename = os.path.join(self.themeDir, '_templates', templatePath)
 		outFilename = os.path.join(self.themeDir, templatePath)
+		outDir = os.path.dirname(outFilename)
+		os.makedirs(outDir, exist_ok=True)
 		with open(inFilename, 'r') as fin:
 			with open(outFilename, 'w') as fout:
 				for line in fin:
