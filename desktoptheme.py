@@ -124,6 +124,7 @@ class BreezeAlphaBlack(DesktopTheme):
 		config.default('panel', 'padding', 2)
 		config.default('panel', 'taskStyle', 'inside')
 		config.default('theme', 'accentColor', '#000000')
+		config.default('widget', 'opacity', 0.9)
 		return config
 
 	def useTemplate(self, inPath, outPath):
@@ -182,6 +183,19 @@ class BreezeAlphaBlack(DesktopTheme):
 		self.renderPanel(config)
 		config.save()
 		self.clearCache() # Necessary
+		self.reloadTheme()
+
+	def renderWidgetBackground(self, config):
+		self.renderTemplate('widgets/background.svg', **{
+			'{{fillOpacity}}': str(config.getProp('widget.opacity')),
+		})
+
+	def setWidgetOpacity(self, newOpacity=0.9):
+		config = self.themeConfig()
+		config.set('widget', 'opacity', newOpacity)
+		self.renderWidgetBackground(config)
+		config.save()
+		self.clearCache() # Not really necessary
 		self.reloadTheme()
 
 	def setAccentColor(self, newColor='0,0,0'):
