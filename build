@@ -15,10 +15,12 @@ zip -r $filename \
 	metadata.desktop \
 	readconfig.py \
 	ReadMe.md \
+	resettitlebarcolor.py \
 	setdialogopacity.py \
 	setpanelopacity.py \
 	settasksvg.py \
 	setthemecolor.py \
+	settitlebarcolor.py \
 	setwidgetopacity.py
 
 # mv ${filename} _releases/${filename}

@@ -74,6 +74,37 @@ def setTitlebarColors(backgroundColor='0,0,0', textColor='255,255,255'):
 	kdeglobals.save()
 
 
+def resetTitlebarColors():
+	filename = os.path.abspath(os.path.expanduser('~/.config/kdeglobals'))
+	kdeglobals = KdeConfig(filename)
+
+	colorSchemeName = kdeglobals['General'].get('ColorScheme', 'Breeze')
+	colorSchemeFilename = '/usr/share/color-schemes/' + colorSchemeName + '.colors'
+	if os.path.isfile(colorSchemeFilename):
+		colorScheme = KdeConfig(colorSchemeFilename)
+		# Default to Breeze.colors if the file leaves it undefined.
+		activeBackgroundColor = colorScheme['Colors:Window'].get('BackgroundNormal', '239,240,241')
+		kdeglobals['WM']['activeBackground'] = colorScheme['WM'].get('activeBackground', '71,80,87') 
+		kdeglobals['WM']['inactiveBackground'] = colorScheme['WM'].get('inactiveBackground', '239,240,241')
+		kdeglobals['WM']['frame'] = colorScheme['WM'].get('frame', activeBackgroundColor)
+		kdeglobals['WM']['inactiveFrame'] = colorScheme['WM'].get('inactiveFrame', kdeglobals['WM']['frame'])
+		kdeglobals['WM']['activeForeground'] = colorScheme['WM'].get('activeForeground', '252,252,252')
+		kdeglobals['WM']['inactiveForeground'] = colorScheme['WM'].get('inactiveForeground', '189,195,199')
+		kdeglobals.save()
+	# elif os.path.isfile(localDesktopThemeFilename):
+	# elif os.path.isfile(rootDesktopThemeFilename):
+		# The color scheme is probably in a desktop theme folder...
+		# Whatever, user can reapply it.
+	else:
+		# Deleting the keys will use white + highlight color,
+		# which isn't the same as the default Breeze colors.
+		del kdeglobals['WM']['activeBackground']
+		del kdeglobals['WM']['inactiveBackground']
+		del kdeglobals['WM']['frame']
+		del kdeglobals['WM']['inactiveFrame']
+		del kdeglobals['WM']['activeForeground']
+		del kdeglobals['WM']['inactiveForeground']
+		kdeglobals.save()
 
 class DesktopTheme:
 	def __init__(self, themeName):

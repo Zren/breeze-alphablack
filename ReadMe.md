@@ -39,10 +39,16 @@ After installing, the widget should appear in your system tray. If you lock your
 Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/setpanelopacity.py 0.75` where 0.75 means the panel is 75% visible.
 
 
-#### Panel Color + Window Decorations (Just `python3`)
+#### Panel Color + Window Decorations
 
 Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/setthemecolor.py 255,255,255` where 255,255,255 is your desired RGB color.
 
+
+#### Window Decorations
+
+Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/settitlebarcolor.py 255,255,255` where 255,255,255 is your desired RGB color.
+
+Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/resettitlebarcolor.py` to reapply the colors from your seleted color scheme.
 
 #### Task Manager Theme
 
