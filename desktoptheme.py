@@ -243,12 +243,17 @@ class BreezeAlphaBlack(DesktopTheme):
 		# inFilename = os.path.join(self.themeDir, '_templates/panel-background.svg')
 		# outFilename = os.path.join(self.themeDir, 'widgets/panel-background.svgz')
 		# buildFromTemplate(inFilename, outFilename, **{
+		panelOpacity = config.getProp('panel.opacity')
+		noPanelPadding = config.getint('panel', 'padding') == 0
+		shadowOpacity = 1 if float(panelOpacity) >= 0.3 else 0
 		self.renderTemplate('widgets/panel-background.svg', **{
-			'{{panelOpacity}}': str(config.getProp('panel.opacity')),
+			'{{panelOpacity}}': str(panelOpacity),
 			'{{panelPadding}}': str(config.getProp('panel.padding')),
-			'{{noPanelPadding}}': '<rect id="hint-no-border-padding"></rect>' if config.getint('panel', 'padding') == 0 else '',
+			'{{noPanelPadding}}': '<rect id="hint-no-border-padding"></rect>' if noPanelPadding else '',
+			'{{shadowOpacity}}': str(shadowOpacity),
 		})
-		print('noPanelPadding', config.getint('panel', 'padding') == 0)
+		print('noPanelPadding', noPanelPadding)
+		print('shadowOpacity', shadowOpacity)
 
 	def setPanelOpacity(self, newOpacity=0.9):
 		config = self.themeConfig()
