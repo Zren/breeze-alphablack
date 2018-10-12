@@ -26,7 +26,6 @@ class KdeConfig(configparser.ConfigParser):
 	def set(self, section, option, value):
 		if not self.has_section(section):
 			self.add_section(section)
-		# self.set(section, option, value)
 		super().set(section, option, str(value))
 
 	def setProp(self, key, value):
