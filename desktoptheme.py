@@ -128,12 +128,6 @@ def scanForColorScheme(colorSchemeName):
 	if colorScheme:
 		return colorScheme
 
-	# 3rd: Check colors scheme packaged in Desktop Themes in home dir.
-	# TODO
-
-	# 4th: Check colors scheme packaged in Desktop Themes in root dir.
-	# TODO
-
 	# No color scheme fulfulled the conditions anywhere
 	return None
 
