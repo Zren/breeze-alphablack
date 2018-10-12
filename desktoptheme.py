@@ -72,9 +72,7 @@ def setTitlebarColors(backgroundColor='0,0,0', textColor='255,255,255'):
 	kdeglobals['WM']['inactiveForeground'] = textColor
 	kdeglobals.save()
 
-def applyColorSchemeTitlebarColors(kdeglobals, colorSchemeFilepath):
-	colorScheme = KdeConfig(colorSchemeFilepath)
-	
+def applyColorSchemeTitlebarColors(kdeglobals, colorScheme):
 	# Default to Breeze.colors if the file leaves it undefined.
 	activeBackgroundColor = colorScheme['Colors:Window'].get('BackgroundNormal', '239,240,241')
 	kdeglobals['WM']['activeBackground'] = colorScheme['WM'].get('activeBackground', '71,80,87') 
@@ -85,22 +83,64 @@ def applyColorSchemeTitlebarColors(kdeglobals, colorSchemeFilepath):
 	kdeglobals['WM']['inactiveForeground'] = colorScheme['WM'].get('inactiveForeground', '189,195,199')
 	kdeglobals.save()
 
+
+
+def scanForColorScheme(colorSchemeName):
+	def testColorSchemeName(colorScheme, colorSchemeName):
+		return colorScheme['General'].get('Name', '') == colorSchemeName
+
+	def scanColorSchemeDir(colorSchemeDir):	
+		colorSchemeFilename = colorSchemeName + '.colors'
+		dirFilenames = os.listdir(colorSchemeDir)
+
+		# First check to see if the obvious filename exists.
+		if colorSchemeFilename in dirFilenames:
+			# If so, move it to the front.
+			dirFilenames.insert(0, dirFilenames.pop(dirFilenames.index(colorSchemeFilename)))
+
+		# Scan folder for the correct color scheme
+		for filename in os.listdir(colorSchemeDir):
+			colorSchemeFilepath = os.path.join(colorSchemeDir, filename)
+			# print(colorSchemeFilepath)
+
+			colorScheme = KdeConfig(colorSchemeFilepath)
+			if testColorSchemeName(colorScheme, colorSchemeName):
+				return colorScheme
+
+		# Color scheme was not found in this dir
+		return None
+
+
+	# 1st: Check the home color-scheme dir (downloads by the user).
+	homeColorSchemeFilepath = os.path.abspath(os.path.expanduser('~/.local/share/color-schemes/'))
+	colorScheme = scanColorSchemeDir(homeColorSchemeFilepath)
+	if colorScheme:
+		return colorScheme
+
+	# 2nd: Check the root color-scheme dir.
+	colorScheme = scanColorSchemeDir('/usr/share/color-schemes/')
+	if colorScheme:
+		return colorScheme
+
+	# 3rd: Check colors scheme packaged in Desktop Themes in home dir.
+	# TODO
+
+	# 4th: Check colors scheme packaged in Desktop Themes in root dir.
+	# TODO
+
+	# No color scheme fulfulled the conditions anywhere
+	return None
+
 def resetTitlebarColors():
 	kdeglobalsFilename = os.path.abspath(os.path.expanduser('~/.config/kdeglobals'))
 	kdeglobals = KdeConfig(kdeglobalsFilename)
 
 	colorSchemeName = kdeglobals['General'].get('ColorScheme', 'Breeze')
-	colorSchemeFilepath = '/share/color-schemes/' + colorSchemeName + '.colors'
-	homeColorSchemeFilepath = os.path.abspath(os.path.expanduser('~/.local' + colorSchemeFilepath))
-	rootColorSchemeFilepath = '/usr' + colorSchemeFilepath
-	# print('colorSchemeName', colorSchemeName)
-	# print('homeColorSchemeFilepath', homeColorSchemeFilepath, os.path.isfile(homeColorSchemeFilepath))
-	# print('rootColorSchemeFilepath', rootColorSchemeFilepath, os.path.isfile(rootColorSchemeFilepath))
 
-	if os.path.isfile(homeColorSchemeFilepath):
-		applyColorSchemeTitlebarColors(kdeglobals, homeColorSchemeFilepath)
-	elif os.path.isfile(rootColorSchemeFilepath):
-		applyColorSchemeTitlebarColors(kdeglobals, rootColorSchemeFilepath)
+	colorScheme = scanForColorScheme(colorSchemeName)
+	if colorScheme:
+		applyColorSchemeTitlebarColors(kdeglobals, colorScheme)
+
 	# elif os.path.isfile(localDesktopThemeFilename):
 	# elif os.path.isfile(rootDesktopThemeFilename):
 		# The color scheme is probably in a desktop theme folder...
