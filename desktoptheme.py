@@ -72,24 +72,35 @@ def setTitlebarColors(backgroundColor='0,0,0', textColor='255,255,255'):
 	kdeglobals['WM']['inactiveForeground'] = textColor
 	kdeglobals.save()
 
+def applyColorSchemeTitlebarColors(kdeglobals, colorSchemeFilepath):
+	colorScheme = KdeConfig(colorSchemeFilepath)
+	
+	# Default to Breeze.colors if the file leaves it undefined.
+	activeBackgroundColor = colorScheme['Colors:Window'].get('BackgroundNormal', '239,240,241')
+	kdeglobals['WM']['activeBackground'] = colorScheme['WM'].get('activeBackground', '71,80,87') 
+	kdeglobals['WM']['inactiveBackground'] = colorScheme['WM'].get('inactiveBackground', '239,240,241')
+	kdeglobals['WM']['frame'] = colorScheme['WM'].get('frame', activeBackgroundColor)
+	kdeglobals['WM']['inactiveFrame'] = colorScheme['WM'].get('inactiveFrame', kdeglobals['WM']['frame'])
+	kdeglobals['WM']['activeForeground'] = colorScheme['WM'].get('activeForeground', '252,252,252')
+	kdeglobals['WM']['inactiveForeground'] = colorScheme['WM'].get('inactiveForeground', '189,195,199')
+	kdeglobals.save()
 
 def resetTitlebarColors():
-	filename = os.path.abspath(os.path.expanduser('~/.config/kdeglobals'))
-	kdeglobals = KdeConfig(filename)
+	kdeglobalsFilename = os.path.abspath(os.path.expanduser('~/.config/kdeglobals'))
+	kdeglobals = KdeConfig(kdeglobalsFilename)
 
 	colorSchemeName = kdeglobals['General'].get('ColorScheme', 'Breeze')
-	colorSchemeFilename = '/usr/share/color-schemes/' + colorSchemeName + '.colors'
-	if os.path.isfile(colorSchemeFilename):
-		colorScheme = KdeConfig(colorSchemeFilename)
-		# Default to Breeze.colors if the file leaves it undefined.
-		activeBackgroundColor = colorScheme['Colors:Window'].get('BackgroundNormal', '239,240,241')
-		kdeglobals['WM']['activeBackground'] = colorScheme['WM'].get('activeBackground', '71,80,87') 
-		kdeglobals['WM']['inactiveBackground'] = colorScheme['WM'].get('inactiveBackground', '239,240,241')
-		kdeglobals['WM']['frame'] = colorScheme['WM'].get('frame', activeBackgroundColor)
-		kdeglobals['WM']['inactiveFrame'] = colorScheme['WM'].get('inactiveFrame', kdeglobals['WM']['frame'])
-		kdeglobals['WM']['activeForeground'] = colorScheme['WM'].get('activeForeground', '252,252,252')
-		kdeglobals['WM']['inactiveForeground'] = colorScheme['WM'].get('inactiveForeground', '189,195,199')
-		kdeglobals.save()
+	colorSchemeFilepath = '/share/color-schemes/' + colorSchemeName + '.colors'
+	homeColorSchemeFilepath = os.path.abspath(os.path.expanduser('~/.local' + colorSchemeFilepath))
+	rootColorSchemeFilepath = '/usr' + colorSchemeFilepath
+	# print('colorSchemeName', colorSchemeName)
+	# print('homeColorSchemeFilepath', homeColorSchemeFilepath, os.path.isfile(homeColorSchemeFilepath))
+	# print('rootColorSchemeFilepath', rootColorSchemeFilepath, os.path.isfile(rootColorSchemeFilepath))
+
+	if os.path.isfile(homeColorSchemeFilepath):
+		applyColorSchemeTitlebarColors(kdeglobals, homeColorSchemeFilepath)
+	elif os.path.isfile(rootColorSchemeFilepath):
+		applyColorSchemeTitlebarColors(kdeglobals, rootColorSchemeFilepath)
 	# elif os.path.isfile(localDesktopThemeFilename):
 	# elif os.path.isfile(rootDesktopThemeFilename):
 		# The color scheme is probably in a desktop theme folder...
