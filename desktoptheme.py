@@ -103,6 +103,12 @@ def scanForColorScheme(colorSchemeName):
 			colorSchemeFilepath = os.path.join(colorSchemeDir, filename)
 			# print(colorSchemeFilepath)
 
+			if not filename.endswith('.colors'):
+				continue
+
+			if not os.path.isfile(colorSchemeFilepath):
+				continue
+
 			colorScheme = KdeConfig(colorSchemeFilepath)
 			if testColorSchemeName(colorScheme, colorSchemeName):
 				return colorScheme
