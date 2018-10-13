@@ -161,12 +161,19 @@ class DesktopTheme:
 		self.themeName = themeName
 		themeDir = os.path.abspath(os.path.expanduser('~/.local/share/plasma/desktoptheme'))
 		self.themeDir = os.path.join(themeDir, themeName)
+		self.dontReload = False
 
 	def colorsConfig(self):
 		filename = os.path.join(self.themeDir, 'colors')
 		return KdeConfig(filename)
 
 	def reloadTheme(self):
+		if self.dontReload:
+			# We're setting multiple properties at once,
+			# and want to skip automatically reloading
+			# after each change.
+			return
+
 		# Switch to another theme and back to apply the changes to breeze-alphablack.
 		filename = os.path.abspath(os.path.expanduser('~/.config/plasmarc'))
 		plasmarc = KdeConfig(filename)
