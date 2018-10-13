@@ -205,6 +205,7 @@ class BreezeAlphaBlack(DesktopTheme):
 		config.default('panel', 'padding', 2)
 		config.default('panel', 'taskStyle', 'inside')
 		config.default('theme', 'accentColor', '0,0,0')
+		config.default('theme', 'textColor', '239,240,241')
 		config.default('widget', 'opacity', 0.9)
 		return config
 
@@ -299,8 +300,7 @@ class BreezeAlphaBlack(DesktopTheme):
 		self.clearCache() # Not really necessary
 		self.reloadTheme()
 
-	def setAccentColor(self, newColor='0,0,0'):
-		textColor = '255,255,255'
+	def setAccentColor(self, newColor='0,0,0', textColor='239,240,241'):
 		altColor = deltaColor(newColor, 23)
 		compColor = deltaColor(newColor, 17)
 
@@ -313,19 +313,29 @@ class BreezeAlphaBlack(DesktopTheme):
 		colors = self.colorsConfig()
 		colors['Colors:Button']['BackgroundNormal'] = compColor
 		colors['Colors:Button']['BackgroundAlternate'] = altColor
+		colors['Colors:Button']['ForegroundNormal'] = textColor
 		colors['Colors:View']['BackgroundNormal'] = newColor
 		colors['Colors:View']['BackgroundAlternate'] = altColor
+		colors['Colors:View']['ForegroundNormal'] = textColor
 		colors['Colors:Window']['BackgroundNormal'] = newColor
 		colors['Colors:Window']['BackgroundAlternate'] = altColor
+		colors['Colors:Window']['ForegroundNormal'] = textColor
 		colors['Colors:Complementary']['BackgroundNormal'] = compColor
 		colors['Colors:Complementary']['BackgroundAlternate'] = altColor
+		colors['Colors:Complementary']['ForegroundNormal'] = textColor
 		colors.save()
 
 		config = self.themeConfig()
 		config.set('theme', 'accentColor', newColor)
+		config.set('theme', 'textColor', textColor)
 		config.save()
 
 		self.reloadTheme()
+
+	def setTextColor(self, textColor):
+		config = self.themeConfig()
+		accentColor = config.get('theme', 'accentColor')
+		self.setAccentColor(accentColor, textColor)
 
 	def setTasksSvg(self, taskTheme):
 		templatePath = "tasks-{}.svg".format(taskTheme)
