@@ -312,7 +312,7 @@ class BreezeAlphaBlack(DesktopTheme):
 		self.clearCache() # Not really necessary
 		self.reloadTheme()
 
-	def setAccentColor(self, newColor='0,0,0', textColor='239,240,241'):
+	def applyColors(self, newColor='0,0,0', textColor='239,240,241'):
 		altColor = deltaColor(newColor, 23)
 		compColor = deltaColor(newColor, 17)
 
@@ -344,10 +344,15 @@ class BreezeAlphaBlack(DesktopTheme):
 
 		self.reloadTheme()
 
+	def setAccentColor(self, accentColor='0,0,0'):
+		config = self.themeConfig()
+		textColor = config.get('theme', 'textColor')
+		self.applyColors(accentColor, textColor)
+
 	def setTextColor(self, textColor):
 		config = self.themeConfig()
 		accentColor = config.get('theme', 'accentColor')
-		self.setAccentColor(accentColor, textColor)
+		self.applyColors(accentColor, textColor)
 
 	def setTasksSvg(self, taskTheme):
 		templatePath = "tasks-{}.svg".format(taskTheme)
