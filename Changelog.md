@@ -2,7 +2,9 @@
 
 * Hide the panel shadow when the panel opacity is set below 30% (`0.3`).
 * Update the desktop widget background to use the same look as breeze.
+* Add `settextcolor.py` to change the panel/widget/titlebar text color.
 * Fix `resettitlebarcolor.py` not working for color schemes installed in the home directory (`~/.local/share/color-scheme/`. It previously only worked for color schemes in the root directory (`/usr/share/color-scheme/`). This fix also scans all color schemes when the color scheme filename is not the typical `{ColorSchemeName}.colors` (Eg: "Breeze Solarized Light" uses "BreezeSolarizedLight.colors").
+* Add `resettodefaults.py` script to revert all changes.
 
 ## v12 - July 26 2018
 
