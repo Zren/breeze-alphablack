@@ -320,7 +320,7 @@ class BreezeAlphaBlack(DesktopTheme):
 		print('BackgroundAlternate: {}'.format(altColor))
 		print('Complementary.BackgroundNormal: {}'.format(compColor))
 
-		setTitlebarColors(newColor)
+		setTitlebarColors(newColor, textColor)
 
 		colors = self.colorsConfig()
 		colors['Colors:Button']['BackgroundNormal'] = compColor
