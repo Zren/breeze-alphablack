@@ -274,12 +274,21 @@ class BreezeAlphaBlack(DesktopTheme):
 	def renderWidgetBackground(self, config):
 		# Breeze's widget/background.svg
 		# fill: 0.9
-		# outline: 1.0
-		fillOpacity = config.getProp('widget.opacity')
-		outlineOpacity = min(float(fillOpacity) + 0.1, 1)
+		# shadows: 1.0 (Linear gradients)
+		# corner shadows: 0.6 (Radial gradients)
+		fillOpacity = float(config.getProp('widget.opacity'))
+		if fillOpacity == 0:
+			# Hide shadows completely if there's no fill
+			shadowOpacity = 0
+			cornerOpacity = 0
+		else:
+			shadowOpacity = min(fillOpacity + 0.1, 1)
+			cornerOpacity = 0.6 * shadowOpacity
+		
 		self.renderTemplate('widgets/background.svg', **{
 			'{{fillOpacity}}': str(fillOpacity),
-			'{{outlineOpacity}}': str(outlineOpacity),
+			'{{shadowOpacity}}': str(shadowOpacity),
+			'{{cornerOpacity}}': str(cornerOpacity),
 		})
 
 	def setWidgetOpacity(self, newOpacity=0.9):
