@@ -16,6 +16,7 @@ zip -r $filename \
 	readconfig.py \
 	ReadMe.md \
 	resettitlebarcolor.py \
+	resettodefaults.py \
 	setdialogopacity.py \
 	setpanelopacity.py \
 	settasksvg.py \

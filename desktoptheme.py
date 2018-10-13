@@ -203,17 +203,22 @@ class DesktopTheme:
 class BreezeAlphaBlack(DesktopTheme):
 	def __init__(self, themeName='breeze-alphablack'):
 		super().__init__(themeName=themeName)
+		self.configProps = [
+			# (group, key, defaultValue, setterKey)
+			('dialog', 'opacity', 0.9, 'setDialogOpacity'),
+			('panel', 'opacity', 0.9, 'setPanelOpacity'),
+			('panel', 'padding', 2, 'setPanelPadding'),
+			('panel', 'taskStyle', 'inside', 'setTasksSvg'),
+			('theme', 'accentColor', '0,0,0', 'setAccentColor'),
+			('theme', 'textColor', '239,240,241', 'setTextColor'),
+			('widget', 'opacity', 0.9, 'setWidgetOpacity'),
+		]
 
 	def themeConfig(self):
 		filename = os.path.join(self.themeDir, 'config.ini')
 		config = KdeConfig(filename)
-		config.default('dialog', 'opacity', 0.9)
-		config.default('panel', 'opacity', 0.9)
-		config.default('panel', 'padding', 2)
-		config.default('panel', 'taskStyle', 'inside')
-		config.default('theme', 'accentColor', '0,0,0')
-		config.default('theme', 'textColor', '239,240,241')
-		config.default('widget', 'opacity', 0.9)
+		for (group, key, value, setterKey) in self.configProps:
+			config.default(group, key, value)
 		return config
 
 	def useTemplate(self, inPath, outPath):
@@ -354,4 +359,12 @@ class BreezeAlphaBlack(DesktopTheme):
 
 		self.reloadTheme()
 
+	def resetToDefaults(self):
+		self.dontReload = True
+		for (group, key, value, setterKey) in self.configProps:
+			print("===[ {}.{}: {} ]===".format(group, key, value))
+			setter = getattr(self, setterKey)
+			setter(value)
 
+		self.dontReload = False
+		self.reloadTheme()
