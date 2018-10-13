@@ -204,7 +204,7 @@ class BreezeAlphaBlack(DesktopTheme):
 		config.default('panel', 'opacity', 0.9)
 		config.default('panel', 'padding', 2)
 		config.default('panel', 'taskStyle', 'inside')
-		config.default('theme', 'accentColor', '#000000')
+		config.default('theme', 'accentColor', '0,0,0')
 		config.default('widget', 'opacity', 0.9)
 		return config
 
