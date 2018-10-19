@@ -714,14 +714,14 @@
          height="32"
          width="6"
          id="rect4152"
-         style="opacity:0.9;fill:currentColor;fill-opacity:1;stroke:none"
+         style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
          transform="matrix(0,-1,-1,0,0,0)"
          class="ColorScheme-Background" />
     </g>
     <g
        id="topleft">
       <path
-         style="opacity:0.9;fill:currentColor;fill-opacity:1"
+         style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1"
          d="m 14,6 c -0.553986,0 -1,0.4460137 -1,1 l 0,4 0,1 4,0 1,0 1,0 0,-1 0,-4 0,-1 -1,0 -1,0 -3,0 z"
          transform="translate(0,904.36218)"
          id="rect4159"
@@ -731,7 +731,7 @@
     <g
        id="topright">
       <path
-         style="opacity:0.9;fill:currentColor;fill-opacity:1"
+         style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1"
          d="m 51,6 0,1 0,4 0,1 1,0 1,0 3,0 1,0 0,-1 0,-4 C 57,6.4460137 56.553986,6 56,6 l -3,0 -1,0 -1,0 z"
          transform="translate(0,904.36218)"
          id="rect4177"
@@ -742,7 +742,7 @@
        id="bottom">
       <rect
          transform="matrix(0,1,-1,0,0,0)"
-         style="opacity:0.9;fill:currentColor;fill-opacity:1;stroke:none"
+         style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
          id="rect4148"
          width="6"
          height="32"
@@ -754,7 +754,7 @@
        id="bottomleft">
       <path
          inkscape:connector-curvature="0"
-         style="opacity:0.9;fill:currentColor;fill-opacity:1"
+         style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1"
          d="m 19,954.36218 0,-1 0,-4 0,-1 -1,0 -1,0 -3,0 -1,0 0,1 0,4 c 0,0.55399 0.446014,1 1,1 l 3,0 1,0 1,0 z"
          id="path5048"
          class="ColorScheme-Background" />
@@ -764,7 +764,7 @@
       <path
          id="rect4177-6"
          d="m 51,954.36218 0,-1 0,-4 0,-1 1,0 1,0 3,0 1,0 0,1 0,4 c 0,0.55399 -0.446014,1 -1,1 l -3,0 -1,0 -1,0 z"
-         style="opacity:0.9;fill:currentColor;fill-opacity:1"
+         style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1"
          inkscape:connector-curvature="0"
          class="ColorScheme-Background" />
     </g>
@@ -772,7 +772,7 @@
        id="left">
       <rect
          transform="scale(-1,1)"
-         style="opacity:0.9;fill:currentColor;fill-opacity:1;stroke:none"
+         style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
          id="rect4144"
          width="5.9999995"
          height="32"
@@ -788,7 +788,7 @@
          height="32"
          width="5.9999995"
          id="rect4140"
-         style="opacity:0.9;fill:currentColor;fill-opacity:1;stroke:none"
+         style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
          class="ColorScheme-Background" />
     </g>
     <g
@@ -801,7 +801,7 @@
          id="rect4401"
          style="opacity:1;fill:none;fill-opacity:1;stroke:none" />
       <rect
-         style="opacity:0.9;fill:currentColor;fill-opacity:1;stroke:none"
+         style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
          id="rect4138"
          width="32"
          height="32"
