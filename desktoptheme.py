@@ -313,24 +313,24 @@ class BreezeAlphaBlack(DesktopTheme):
 		self.clearCache() # Not really necessary
 		self.reloadTheme()
 
-	def _applyColors(self, newColor='0,0,0', textColor='239,240,241', highlightColor='30,146,255'):
-		altColor = deltaColor(newColor, 23)
-		compColor = deltaColor(newColor, 17)
+	def _applyColors(self, accentColor='0,0,0', textColor='239,240,241', highlightColor='30,146,255'):
+		altColor = deltaColor(accentColor, 23)
+		compColor = deltaColor(accentColor, 17)
 
-		print('BackgroundNormal: {}'.format(newColor))
+		print('BackgroundNormal: {}'.format(accentColor))
 		print('BackgroundAlternate: {}'.format(altColor))
 		print('Complementary.BackgroundNormal: {}'.format(compColor))
 
-		setTitlebarColors(newColor, textColor)
+		setTitlebarColors(accentColor, textColor)
 
 		colors = self.colorsConfig()
 		colors['Colors:Button']['BackgroundNormal'] = compColor
 		colors['Colors:Button']['BackgroundAlternate'] = altColor
 		colors['Colors:Button']['ForegroundNormal'] = textColor
-		colors['Colors:View']['BackgroundNormal'] = newColor
+		colors['Colors:View']['BackgroundNormal'] = accentColor
 		colors['Colors:View']['BackgroundAlternate'] = altColor
 		colors['Colors:View']['ForegroundNormal'] = textColor
-		colors['Colors:Window']['BackgroundNormal'] = newColor
+		colors['Colors:Window']['BackgroundNormal'] = accentColor
 		colors['Colors:Window']['BackgroundAlternate'] = altColor
 		colors['Colors:Window']['ForegroundNormal'] = textColor
 		colors['Colors:Complementary']['BackgroundNormal'] = compColor
@@ -339,7 +339,7 @@ class BreezeAlphaBlack(DesktopTheme):
 		colors.save()
 
 		config = self.themeConfig()
-		config.set('theme', 'accentColor', newColor)
+		config.set('theme', 'accentColor', accentColor)
 		config.set('theme', 'textColor', textColor)
 		config.save()
 
