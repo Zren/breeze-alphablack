@@ -395,7 +395,7 @@ class BreezeAlphaBlack(DesktopTheme):
 		self.applyColors(highlightColor=highlightColor)
 
 	def setTextColor(self, textColor):
-		self.applyColors(accentColor=accentColor)
+		self.applyColors(textColor=textColor)
 
 	def setTasksSvg(self, taskTheme):
 		templatePath = "tasks-{}.svg".format(taskTheme)
