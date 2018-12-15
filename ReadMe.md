@@ -82,3 +82,5 @@ inactiveFrame=8,8,8
 
 * Wiki for Editing Desktop Themes  
   https://techbase.kde.org/Development/Tutorials/Plasma5/ThemeDetails
+* Code that parses the `colors` file for use with the svg CSS colors.
+  https://github.com/KDE/plasma-framework/blob/master/src/plasma/private/theme_p.cpp#L422
