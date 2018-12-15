@@ -210,6 +210,7 @@ class BreezeAlphaBlack(DesktopTheme):
 			('panel', 'padding', 2, 'setPanelPadding'),
 			('panel', 'taskStyle', 'inside', 'setTasksSvg'),
 			('theme', 'accentColor', '0,0,0', 'setAccentColor'),
+			('theme', 'highlightColor', '30,146,255', 'setHighlightColor'),
 			('theme', 'textColor', '239,240,241', 'setTextColor'),
 			('widget', 'opacity', 0.9, 'setWidgetOpacity'),
 		]
@@ -312,7 +313,7 @@ class BreezeAlphaBlack(DesktopTheme):
 		self.clearCache() # Not really necessary
 		self.reloadTheme()
 
-	def applyColors(self, newColor='0,0,0', textColor='239,240,241'):
+	def _applyColors(self, newColor='0,0,0', textColor='239,240,241', highlightColor='30,146,255'):
 		altColor = deltaColor(newColor, 23)
 		compColor = deltaColor(newColor, 17)
 
@@ -344,15 +345,24 @@ class BreezeAlphaBlack(DesktopTheme):
 
 		self.reloadTheme()
 
-	def setAccentColor(self, accentColor='0,0,0'):
+	def applyColors(self, accentColor=None, textColor=None, highlightColor=None):
 		config = self.themeConfig()
-		textColor = config.get('theme', 'textColor')
-		self.applyColors(accentColor, textColor)
+		if accentColor is None:
+			accentColor = config.get('theme', 'accentColor')
+		if textColor is None:
+			textColor = config.get('theme', 'textColor')
+		if highlightColor is None:
+			highlightColor = config.get('theme', 'highlightColor')
+		self._applyColors(accentColor, textColor, highlightColor)
+
+	def setAccentColor(self, accentColor):
+		self.applyColors(accentColor=accentColor)
+
+	def setHighlightColor(self, highlightColor):
+		self.applyColors(highlightColor=highlightColor)
 
 	def setTextColor(self, textColor):
-		config = self.themeConfig()
-		accentColor = config.get('theme', 'accentColor')
-		self.applyColors(accentColor, textColor)
+		self.applyColors(accentColor=accentColor)
 
 	def setTasksSvg(self, taskTheme):
 		templatePath = "tasks-{}.svg".format(taskTheme)
