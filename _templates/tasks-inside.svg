@@ -15,7 +15,6 @@
     <style
        id="current-color-scheme"
        type="text/css">
-      
        
       .ColorScheme-Text {
         
@@ -35,7 +34,7 @@
       .ColorScheme-ViewHover {
         color:#93cee9;
       }
-      .ColorScheme-ViewFocus{
+      .ColorScheme-ViewFocus {
         color:#3daee9;
       }
       .ColorScheme-ButtonText {
@@ -47,7 +46,7 @@
       .ColorScheme-ButtonHover {
         color:#93cee9;
       }
-      .ColorScheme-ButtonFocus{
+      .ColorScheme-ButtonFocus {
         color:#3daee9;
       }
       .ColorScheme-Text {
@@ -59,19 +58,16 @@
       .ColorScheme-PositiveText {
         color:#27ae60;
       }
-  
-    
+      
     </style>
     <style
        id="tasks-colors"
        type="text/css">
       
+      .ColorScheme-Attention {
+        color:#f67400;
+      }
       
-    .ColorScheme-Attention {
-      color:#f67400;
-    }
-  
-    
     </style>
   </defs>
   <g
