@@ -18,6 +18,7 @@ zip -r $filename \
 	resettitlebarcolor.py \
 	resettodefaults.py \
 	setdialogopacity.py \
+	sethighlightcolor.py \
 	setpanelopacity.py \
 	settasksvg.py \
 	settextcolor.py \

@@ -58,8 +58,11 @@ def deltaColor(colorStr, delta):
 		d = delta
 	return '{},{},{}'.format(limitColor(r+d), limitColor(g+d), limitColor(b+d))
 
-
-
+def hoverEffect(colorStr, rd, gd, bd):
+	def f(a, b):
+		return a-b if a+b > 255 else a+b
+	r, g, b = map(int, colorStr.split(','))
+	return '{},{},{}'.format(f(r, rd), f(g, gd), f(b, bd))
 
 def setTitlebarColors(backgroundColor='0,0,0', textColor='255,255,255'):
 	filename = os.path.abspath(os.path.expanduser('~/.config/kdeglobals'))
@@ -210,7 +213,7 @@ class BreezeAlphaBlack(DesktopTheme):
 			('panel', 'padding', 2, 'setPanelPadding'),
 			('panel', 'taskStyle', 'inside', 'setTasksSvg'),
 			('theme', 'accentColor', '0,0,0', 'setAccentColor'),
-			('theme', 'highlightColor', '30,146,255', 'setHighlightColor'),
+			('theme', 'highlightColor', '61,174,230', 'setHighlightColor'),
 			('theme', 'textColor', '239,240,241', 'setTextColor'),
 			('widget', 'opacity', 0.9, 'setWidgetOpacity'),
 		]
@@ -313,17 +316,37 @@ class BreezeAlphaBlack(DesktopTheme):
 		self.clearCache() # Not really necessary
 		self.reloadTheme()
 
-	def _applyColors(self, accentColor='0,0,0', textColor='239,240,241', highlightColor='30,146,255'):
+	def _applyColors(self, accentColor='0,0,0', textColor='239,240,241', highlightColor='61,174,230'):
 		altColor = deltaColor(accentColor, 23)
 		compColor = deltaColor(accentColor, 17)
+		focusColor = hoverEffect(highlightColor, -31, -28, 25) # 61,174,230 => 30,146,255
+		hoverColor = highlightColor
+		selectionColor = highlightColor
+		selectionAltColor = hoverEffect(selectionColor, 13, 36, 47) # 61,174,230 => 48,138,183
 
 		print('BackgroundNormal: {}'.format(accentColor))
 		print('BackgroundAlternate: {}'.format(altColor))
 		print('Complementary.BackgroundNormal: {}'.format(compColor))
+		print('DecorationFocus: {}'.format(focusColor))
+		print('DecorationHover: {}'.format(hoverColor))
+		print('Selection.BackgroundNormal: {}'.format(selectionColor))
+		print('Selection.BackgroundAlternate: {}'.format(selectionAltColor))
 
 		setTitlebarColors(accentColor, textColor)
 
 		colors = self.colorsConfig()
+		allGroups = [
+			'Colors:Button',
+			'Colors:Selection',
+			'Colors:Tooltip',
+			'Colors:View',
+			'Colors:Window',
+			'Colors:Complementary',
+		]
+		def applyToGroups(groups, key, value):
+			for group in groups:
+				colors[group][key] = value
+
 		colors['Colors:Button']['BackgroundNormal'] = compColor
 		colors['Colors:Button']['BackgroundAlternate'] = altColor
 		colors['Colors:Button']['ForegroundNormal'] = textColor
@@ -336,10 +359,20 @@ class BreezeAlphaBlack(DesktopTheme):
 		colors['Colors:Complementary']['BackgroundNormal'] = compColor
 		colors['Colors:Complementary']['BackgroundAlternate'] = altColor
 		colors['Colors:Complementary']['ForegroundNormal'] = textColor
+
+		# Focus
+		applyToGroups(allGroups, 'DecorationFocus', focusColor)
+
+		# Hover
+		applyToGroups(allGroups, 'DecorationHover', hoverColor)
+		colors['Colors:Selection']['BackgroundNormal'] = selectionColor # Note that variable controls `theme.highlightColor`
+		colors['Colors:Selection']['BackgroundAlternate'] = selectionAltColor
+
 		colors.save()
 
 		config = self.themeConfig()
 		config.set('theme', 'accentColor', accentColor)
+		config.set('theme', 'highlightColor', highlightColor)
 		config.set('theme', 'textColor', textColor)
 		config.save()
 
