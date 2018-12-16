@@ -322,7 +322,7 @@ class BreezeAlphaBlack(DesktopTheme):
 		focusColor = hoverEffect(highlightColor, -31, -28, 25) # 61,174,230 => 30,146,255
 		hoverColor = highlightColor
 		selectionColor = highlightColor
-		selectionAltColor = hoverEffect(selectionColor, 13, 36, 47) # 61,174,230 => 48,138,183
+		selectionAltColor = hoverEffect(selectionColor, -13, -36, -47) # 61,174,230 => 48,138,183
 
 		print('BackgroundNormal: {}'.format(accentColor))
 		print('BackgroundAlternate: {}'.format(altColor))
