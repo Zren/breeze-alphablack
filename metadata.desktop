@@ -9,7 +9,7 @@ X-KDE-PluginInfo-EnabledByDefault=true
 X-KDE-PluginInfo-License=LGPL
 X-KDE-PluginInfo-Name=breeze-alphablack
 X-KDE-PluginInfo-Version=13
-X-KDE-PluginInfo-Website=https://github.com/Zren/
+X-KDE-PluginInfo-Website=https://github.com/Zren/breeze-alphablack
 X-Plasma-API=5.0
 
 X-KPackage-Dependencies=kns://plasmoids.knsrc/api.kde-look.org/1237963
