@@ -60,7 +60,10 @@ def deltaColor(colorStr, delta):
 
 def hoverEffect(colorStr, rd, gd, bd):
 	def f(a, b):
-		return a-b if a+b > 255 else a+b
+		if a + b > 255:
+			return limitColor(a - b)
+		else:
+			return limitColor(a + b)
 	r, g, b = map(int, colorStr.split(','))
 	return '{},{},{}'.format(f(r, rd), f(g, gd), f(b, bd))
 
