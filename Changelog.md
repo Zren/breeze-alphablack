@@ -1,3 +1,8 @@
+## v14 - December 15 2018
+
+* Use Breeze's rectangle corner popup svg. Somewhere along the line this theme ended up using a different svg with round corners for some reason.
+* Add `sethighlightcolor.py` to set the selection/highlight color.
+
 ## v13 - October 12 2018
 
 * Hide the panel shadow when the panel opacity is set below 30% (`0.3`).
