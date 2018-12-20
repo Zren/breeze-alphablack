@@ -368,7 +368,7 @@ class BreezeAlphaBlack(DesktopTheme):
 
 		# Hover
 		applyToGroups(allGroups, 'DecorationHover', hoverColor)
-		colors['Colors:Selection']['BackgroundNormal'] = selectionColor # Note that variable controls `theme.highlightColor`
+		colors['Colors:Selection']['BackgroundNormal'] = selectionColor # Note this variable controls `theme.highlightColor`
 		colors['Colors:Selection']['BackgroundAlternate'] = selectionAltColor
 
 		colors.save()
