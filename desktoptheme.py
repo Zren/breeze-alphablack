@@ -338,7 +338,7 @@ class BreezeAlphaBlack(DesktopTheme):
 		setTitlebarColors(accentColor, textColor)
 
 		colors = self.colorsConfig()
-		allGroups = [
+		allColorGroups = [
 			'Colors:Button',
 			'Colors:Selection',
 			'Colors:Tooltip',
@@ -364,10 +364,10 @@ class BreezeAlphaBlack(DesktopTheme):
 		colors['Colors:Complementary']['ForegroundNormal'] = textColor
 
 		# Focus
-		applyToGroups(allGroups, 'DecorationFocus', focusColor)
+		applyToGroups(allColorGroups, 'DecorationFocus', focusColor)
 
 		# Hover
-		applyToGroups(allGroups, 'DecorationHover', hoverColor)
+		applyToGroups(allColorGroups, 'DecorationHover', hoverColor)
 		colors['Colors:Selection']['BackgroundNormal'] = selectionColor # Note this variable controls `theme.highlightColor`
 		colors['Colors:Selection']['BackgroundAlternate'] = selectionAltColor
 
