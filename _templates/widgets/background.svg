@@ -77,7 +77,6 @@
     <linearGradient inkscape:collect="always" xlink:href="#linearGradient4289" id="linearGradient4926" gradientUnits="userSpaceOnUse" x1="16" y1="7.9999776" x2="16" y2="4.9999776" gradientTransform="translate(58,0)"/>
     <linearGradient inkscape:collect="always" xlink:href="#linearGradient4289" id="linearGradient4928" gradientUnits="userSpaceOnUse" x1="55" y1="9.9999781" x2="58" y2="9.9999781"/>
     <linearGradient inkscape:collect="always" xlink:href="#linearGradient4289" id="linearGradient4932" gradientUnits="userSpaceOnUse" x1="53" y1="7.9999776" x2="53" y2="4.9999776" gradientTransform="translate(58,0)"/>
-    <linearGradient inkscape:collect="always" xlink:href="#linearGradient4289" id="linearGradient4934" gradientUnits="userSpaceOnUse" x1="952.36218" y1="-35" x2="955.36218" y2="-35"/>
     <linearGradient inkscape:collect="always" xlink:href="#linearGradient4289" id="linearGradient4936" gradientUnits="userSpaceOnUse" x1="77" y1="48" x2="77" y2="51"/>
     <linearGradient inkscape:collect="always" xlink:href="#linearGradient4289" id="linearGradient4940" gradientUnits="userSpaceOnUse" x1="73" y1="46" x2="70" y2="46"/>
     <linearGradient inkscape:collect="always" xlink:href="#linearGradient4289" id="linearGradient4942" gradientUnits="userSpaceOnUse" x1="53" y1="48" x2="53" y2="51"/>
@@ -168,10 +167,9 @@
       <rect style="fill:none;fill-opacity:1" id="rect4850" width="2.0000153" height="5.9999752" x="50.999985" y="910.36218" ry="0"/>
       <rect style="fill:none;fill-opacity:1" id="rect4852" width="4.9999809" height="2.0000248" x="52" y="914.36218"/>
     </g>
-    <g id="shadow-bottom" transform="translate(58,0)">
-      <rect y="-50.999985" x="948.36218" height="32" width="6" id="rect4856" style="opacity:1;fill:none;fill-opacity:1;stroke:none" transform="matrix(0,1,-1,0,0,0)"/>
-      <rect y="-50.999985" x="954.36218" height="32" width="6" id="rect4858" style="opacity:1;fill:url(#linearGradient4934);fill-opacity:1;stroke:none" transform="matrix(0,1,-1,0,0,0)"/>
-      <rect transform="matrix(0,1,-1,0,0,0)" style="opacity:1;fill:none;fill-opacity:1;stroke:none" id="rect4860" width="1.0000226" height="31.999971" x="953.36218" y="-50.999985"/>
+    <g id="shadow-bottom">
+      <rect id="rect4856" x="77" y="44" width="32" height="6" style="opacity:1;fill:none;fill-opacity:1;stroke:none"/>
+      <rect id="rect4858" x="77" y="50" width="32" height="6" style="opacity:1;fill:url(#linearGradient4936);fill-opacity:1;stroke:none"/>
     </g>
     <g id="shadow-bottomleft">
       <path id="path4864" d="m 72,50 0,6 1,0 4,0 0,-6 -4,0 -1,0 z" style="fill:url(#linearGradient4936);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" inkscape:connector-curvature="0"/>
