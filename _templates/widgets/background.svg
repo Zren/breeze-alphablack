@@ -197,9 +197,9 @@
       <rect style="opacity:1;fill:none;fill-opacity:1;stroke:none" id="rect4908" width="32" height="32" x="19.000004" y="916.36218"/>
       <rect y="916.36218" x="19.000004" height="32" width="32" id="rect4910" style="opacity:1;fill:none;fill-opacity:1;stroke:none"/>
     </g>
-    <rect y="0" x="91" height="12" width="4" id="shadow-hint-top-margin" style="fill:#ff00ff;fill-opacity:1;stroke:none"/>
-    <rect style="fill:#ff00ff;fill-opacity:1;stroke:none" id="shadow-hint-bottom-margin" width="4" height="12" x="91" y="948.36218"/>
-    <rect transform="matrix(0,1,-1,0,0,0)" style="fill:#ff00ff;fill-opacity:1;stroke:none" id="shadow-hint-right-margin" width="4" height="11.999999" x="930.36218" y="-120.99998"/>
-    <rect transform="matrix(0,1,-1,0,0,0)" y="-77" x="930.36218" height="11.999999" width="4" id="shadow-hint-left-margin" style="fill:#ff00ff;fill-opacity:1;stroke:none"/>
+    <rect id="shadow-hint-top-margin" x="91" y="0" width="4" height="12" style="fill:#ff00ff;fill-opacity:1;stroke:none"/>
+    <rect id="shadow-hint-bottom-margin" x="91" y="44" width="4" height="12" style="fill:#ff00ff;fill-opacity:1;stroke:none" />
+    <rect id="shadow-hint-right-margin" x="109" y="28" width="12" height="4" style="fill:#ff00ff;fill-opacity:1;stroke:none"/>
+    <rect id="shadow-hint-left-margin" x="65" y="28" width="12" height="4" style="fill:#ff00ff;fill-opacity:1;stroke:none"/>
   </g>
 </svg>
