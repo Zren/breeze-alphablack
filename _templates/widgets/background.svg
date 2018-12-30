@@ -172,15 +172,15 @@
       <rect id="rect4858" x="77" y="50" width="32" height="6" style="opacity:1;fill:url(#linearGradient4936);fill-opacity:1;stroke:none"/>
     </g>
     <g id="shadow-bottomleft">
-      <path id="path4864" d="m 72,50 0,6 1,0 4,0 0,-6 -4,0 -1,0 z" style="fill:url(#linearGradient4936);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" inkscape:connector-curvature="0"/>
+      <rect id="rect4864" x="72" y="50" width="5" height="6" style="opacity:1;fill:url(#linearGradient4936);fill-opacity:1;stroke:none"/>
       <path id="path4866" d="m 65,49 0,7 7,0 0,-6 -1,0 0,-1 -6,0 z" style="opacity:0.6;fill:url(#radialGradient4938);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" inkscape:connector-curvature="0"/>
-      <path id="path4868" d="m 65,44 0,4 0,1 6,0 0,-1 0,-4 -6,0 z" style="fill:url(#linearGradient4940);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" inkscape:connector-curvature="0"/>
+      <rect id="rect4868" x="65" y="44" width="6" height="5" style="opacity:1;fill:url(#linearGradient4940);fill-opacity:1;stroke:none"/>
       <rect id="rect4870" x="71" y="44" width="6" height="6" style="fill:none;fill-opacity:1" />
     </g>
     <g id="shadow-bottomright">
-      <path id="path4878" d="m 109,50 0,6 4,0 1,0 0,-6 -1,0 -4,0 z" style="fill:url(#linearGradient4942);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" inkscape:connector-curvature="0"/>
+      <rect id="rect4878" x="109" y="50" width="5" height="6" style="opacity:1;fill:url(#linearGradient4936);fill-opacity:1;stroke:none"/>
       <path id="path4880" d="m 115,49 0,1 -1,0 0,6 7,0 0,-7 -6,0 z" style="opacity:0.6;fill:url(#radialGradient4944);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" inkscape:connector-curvature="0"/>
-      <path id="path4882" d="m 115,44 0,4 0,1 6,0 0,-1 0,-4 -6,0 z" style="fill:url(#linearGradient4946);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" inkscape:connector-curvature="0"/>
+      <rect id="rect4882" x="115" y="44" width="6" height="5" style="opacity:1;fill:url(#linearGradient4946);fill-opacity:1;stroke:none"/>
       <rect id="rect4884" x="109" y="44" width="6" height="6" style="fill:none;fill-opacity:1"/>
     </g>
     <g id="shadow-left" transform="translate(58,0)">
