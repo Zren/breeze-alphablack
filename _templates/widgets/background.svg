@@ -81,8 +81,6 @@
     <linearGradient inkscape:collect="always" xlink:href="#linearGradient4289" id="linearGradient4940" gradientUnits="userSpaceOnUse" x1="73" y1="46" x2="70" y2="46"/>
     <linearGradient inkscape:collect="always" xlink:href="#linearGradient4289" id="linearGradient4942" gradientUnits="userSpaceOnUse" x1="53" y1="48" x2="53" y2="51"/>
     <linearGradient inkscape:collect="always" xlink:href="#linearGradient4289" id="linearGradient4946" gradientUnits="userSpaceOnUse" x1="113" y1="46" x2="116" y2="46"/>
-    <linearGradient inkscape:collect="always" xlink:href="#linearGradient4289" id="linearGradient4948" gradientUnits="userSpaceOnUse" x1="-15" y1="932.36218" x2="-12" y2="932.36218"/>
-    <linearGradient inkscape:collect="always" xlink:href="#linearGradient4289" id="linearGradient4950" gradientUnits="userSpaceOnUse" x1="55" y1="932.36218" x2="58" y2="932.36218"/>
   </defs>
   <sodipodi:namedview id="base" pagecolor="#b0dba0" bordercolor="#cc0000" borderopacity="1" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:zoom="8" inkscape:cx="65.206603" inkscape:cy="30.095125" inkscape:document-units="px" inkscape:current-layer="layer1" showgrid="true" inkscape:showpageshadow="false" borderlayer="true" units="px" inkscape:window-width="2560" inkscape:window-height="957" inkscape:window-x="0" inkscape:window-y="30" inkscape:window-maximized="1" showguides="true" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0">
     <inkscape:grid type="xygrid" id="grid3336" empspacing="2" originx="0" originy="-91.999978"/>
@@ -183,19 +181,16 @@
       <rect id="rect4882" x="115" y="44" width="6" height="5" style="opacity:1;fill:url(#linearGradient4946);fill-opacity:1;stroke:none"/>
       <rect id="rect4884" x="109" y="44" width="6" height="6" style="fill:none;fill-opacity:1"/>
     </g>
-    <g id="shadow-left" transform="translate(58,0)">
-      <rect y="916.36218" x="-19.000004" height="32" width="5.9999995" id="rect4892" style="opacity:1;fill:none;fill-opacity:1;stroke:none" transform="scale(-1,1)"/>
-      <rect y="916.36218" x="-13.000002" height="32" width="5.9999995" id="rect4894" style="opacity:1;fill:url(#linearGradient4948);fill-opacity:1;stroke:none" transform="scale(-1,1)"/>
-      <rect transform="scale(-1,1)" style="opacity:1;fill:none;fill-opacity:1;stroke:none" id="rect4896" width="1.0000019" height="32.000023" x="-14.000002" y="916.36218"/>
+    <g id="shadow-left">
+      <rect id="rect4892" x="71" y="12" width="6" height="32" style="opacity:1;fill:none;fill-opacity:1;stroke:none"/>
+      <rect id="rect4894" x="65" y="12" width="6" height="32" style="opacity:1;fill:url(#linearGradient4940);fill-opacity:1;stroke:none"/>
     </g>
-    <g id="shadow-right" transform="translate(58,0)">
-      <rect style="opacity:1;fill:none;fill-opacity:1;stroke:none" id="rect4900" width="5.9999995" height="32" x="50.999985" y="916.36218"/>
-      <rect style="opacity:1;fill:url(#linearGradient4950);fill-opacity:1;stroke:none" id="rect4902" width="5.9999995" height="32" x="56.999985" y="916.36218"/>
-      <rect y="916.36218" x="55.999985" height="32.000023" width="1" id="rect4904" style="opacity:1;fill:none;fill-opacity:1;stroke:none"/>
+    <g id="shadow-right">
+      <rect id="rect4900" x="109" y="12" width="6" height="32" style="opacity:1;fill:none;fill-opacity:1;stroke:none"/>
+      <rect id="rect4902" x="115" y="12" width="6" height="32" style="opacity:1;fill:url(#linearGradient4946);fill-opacity:1;stroke:none"/>
     </g>
-    <g id="shadow-center" transform="translate(58,0)">
-      <rect style="opacity:1;fill:none;fill-opacity:1;stroke:none" id="rect4908" width="32" height="32" x="19.000004" y="916.36218"/>
-      <rect y="916.36218" x="19.000004" height="32" width="32" id="rect4910" style="opacity:1;fill:none;fill-opacity:1;stroke:none"/>
+    <g id="shadow-center">
+      <rect id="rect4908" x="77" y="12" width="32" height="32" style="opacity:1;fill:none;fill-opacity:1;stroke:none"/>
     </g>
     <rect id="shadow-hint-top-margin" x="91" y="0" width="4" height="12" style="fill:#ff00ff;fill-opacity:1;stroke:none"/>
     <rect id="shadow-hint-bottom-margin" x="91" y="44" width="4" height="12" style="fill:#ff00ff;fill-opacity:1;stroke:none" />
