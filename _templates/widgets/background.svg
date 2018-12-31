@@ -131,16 +131,15 @@
       <path style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1" id="rect4177-6" d="m 51,954.36218 0,-1 0,-4 0,-1 1,0 1,0 3,0 1,0 0,1 0,4 c 0,0.55399 -0.446014,1 -1,1 l -3,0 -1,0 -1,0 z" inkscape:connector-curvature="0" class="ColorScheme-Background"/>
     </g>
     <g id="left">
-      <rect style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none" transform="scale(-1,1)" id="rect4144" width="5.9999995" height="32" x="-19.000004" y="916.36218" class="ColorScheme-Background"/>
-      <rect style="opacity:{{shadowOpacity}};fill:url(#linearGradient4295);fill-opacity:1;stroke:none" transform="scale(-1,1)" id="rect4146" width="5.9999995" height="32" x="-13.000002" y="916.36218"/>
+      <rect id="rect4144" x="13" y="12" width="6" height="32" class="ColorScheme-Background" style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"/>
+      <rect id="rect4146" x="7" y="12" width="6" height="32" style="opacity:{{shadowOpacity}};fill:url(#linearGradient4295);fill-opacity:1;stroke:none"/>
     </g>
     <g id="right">
-      <rect style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none" y="916.36218" x="50.999985" height="32" width="5.9999995" id="rect4140" class="ColorScheme-Background"/>
-      <rect style="opacity:{{shadowOpacity}};fill:url(#linearGradient4303);fill-opacity:1;stroke:none" y="916.36218" x="56.999985" height="32" width="5.9999995" id="rect4142"/>
+      <rect id="rect4140" x="51" y="12" width="6" height="32" class="ColorScheme-Background" style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"/>
+      <rect id="rect4142" x="57" y="12" width="6" height="32" style="opacity:{{shadowOpacity}};fill:url(#linearGradient4303);fill-opacity:1;stroke:none"/>
     </g>
     <g id="center">
-      <rect style="opacity:1;fill:none;fill-opacity:1;stroke:none" y="916.36218" x="19.000004" height="32" width="32" id="rect4401"/>
-      <rect style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none" id="rect4138" width="32" height="32" x="19.000004" y="916.36218" class="ColorScheme-Background"/>
+      <rect id="rect4138" x="19" y="12" width="32" height="32" class="ColorScheme-Background" style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"/>
     </g>
 
     <!-- Margins -->
