@@ -1,3 +1,9 @@
+## v15 - March 17 2019
+
+* Cleanup the desktop widget background svg coordinates (`widget/background.svg`).
+* Use Breeze's rectangle new rounded corner popup dialog svg from KDE Frameworks 5.56.
+* Fix the dialog popup color (when using a custom opacity) broken by the Qt 5.12.2 update. The default dialog popups and tooltips will be fixed in KDE Frameworks 5.56.2 or 5.57.0.
+
 ## v14 - December 15 2018
 
 * Use Breeze's rectangle corner popup svg. Somewhere along the line this theme ended up using a different svg with round corners for some reason.
