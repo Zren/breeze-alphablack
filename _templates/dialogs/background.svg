@@ -17,8 +17,11 @@
    version="1.1"
    inkscape:version="0.92.4 5da689c313, 2019-01-14"
    sodipodi:docname="tooltip.svgz">
-  <style
-     id="style3">
+  <defs
+     id="defs4">
+    <style
+       id="current-color-scheme"
+       type="text/css">
       .ColorScheme-Text {
         color:#31363b;
         stop-color:#31363b;
@@ -64,8 +67,6 @@
         stop-color:#3daee9;
       }
       </style>
-  <defs
-     id="defs4">
     <linearGradient
        id="linearGradient4270"
        inkscape:collect="always">
