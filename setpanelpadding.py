@@ -5,7 +5,7 @@ from desktoptheme import BreezeAlphaBlack
 
 def printHelp():
 	print("python3 setpanelpadding.py [pixels]")
-	print("\t[opacity] is an integer from 0 to 40")
+	print("\t[pixels] is an integer from 0 to 40")
 	print("\tEg: python3 setpanelpadding.py 2")
 
 if __name__ == '__main__':
