@@ -228,6 +228,19 @@ class BreezeAlphaBlack(DesktopTheme):
 			config.default(group, key, value)
 		return config
 
+	def configGet(self, propPath):
+		config = self.themeConfig()
+		value = config.getProp(propPath)
+		return value
+
+	def configSet(self, propPath, value):
+		group1, key1 = propPath.split('.')
+		for (group2, key2, defaultValue, setterKey) in self.configProps:
+			if group1 == group2 and key1 == key2:
+				setter = getattr(self, setterKey)
+				setter(value)
+				break
+
 	def useTemplate(self, inPath, outPath):
 		templatePath = os.path.join(self.themeDir, '_templates', inPath)
 		outPath = os.path.join(self.themeDir, outPath)
@@ -419,3 +432,77 @@ class BreezeAlphaBlack(DesktopTheme):
 
 		self.dontReload = False
 		self.reloadTheme()
+
+
+
+
+#--- Main
+def theme_getall(args):
+	import json
+
+	desktoptheme = BreezeAlphaBlack()
+	config = desktoptheme.themeConfig()
+	out = {}
+	for section in config.sections():
+		out[section] = {}
+		for name, value in config.items(section):
+			out[section][name] = value
+	print(json.dumps(out, indent="\t"))
+
+def theme_get(args):
+	desktopTheme = BreezeAlphaBlack()
+	argsVars = vars(args)
+	propPath = argsVars['section.property']
+	value = desktopTheme.configGet(propPath)
+	print(value)
+
+def theme_set(args):
+	desktopTheme = BreezeAlphaBlack()
+	config = desktopTheme.themeConfig()
+	argsVars = vars(args)
+	propPath = argsVars['section.property']
+	desktopTheme.configSet(propPath, args.value)
+
+
+def theme_reset(args):
+	desktopTheme = BreezeAlphaBlack()
+	desktopTheme.resetToDefaults()
+
+def theme_resetTitlebarColors(args):
+	resetTitlebarColors()
+
+def main():
+	import argparse
+
+	parser = argparse.ArgumentParser(prog='desktoptheme', description='Python script to modify a desktop theme.')
+	subparsers = parser.add_subparsers()
+
+	def add_subcommand(name, func, *args):
+		tokens = ['[{}]'.format(arg) for arg in args]
+		tokens = ['python3', 'desktoptheme.py', name] + tokens
+		cmdstr = ' '.join(tokens)
+		parser_subcommand = subparsers.add_parser(name, help=cmdstr)
+		parser_subcommand.set_defaults(func=func)
+		for arg in args:
+			parser_subcommand.add_argument(arg)
+
+	add_subcommand('getall', theme_getall)
+	add_subcommand('get', theme_get, 'section.property')
+	add_subcommand('set', theme_set, 'section.property', 'value')
+	add_subcommand('reset', theme_reset)
+	add_subcommand('resettitlebarcolors', theme_resetTitlebarColors)
+	
+
+	args = parser.parse_args()
+
+	if 'func' in args:
+		try:
+			args.func(args)
+		except KeyboardInterrupt:
+			pass
+	else:
+		parser.print_help()
+
+
+if __name__ == '__main__':
+	main()
