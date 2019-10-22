@@ -117,6 +117,16 @@ def roundIfNeeded(a):
 		return a
 
 def applyTranslate(el, dx, dy):
+	# First check if the el has a tranlsate() that negates (dx,dy).
+	transform = el.attrs.get('transform')
+	if transform is not None and 'translate(' in transform:
+		args = parseArgs(transform)
+		dx2, dy2 = args
+		if dx == -dx2 and dy == -dy2: # Comparing floats...
+			del el.attrs['transform']
+			return
+
+	# If not, shift all coordinates of the el.
 	if el.name == 'g':
 		transformChildren(el, applyTranslate, dx, dy)
 	elif el.name == 'path':
