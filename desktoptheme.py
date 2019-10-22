@@ -442,12 +442,18 @@ def theme_getall(args):
 
 	desktoptheme = BreezeAlphaBlack()
 	config = desktoptheme.themeConfig()
-	out = {}
-	for section in config.sections():
-		out[section] = {}
-		for name, value in config.items(section):
-			out[section][name] = value
-	print(json.dumps(out, indent="\t"))
+
+	if args.json:
+		out = {}
+		for section in config.sections():
+			out[section] = {}
+			for name, value in config.items(section):
+				out[section][name] = value
+		print(json.dumps(out, indent="\t"))
+	else:
+		for section in config.sections():
+			for name, value in config.items(section):
+				print("{}.{}: {}".format(section, name, value))
 
 def theme_get(args):
 	desktopTheme = BreezeAlphaBlack()
@@ -485,8 +491,10 @@ def main():
 		parser_subcommand.set_defaults(func=func)
 		for arg in args:
 			parser_subcommand.add_argument(arg)
+		return parser_subcommand
 
-	add_subcommand('getall', theme_getall)
+	parser_getall = add_subcommand('getall', theme_getall)
+	parser_getall.add_argument('--json', default=False, action='store_true')
 	add_subcommand('get', theme_get, 'section.property')
 	add_subcommand('set', theme_set, 'section.property', 'value')
 	add_subcommand('reset', theme_reset)
