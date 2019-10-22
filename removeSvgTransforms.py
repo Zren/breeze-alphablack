@@ -3,6 +3,7 @@
 import sys, os
 from bs4 import BeautifulSoup, NavigableString, Tag
 import re
+import math
 
 # s = '4.500'
 # while len(s) > 2:
@@ -122,7 +123,7 @@ def applyTranslate(el, dx, dy):
 	if transform is not None and 'translate(' in transform:
 		args = parseArgs(transform)
 		dx2, dy2 = args
-		if dx == -dx2 and dy == -dy2: # Comparing floats...
+		if math.isclose(dx, -dx2) and math.isclose(dy, -dy2):
 			del el.attrs['transform']
 			return
 
