@@ -799,40 +799,44 @@
         sodipodi:nodetypes="cccccccccssccc"
       />
     </g>
+    <rect
+      id="hint-top-margin"
+      x="33"
+      y="44"
+      width="4"
+      height="6"
+      style="fill:#ff00ff;fill-opacity:1;stroke:none"
+    />
+    <rect
+      id="hint-left-margin"
+      x="13"
+      y="26"
+      width="6"
+      height="4"
+      style="fill:#ff00ff;fill-opacity:1;stroke:none"
+    />
+    <rect
+      id="hint-right-margin"
+      x="51"
+      y="26"
+      width="6"
+      height="4"
+      style="fill:#ff00ff;fill-opacity:1;stroke:none"
+    />
+    <rect
+      id="hint-bottom-margin"
+      x="33"
+      y="6"
+      width="4"
+      height="6"
+      style="fill:#ff00ff;fill-opacity:1;stroke:none"
+    />
   </g>
+
+
   <g id="layer2" inkscape:label="Layer 2" inkscape:groupmode="layer"
     transform="translate(0,-904.36218)"
   >
-    <rect
-       style="fill:#ff00ff;fill-opacity:1;stroke:none"
-       id="hint-top-margin"
-       width="4"
-       height="6.0000248"
-       x="33"
-       y="916.36218" />
-    <rect
-       y="942.36218"
-       x="33"
-       height="5.9999752"
-       width="4"
-       id="hint-bottom-margin"
-       style="fill:#ff00ff;fill-opacity:1;stroke:none" />
-    <rect
-       y="-51"
-       x="930.36218"
-       height="6.0000153"
-       width="4"
-       id="hint-right-margin"
-       style="fill:#ff00ff;fill-opacity:1;stroke:none"
-       transform="matrix(0,1,-1,0,0,0)" />
-    <rect
-       style="fill:#ff00ff;fill-opacity:1;stroke:none"
-       id="hint-left-margin"
-       width="4"
-       height="6.0000038"
-       x="930.36218"
-       y="-25.000004"
-       transform="matrix(0,1,-1,0,0,0)" />
     <g
        id="shadow-top"
        transform="translate(58,0)">
