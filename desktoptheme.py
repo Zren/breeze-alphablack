@@ -212,6 +212,7 @@ class BreezeAlphaBlack(DesktopTheme):
 		self.configProps = [
 			# (group, key, defaultValue, setterKey)
 			('dialog', 'opacity', 0.9, 'setDialogOpacity'),
+			('dialog', 'padding', 6, 'setDialogPadding'),
 			('panel', 'opacity', 0.9, 'setPanelOpacity'),
 			('panel', 'padding', 2, 'setPanelPadding'),
 			('panel', 'taskStyle', 'inside', 'setTasksSvg'),
@@ -262,15 +263,22 @@ class BreezeAlphaBlack(DesktopTheme):
 	def renderDialogBackground(self, config):
 		self.renderTemplate('dialogs/background.svg', **{
 			'{{fillOpacity}}': str(config.getProp('dialog.opacity')),
+			'{{padding}}': str(config.getProp('dialog.padding')),
 		})
 
-	def setDialogOpacity(self, newOpacity=0.9):
+	def setDialogProperty(self, key, newValue):
 		config = self.themeConfig()
-		config.set('dialog', 'opacity', newOpacity)
+		config.set('dialog', key, newValue)
 		self.renderDialogBackground(config)
 		config.save()
 		self.clearCache() # Not really necessary
 		self.reloadTheme()
+
+	def setDialogOpacity(self, newOpacity=0.9):
+		self.setDialogProperty('opacity', newOpacity)
+
+	def setDialogPadding(self, newPadding=6):
+		self.setDialogProperty('padding', newPadding)
 
 	def renderPanel(self, config):
 		# inFilename = os.path.join(self.themeDir, '_templates/panel-background.svg')
