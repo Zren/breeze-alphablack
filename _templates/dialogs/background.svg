@@ -695,125 +695,114 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,-904.36218)">
+  <g id="layer1" inkscape:label="Layer 1" inkscape:groupmode="layer">
     <rect
-       style="opacity:1;fill:#ff6600;fill-opacity:1;stroke:none"
-       id="hint-tile-center"
-       width="5"
-       height="5"
-       x="0"
-       y="904.36218" />
-    <g
-       id="top">
-      <rect
-         y="-50.999985"
-         x="-916.36218"
-         height="32"
-         width="6"
-         id="rect4152"
-         style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
-         transform="matrix(0,-1,-1,0,0,0)"
-         class="ColorScheme-Background" />
-    </g>
-    <g
-       id="topleft">
+      id="hint-tile-center"
+      x="0"
+      y="0"
+      width="5"
+      height="5"
+      style="opacity:1;fill:#ff6600;fill-opacity:1;stroke:none"
+    />
+    <g id="topleft">
       <path
-         style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
-         d="m 16,6 c -2,0 -3,1 -3,3 v 2 1 h 4 1 1 V 11 7 6 h -1 1 z"
-         transform="translate(0,904.36218)"
-         id="rect4159"
-         inkscape:connector-curvature="0"
-         class="ColorScheme-Background"
-         sodipodi:nodetypes="cccccccccssccc" />
+        id="rect4159"
+        class="ColorScheme-Background"
+        d="m 16,6 c -2,0 -3,1 -3,3 v 2 1 h 4 1 1 V 11 7 6 h -1 1 z"
+        style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
+        inkscape:connector-curvature="0"
+        sodipodi:nodetypes="cccccccccssccc"
+      />
     </g>
-    <g
-       id="topright">
+    <g id="top">
+      <rect
+        id="rect4152"
+        class="ColorScheme-Background"
+        x="19"
+        y="44"
+        width="32"
+        height="6"
+        style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
+      />
+    </g>
+    <g id="topright">
       <path
-         style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
-         d="m 51,6 v 1 4 1 h 1 1 3 1 V 11 9 C 57,7 56,6 54,6 h -1 -1 z"
-         transform="translate(0,904.36218)"
-         id="rect4177"
-         inkscape:connector-curvature="0"
-         class="ColorScheme-Background"
-         sodipodi:nodetypes="cccccccccssccc" />
+        id="rect4177"
+        class="ColorScheme-Background"
+        d="m 51,6 v 1 4 1 h 1 1 3 1 V 11 9 C 57,7 56,6 54,6 h -1 -1 z"
+        style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
+        inkscape:connector-curvature="0"
+        sodipodi:nodetypes="cccccccccssccc"
+      />
     </g>
-    <g
-       id="bottom">
+    <g id="left">
       <rect
-         transform="matrix(0,1,-1,0,0,0)"
-         style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
-         id="rect4148"
-         width="6"
-         height="32"
-         x="948.36218"
-         y="-50.999985"
-         class="ColorScheme-Background" />
+        id="rect4144"
+        class="ColorScheme-Background"
+        x="13"
+        y="12"
+        width="6"
+        height="32"
+        style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
+      />
     </g>
-    <g
-       id="bottomleft">
+    <g id="center">
+      <rect
+        id="rect4138"
+        class="ColorScheme-Background"
+        x="19"
+        y="12"
+        width="32"
+        height="32"
+        style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
+      />
+    </g>
+    <g id="right">
+      <rect
+        id="rect4140"
+        class="ColorScheme-Background"
+        x="51"
+        y="12"
+        width="6"
+        height="32"
+        style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
+      />
+    </g>
+    <g id="bottomleft">
       <path
-         inkscape:connector-curvature="0"
-         style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
-         d="m 19,954.36218 v -1 -4 -1 h -1 -1 -3 -1 v 1 2 c 0,2 1,3 3,3 h 1 1 z"
-         id="path5048"
-         class="ColorScheme-Background"
-         sodipodi:nodetypes="cccccccccssccc" />
+        id="path5048"
+        class="ColorScheme-Background"
+        d="m 19,50 v -1 -4 -1 h -1 -1 -3 -1 v 1 2 c 0,2 1,3 3,3 h 1 1 z"
+        style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
+        inkscape:connector-curvature="0"
+        sodipodi:nodetypes="cccccccccssccc"
+      />
     </g>
-    <g
-       id="bottomright">
+    <g id="bottom">
+      <rect
+        id="rect4148"
+        class="ColorScheme-Background"
+        x="19"
+        y="6"
+        width="32"
+        height="6"
+        style="color:#eff0f1"
+      />
+    </g>
+    <g id="bottomright">
       <path
-         id="rect4177-6"
-         d="m 51,954.36218 v -1 -4 -1 h 1 1 3 1 v 1 2 c 0,2 -1,3 -3,3 h -1 -1 z"
-         style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
-         inkscape:connector-curvature="0"
-         class="ColorScheme-Background"
-         sodipodi:nodetypes="cccccccccssccc" />
+        id="rect4177-6"
+        class="ColorScheme-Background"
+        d="m 51,50 v -1 -4 -1 h 1 1 3 1 v 1 2 c 0,2 -1,3 -3,3 h -1 -1 z"
+        style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
+        inkscape:connector-curvature="0"
+        sodipodi:nodetypes="cccccccccssccc"
+      />
     </g>
-    <g
-       id="left">
-      <rect
-         transform="scale(-1,1)"
-         style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
-         id="rect4144"
-         width="5.9999995"
-         height="32"
-         x="-19.000004"
-         y="916.36218"
-         class="ColorScheme-Background" />
-    </g>
-    <g
-       id="right">
-      <rect
-         y="916.36218"
-         x="50.999985"
-         height="32"
-         width="5.9999995"
-         id="rect4140"
-         style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
-         class="ColorScheme-Background" />
-    </g>
-    <g
-       id="center">
-      <rect
-         y="916.36218"
-         x="19.000004"
-         height="32"
-         width="32"
-         id="rect4401"
-         style="opacity:1;fill:none;fill-opacity:1;stroke:none" />
-      <rect
-         style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
-         id="rect4138"
-         width="32"
-         height="32"
-         x="19.000004"
-         y="916.36218"
-         class="ColorScheme-Background" />
-    </g>
+  </g>
+  <g id="layer2" inkscape:label="Layer 2" inkscape:groupmode="layer"
+    transform="translate(0,-904.36218)"
+  >
     <rect
        style="fill:#ff00ff;fill-opacity:1;stroke:none"
        id="hint-top-margin"
