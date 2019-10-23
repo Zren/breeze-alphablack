@@ -250,24 +250,33 @@ def applyMatrixToPath(el, a, b, c, d, e, f):
 	lastCommand = ''
 	command = ''
 
+	matrixIsTranslation = a == 1 and b == 0 and c == 0 and d == 1 # With (e == dx, f == dy)
+
 	tokenIter = iter(tokens)
 	commandUseCount = 0
 	arcX1 = 0
 	arcY1 = 0
 	arcX2 = 0
 	arcY2 = 0
+
+	# https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths
+	pathCommands = [
+		'M', 'L', 'H', 'V', 'Z', 'C', 'S', 'Q', 'T', 'A', # M x,y (absolute coordinates)
+		'm', 'l', 'h', 'v', 'z', 'c', 's', 'q', 't', 'a', # m dx,dy (relative)
+	]
 	for token in tokenIter:
 		# print('\t\t' + token)
 		
-		if token in ['m', 'l', 'h', 'v', 'z', 'c', 's', 'q', 't', 'a']:
+		if token in pathCommands:
 			commandUseCount = 0
 			lastCommand = command
 			command = token
-			if command == 'z': # Close Path
+			if command.lower() == 'z': # Close Path
 				out.append('z')
 			continue
 
 		commandUseCount += 1
+
 		if command == 'm' or command == 'l':
 			# Move To x,y
 			# Line to x,y
@@ -307,24 +316,91 @@ def applyMatrixToPath(el, a, b, c, d, e, f):
 				commandStr = "{},{}".format(dx, dy)
 			# print("\t\t[{}] ({},{}) => ({})".format(command, x, y, commandStr))
 			out.append(commandStr)
-		elif command == 'h': # Horizontal to x
-			raise Exception("Implement path h/v")
-		elif command == 'v': # Vertical to y
-			raise Exception("Implement path h/v")
-		elif command == 'z': # Close Path
+
+
+		#--- Abosolute coordinates
+		elif command == 'H': # Horizontal to x
+			# H x
+			raise Exception("Implement path Bezier Curves")
+		elif command == 'V': # Vertical to y
+			# V y
+			raise Exception("Implement path Bezier Curves")
+		elif command == 'Z': # Close Path
 			raise Exception('Close Path does not use arguments')
-		elif command == 'c': # Cubic Bezier curve to
+		elif command == 'C': # Cubic Bezier curve to
 			# C x1 y1, x2 y2, x y
-			raise Exception("Implement path Bezier Curves")
-		elif command == 's': # Continue Cubic Bezier curve
+			raise Exception("Implement '{}' {}. el: {}".format(command, 'path Bezier Curves', el))
+		elif command == 'S': # Continue Cubic Bezier curve
 			# S x2 y2, x y
-			raise Exception("Implement path Bezier Curves")
-		elif command == 'q': # Quadratic Bezier curve
+			raise Exception("Implement '{}' {}. el: {}".format(command, 'path Bezier Curves', el))
+		elif command == 'Q': # Quadratic Bezier curve
 			# Q x1 y1, x y
-			raise Exception("Implement path Bezier Curves")
-		elif command == 't': # Continue Quadratic Bezier curve
+			raise Exception("Implement '{}' {}. el: {}".format(command, 'path Bezier Curves', el))
+		elif command == 'T': # Continue Quadratic Bezier curve
 			# T x y
-			raise Exception("Implement path Bezier Curves")
+			raise Exception("Implement '{}' {}. el: {}".format(command, 'path Bezier Curves', el))
+		elif command == 'A': # Arc to
+			# A rx ry x-axis-rotation large-arc-flag sweep-flag x y
+			raise Exception("Implement '{}' {}. el: {}".format(command, 'path Arc', el))
+
+
+		#--- Relative coordinates
+		elif command == 'h': # Horizontal to x
+			# h dx
+			dx = float(token)
+			if matrixIsTranslation:
+				pass # Only uses delta coordinates (which we can ignore)
+			else:
+				raise Exception("Implement '{}' {}. el: {}".format(command, 'path h/v', el))
+		elif command == 'v': # Vertical to y
+			# v dy
+			dy = float(token)
+			if matrixIsTranslation:
+				pass # Only uses delta coordinates (which we can ignore)
+			else:
+				raise Exception("Implement '{}' {}. el: {}".format(command, 'path h/v', el))
+		elif command == 'z': # Close Path
+			raise Exception('Close Path does not use arguments {}'.format(el))
+		elif command == 'c': # Cubic Bezier curve to
+			# c dx1 dy1, dx2 dy2, dx dy
+			dx1 = float(token)
+			dy1 = float(next(tokenIter))
+			dx2 = float(next(tokenIter))
+			dy2 = float(next(tokenIter))
+			dx = float(next(tokenIter))
+			dy = float(next(tokenIter))
+			if matrixIsTranslation:
+				pass # Only uses delta coordinates (which we can ignore)
+			else:
+				raise Exception("Implement '{}' {}. el: {}".format(command, 'path Bezier Curves', el))
+		elif command == 's': # Continue Cubic Bezier curve
+			# s dx2 dy2, dx dy
+			dx2 = float(token)
+			dy2 = float(next(tokenIter))
+			dx = float(next(tokenIter))
+			dy = float(next(tokenIter))
+			if matrixIsTranslation:
+				pass # Only uses delta coordinates (which we can ignore)
+			else:
+				raise Exception("Implement '{}' {}. el: {}".format(command, 'path Bezier Curves', el))
+		elif command == 'q': # Quadratic Bezier curve
+			# q dx1 dy1, dx dy
+			dx1 = float(token)
+			dy1 = float(next(tokenIter))
+			dx = float(next(tokenIter))
+			dy = float(next(tokenIter))
+			if matrixIsTranslation:
+				pass # Only uses delta coordinates (which we can ignore)
+			else:
+				raise Exception("Implement '{}' {}. el: {}".format(command, 'path Bezier Curves', el))
+		elif command == 't': # Continue Quadratic Bezier curve
+			# t dx dy
+			dx = float(token)
+			dy = float(next(tokenIter))
+			if matrixIsTranslation:
+				pass # Only uses delta coordinates (which we can ignore)
+			else:
+				raise Exception("Implement '{}' {}. el: {}".format(command, 'path Bezier Curves', el))
 		elif command == 'a': # Arc to
 			# A rx ry x-axis-rotation large-arc-flag sweep-flag x y
 			# a 4.5,4.5 0 0 0 -4.5,4.5
