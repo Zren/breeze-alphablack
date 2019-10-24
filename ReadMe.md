@@ -34,25 +34,35 @@ After installing, the widget should appear in your system tray. If you lock your
 
 ### Command Line
 
+Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/desktoptheme.py`  
+to see all commands in the help message.
+
 #### Panel Opacity
 
-Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/setpanelopacity.py 0.75` where 0.75 means the panel is 75% visible.
+Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/desktoptheme.py set panel.opacity 0.75`  
+where `0.75` means the panel is 75% visible.
+
+You can also set the `dialog.opacity` for panel popups, and `widget.opacity` for desktop widgets.
 
 
 #### Panel Color + Window Decorations
 
-Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/setthemecolor.py 255,255,255` where 255,255,255 is your desired RGB color.
+Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/desktoptheme.py set theme.accentColor 255,255,255`  
+where `255,255,255` is your desired RGB color.
 
 
 #### Window Decorations
 
-Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/settitlebarcolor.py 255,255,255` where 255,255,255 is your desired RGB color.
+Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/settitlebarcolor.py 255,255,255`  
+where `255,255,255` is your desired RGB color.
 
-Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/resettitlebarcolor.py` to reapply the colors from your seleted color scheme.
+Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/desktoptheme.py resettitlebarcolors`  
+to reapply the colors from your seleted color scheme.
 
 #### Task Manager Theme
 
-Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/settasksvg.py outside` where 'outside' draws the line on the edge of the screen like Windows 10, or 'inside' like Breeze.
+Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/settasksvg.py outside`  
+where `outside` draws the line on the edge of the screen like Windows 10, or `inside` like Breeze.
 
 
 
@@ -61,7 +71,7 @@ Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/settasksvg.py 
 To color the the default breeze window decorations (window titlebars). You can either:
 
 1. Download a custom window decoration.
-2. Use the Color Picker script above.
+2. Use the set titlebar colors python script above.
 3. Use the System Settings > Colors > Colors section to color the titlebar background/foreground. You will not be able to color the frame color (bottom/left/right of the window) from this menu.
 4. Add/set the following values in your `~/.config/kdeglobals` file to set the borders to black (when using the breeze window decorations).
 

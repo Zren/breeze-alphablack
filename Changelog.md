@@ -1,3 +1,8 @@
+## v16 - October __ 2019
+
+* Move `set___color.py` etc into `desktoptheme.py` as subcommands. Eg: `python3 desktoptheme.py set dialog.opacity 0.7`. The existing scripts are deprecated and will be removed in the next version.
+* Add ability to set dialog padding with `python3 desktoptheme.py set dialog.padding 2`. Note that you need to close a popup and reopen it to see the change in padding. You may need to run the command a few times for it to take effect.
+
 ## v15 - March 17 2019
 
 * Cleanup the desktop widget background svg coordinates (`widget/background.svg`).
