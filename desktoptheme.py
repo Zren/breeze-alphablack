@@ -261,9 +261,13 @@ class BreezeAlphaBlack(DesktopTheme):
 					fout.write(line)
 
 	def renderDialogBackground(self, config):
+		# Plasma doesn't like a padding of 0, so just use a really small number (which is rounded to 0).
+		dialogPadding = float(config.getProp('dialog.padding'))
+		dialogPadding = max(0.001, dialogPadding)
+
 		self.renderTemplate('dialogs/background.svg', **{
 			'{{fillOpacity}}': str(config.getProp('dialog.opacity')),
-			'{{padding}}': str(config.getProp('dialog.padding')),
+			'{{padding}}': str(dialogPadding),
 		})
 
 	def setDialogProperty(self, key, newValue):
