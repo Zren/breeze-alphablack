@@ -260,13 +260,22 @@ class BreezeAlphaBlack(DesktopTheme):
 						line = line.replace(a, b)
 					fout.write(line)
 
-	def renderDialogBackground(self, config):
+	def getDialogPadding(self, config):
 		# Plasma doesn't like a padding of 0, so just use a really small number (which is rounded to 0).
 		dialogPadding = float(config.getProp('dialog.padding'))
 		dialogPadding = max(0.001, dialogPadding)
+		return dialogPadding
 
+	def renderDialogBackground(self, config):
+		dialogPadding = self.getDialogPadding(config)
 		self.renderTemplate('dialogs/background.svg', **{
 			'{{fillOpacity}}': str(config.getProp('dialog.opacity')),
+			'{{padding}}': str(dialogPadding),
+		})
+
+	def renderPlasmoidHeading(self, config):
+		dialogPadding = self.getDialogPadding(config)
+		self.renderTemplate('widgets/plasmoidheading.svg', **{
 			'{{padding}}': str(dialogPadding),
 		})
 
@@ -274,6 +283,7 @@ class BreezeAlphaBlack(DesktopTheme):
 		config = self.themeConfig()
 		config.set('dialog', key, newValue)
 		self.renderDialogBackground(config)
+		self.renderPlasmoidHeading(config)
 		config.save()
 		self.clearCache() # Not really necessary
 		self.reloadTheme()
