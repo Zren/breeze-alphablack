@@ -13,18 +13,7 @@ zip -r $filename \
 	colors \
 	desktoptheme.py \
 	metadata.desktop \
-	readconfig.py \
-	ReadMe.md \
-	resettitlebarcolor.py \
-	resettodefaults.py \
-	setdialogopacity.py \
-	sethighlightcolor.py \
-	setpanelopacity.py \
-	settasksvg.py \
-	settextcolor.py \
-	setthemecolor.py \
-	settitlebarcolor.py \
-	setwidgetopacity.py
+	ReadMe.md
 
 # mv ${filename} _releases/${filename}
 echo "md5: $(md5sum $filename | awk '{ print $1 }')"
