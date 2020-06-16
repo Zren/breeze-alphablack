@@ -1,3 +1,8 @@
+## v17 - June 16 2020
+
+* Added `widgets/plasmoidheading.svg` to show the solid notification heading like Breeze. It's only displayed if the current theme has the svg, it does not inherit this svg.
+* Removed all deprecated `set___color.py` scripts. Use the `desktoptheme.py` subcommands.
+
 ## v16 - March 15 2020
 
 * Move `set___color.py` etc into `desktoptheme.py` as subcommands. Eg: `python3 desktoptheme.py set dialog.opacity 0.7`. The existing scripts are deprecated and will be removed in the next version.
