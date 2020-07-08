@@ -64,7 +64,6 @@
       <stop style="stop-color:#000000;stop-opacity:0;" offset="0" id="stop4293"/>
       <stop style="stop-color:#000000;stop-opacity:1;" offset="1" id="stop4294"/>
     </linearGradient>
-    <linearGradient inkscape:collect="always" xlink:href="#linearGradient4289" id="linearGradient4542" x1="15" y1="45.999977" x2="12" y2="45.999977" gradientUnits="userSpaceOnUse" gradientTransform="translate(0,0)"/>
     <linearGradient inkscape:collect="always" xlink:href="#linearGradientFadeOut" id="linearGradientLeft" gradientUnits="userSpaceOnUse" x1="15" y1="0" x2="12" y2="0"/>
     <linearGradient inkscape:collect="always" xlink:href="#linearGradientFadeOut" id="linearGradientRight" gradientUnits="userSpaceOnUse" x1="55" y1="0" x2="58" y2="0"/>
     <linearGradient inkscape:collect="always" xlink:href="#linearGradientFadeIn" id="linearGradientTop" gradientUnits="userSpaceOnUse" x1="0" y1="5" x2="0" y2="8"/>
@@ -112,7 +111,7 @@
     <g id="bottomleft">
       <path id="path4538" d="m 14,50 0,6 1,0 4,0 0,-6 -2,0 -2,0 -1,0 z" style="opacity:{{shadowOpacity}};fill:url(#linearGradientBottom);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" inkscape:connector-curvature="0"/>
       <path id="path4531" d="m 7,49 0,7 7,0 0,-6 c -0.553845,0 -1,-0.44616 -1,-1 l -6,0 z" style="opacity:{{cornerOpacity}};fill:url(#radialGradientBottomLeft);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" inkscape:connector-curvature="0"/>
-      <path id="path4203" d="m 7,44 0,4 0,1 6,0 0,-1 0,-4 -6,0 z" style="opacity:{{shadowOpacity}};fill:url(#linearGradient4542);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" inkscape:connector-curvature="0"/>
+      <path id="path4203" d="m 7,44 0,4 0,1 6,0 0,-1 0,-4 -6,0 z" style="opacity:{{shadowOpacity}};fill:url(#linearGradientLeft);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" inkscape:connector-curvature="0"/>
       <path id="path5048" d="m 19,50 0,-1 0,-4 0,-1 -1,0 -1,0 -3,0 -1,0 0,1 0,4 c 0,0.55399 0.446014,1 1,1 l 3,0 1,0 1,0 z" class="ColorScheme-Background" style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1" inkscape:connector-curvature="0"/>
     </g>
     <g id="bottomright">
