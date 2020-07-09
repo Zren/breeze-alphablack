@@ -160,37 +160,6 @@
       fy="48"
       r="6"
     />
-    <mask
-       id="mask4270-9"
-       maskUnits="userSpaceOnUse">
-      <g
-         id="g4272-5">
-        <path
-           style="fill:#ffffff;fill-opacity:1;stroke:none"
-           d="M 127,-30.9996 93.526316,2.5612549 74,22.0004 l 106,0 -19.52632,-19.4391451 z"
-           id="path4274-2"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="cccccc" />
-        <path
-           sodipodi:nodetypes="cccccc"
-           inkscape:connector-curvature="0"
-           id="path4276-2"
-           d="m 127,-13.9996 -12,12.0312498 -7,6.96875 38,0 -7,-6.96875 z"
-           style="fill:#000000;fill-opacity:1;stroke:none" />
-      </g>
-    </mask>
-    <filter
-       height="2.0368"
-       y="-0.5184"
-       width="1.5184"
-       x="-0.2592"
-       id="filter4258-8"
-       inkscape:collect="always">
-      <feGaussianBlur
-         id="feGaussianBlur4260-5"
-         stdDeviation="4.104"
-         inkscape:collect="always" />
-    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
