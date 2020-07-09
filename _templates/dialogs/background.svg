@@ -74,19 +74,19 @@
 			gradientUnits="userSpaceOnUse"
 			inkscape:collect="always"
 			xlink:href="#linearGradientFadeIn"
-			x1="73"
-			y1="12"
-			x2="67"
-			y2="12"
+			x1="8"
+			y1="28"
+			x2="2"
+			y2="28"
 		/>
 		<radialGradient
 			id="radialGradientShadowTopLeft"
 			gradientUnits="userSpaceOnUse"
 			inkscape:collect="always"
 			xlink:href="#linearGradientFadeIn"
-			cx="73"
+			cx="8"
 			cy="8"
-			fx="73"
+			fx="8"
 			fy="8"
 			r="6"
 		/>
@@ -95,9 +95,9 @@
 			gradientUnits="userSpaceOnUse"
 			inkscape:collect="always"
 			xlink:href="#linearGradientFadeIn"
-			x1="93"
+			x1="28"
 			y1="8"
-			x2="93"
+			x2="28"
 			y2="2"
 		/>
 		<radialGradient
@@ -105,9 +105,9 @@
 			gradientUnits="userSpaceOnUse"
 			inkscape:collect="always"
 			xlink:href="#linearGradientFadeIn"
-			cx="113"
+			cx="48"
 			cy="8"
-			fx="113"
+			fx="48"
 			fy="8"
 			r="6"
 		/>
@@ -116,9 +116,9 @@
 			gradientUnits="userSpaceOnUse"
 			inkscape:collect="always"
 			xlink:href="#linearGradientFadeIn"
-			x1="113"
+			x1="48"
 			y1="28"
-			x2="119"
+			x2="54"
 			y2="28"
 		/>
 		<linearGradient
@@ -126,9 +126,9 @@
 			gradientUnits="userSpaceOnUse"
 			inkscape:collect="always"
 			xlink:href="#linearGradientFadeIn"
-			x1="93"
+			x1="28"
 			y1="48"
-			x2="93"
+			x2="28"
 			y2="54"
 		/>
 		<radialGradient
@@ -136,9 +136,9 @@
 			gradientUnits="userSpaceOnUse"
 			inkscape:collect="always"
 			xlink:href="#linearGradientFadeIn"
-			cx="73"
+			cx="8"
 			cy="48"
-			fx="73"
+			fx="8"
 			fy="48"
 			r="6"
 		/>
@@ -147,9 +147,9 @@
 			gradientUnits="userSpaceOnUse"
 			inkscape:collect="always"
 			xlink:href="#linearGradientFadeIn"
-			cx="113"
+			cx="48"
 			cy="48"
-			fx="113"
+			fx="48"
 			fy="48"
 			r="6"
 		/>
@@ -338,28 +338,34 @@
 		</g>
 
 		<!-- Shadow Tileset -->
-		<g id="shadow-tileset" transform="translate(0,0)">
+		<g id="shadow-tileset" transform="translate(65,0)">
 			<g id="shadow-topleft">
-				<path
-					id="pathShadowTopLeft-Left"
-					d="m 65,9 v 1 2 h 6 V 8 9 Z"
+				<rect
+					id="rectShadowTopLeft-Left"
+					x="0"
+					y="9"
+					width="6"
+					height="3"
 					style="fill:url(#linearGradientShadowLeft);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0.9"
 				/>
 				<path
 					id="pathShadowTopLeft-TopLeft"
-					d="m 65,0 v 9 h 6 C 71,7 72,6 74,6 V 0 Z"
+					d="m 0,0 v 9 h 6 c 0,-2 1,-3 3,-3 v -6 z"
 					style="opacity:0.9;fill:url(#radialGradientShadowTopLeft);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
 				/>
-				<path
-					id="pathShadowTopLeft-Top"
-					d="m 74,0 v 6 h -1 4 V 0 h -4 z"
+				<rect
+					id="rectShadowTopLeft-Top"
+					x="9"
+					y="0"
+					width="3"
+					height="6"
 					style="fill:url(#linearGradientShadowTop);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0.9"
 				/>
 			</g>
 			<g id="shadow-top">
 				<rect
 					id="rectShadowTop-Top"
-					x="77"
+					x="12"
 					y="0"
 					width="32"
 					height="6"
@@ -367,7 +373,7 @@
 				/>
 				<rect
 					id="rectShadowTop-Placeholder"
-					x="77"
+					x="12"
 					y="6"
 					width="32"
 					height="6"
@@ -375,26 +381,32 @@
 				/>
 			</g>
 			<g id="shadow-topright">
-				<path
-					id="pathShadowTopRight-Top"
-					d="m 109,0 v 6 h 4 -1 V 0 h 1 z"
+				<rect
+					id="rectShadowTopRight-Top"
+					x="44"
+					y="0"
+					width="3"
+					height="6"
 					style="fill:url(#linearGradientShadowTop);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0.9"
 				/>
 				<path
 					id="pathShadowTopRight-TopRight"
-					d="m 112,0 v 6 c 2,0 3,1 3,3 h 6 V 0 Z"
+					d="m 47,0 v 6 c 2,0 3,1 3,3 h 6 v -9 z"
 					style="opacity:0.9;fill:url(#radialGradientShadowTopRight);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
 				/>
-				<path
-					id="pathShadowTopRight-Right"
-					d="m 115,9 v -1 4 h 6 V 8 9 Z"
+				<rect
+					id="rectShadowTopRight-Right"
+					x="50"
+					y="9"
+					width="6"
+					height="3"
 					style="fill:url(#linearGradientShadowRight);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0.9"
 				/>
 			</g>
 			<g id="shadow-left">
 				<rect
 					id="rectShadowLeft-Left"
-					x="65"
+					x="0"
 					y="12"
 					width="6"
 					height="32"
@@ -402,7 +414,7 @@
 				/>
 				<rect
 					id="rectShadowLeft-Placeholder"
-					x="71"
+					x="6"
 					y="12"
 					width="6"
 					height="32"
@@ -412,7 +424,7 @@
 			<g id="shadow-center">
 				<rect
 					id="rectShadowCenter-Placeholder"
-					x="77"
+					x="12"
 					y="12"
 					width="32"
 					height="32"
@@ -422,7 +434,7 @@
 			<g id="shadow-right">
 				<rect
 					id="rectShadowRight-Right"
-					x="115"
+					x="50"
 					y="12"
 					width="6"
 					height="32"
@@ -430,7 +442,7 @@
 				/>
 				<rect
 					id="rectShadowRight-Placeholder"
-					x="109"
+					x="44"
 					y="12"
 					width="6"
 					height="32"
@@ -438,26 +450,32 @@
 				/>
 			</g>
 			<g id="shadow-bottomleft">
-				<path
-					id="pathShadowBottomLeft-Left"
-					d="m 65,44 v 4 -1 h 6 v 1 -4 z"
+				<rect
+					id="rectShadowBottomLeft-Left"
+					x="0"
+					y="44"
+					width="6"
+					height="3"
 					style="fill:url(#linearGradientShadowLeft);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0.9"
 				/>
 				<path
 					id="pathShadowBottomLeft-BottomLeft"
-					d="m 65,47 v 9 h 9 v -6 c -2,0 -3,-1 -3,-3 z"
+					d="m 0,47 v 9 h 9 v -6 c -2,0 -3,-1 -3,-3 z"
 					style="opacity:0.9;fill:url(#radialGradientShadowBottomLeft);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
 				/>
-				<path
-					id="pathShadowBottomLeft-Bottom"
-					d="m 74,50 v 6 h -1 4 v -6 h -4 z"
+				<rect
+					id="rectShadowBottomLeft-Bottom"
+					x="9"
+					y="50"
+					width="3"
+					height="6"
 					style="fill:url(#linearGradientShadowBottom);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0.9"
 				/>
 			</g>
 			<g id="shadow-bottom">
 				<rect
 					id="rectShadowBottom-Bottom"
-					x="77"
+					x="12"
 					y="50"
 					width="32"
 					height="6"
@@ -465,7 +483,7 @@
 				/>
 				<rect
 					id="rectShadowBottom-Placeholder"
-					x="77"
+					x="12"
 					y="44"
 					width="32"
 					height="6"
@@ -473,19 +491,25 @@
 				/>
 			</g>
 			<g id="shadow-bottomright">
-				<path
-					id="pathShadowBottomRight-Bottom"
-					d="m 109,50 v 6 h 4 -1 v -6 h 1 z"
+				<rect
+					id="rectShadowBottomRight-Bottom"
+					x="44"
+					y="50"
+					width="3"
+					height="6"
 					style="fill:url(#linearGradientShadowBottom);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0.9"
 				/>
 				<path
 					id="pathShadowBottomRight-BottomRight"
-					d="m 115,47 c 0,2 -1,3 -3,3 v 6 h 9 v -9 z"
+					d="m 50,47 c 0,2 -1,3 -3,3 v 6 h 9 v -9 z"
 					style="opacity:0.9;fill:url(#radialGradientShadowBottomRight);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
 				/>
-				<path
-					id="pathShadowBottomRight-Right"
-					d="m 115,44 v 4 -1 h 6 v 1 -4 z"
+				<rect
+					id="rectShadowBottomRight-Right"
+					x="50"
+					y="44"
+					width="6"
+					height="3"
 					style="fill:url(#linearGradientShadowRight);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0.9"
 				/>
 			</g>
@@ -493,7 +517,7 @@
 			<!-- Shadow Margins -->
 			<rect
 				id="shadow-hint-top-margin"
-				x="91"
+				x="26"
 				y="0"
 				width="4"
 				height="6"
@@ -501,7 +525,7 @@
 			/>
 			<rect
 				id="shadow-hint-left-margin"
-				x="65"
+				x="0"
 				y="26"
 				width="6"
 				height="4"
@@ -509,7 +533,7 @@
 			/>
 			<rect
 				id="shadow-hint-right-margin"
-				x="115"
+				x="50"
 				y="26"
 				width="6"
 				height="4"
@@ -517,7 +541,7 @@
 			/>
 			<rect
 				id="shadow-hint-bottom-margin"
-				x="91"
+				x="26"
 				y="50"
 				width="4"
 				height="6"
