@@ -213,7 +213,7 @@ class BreezeAlphaBlack(DesktopTheme):
 			# (group, key, defaultValue, setterKey)
 			('dialog', 'opacity', 0.9, 'setDialogOpacity'),
 			('dialog', 'padding', 6, 'setDialogPadding'),
-			('dialog', 'radius', 2, 'setDialogRadius'),
+			('dialog', 'radius', 3, 'setDialogRadius'),
 			('panel', 'opacity', 0.9, 'setPanelOpacity'),
 			('panel', 'padding', 2, 'setPanelPadding'),
 			('panel', 'taskStyle', 'inside', 'setTasksSvg'),
@@ -286,7 +286,7 @@ class BreezeAlphaBlack(DesktopTheme):
 	def renderPlasmoidHeading(self, config):
 		dialogPadding = self.getDialogPadding(config)
 		dialogRadius = self.getDialogRadius(config)
-		svgScale = dialogRadius / 2 # 2 is the default, so use it to scale the entire thing
+		svgScale = dialogRadius / 3 # 3 is the default radius, so use it to scale the entire thing
 		self.renderTemplate('widgets/plasmoidheading.svg', **{
 			'{{padding}}': str(dialogPadding),
 			'{{cornerRadius}}': str(svgScale),
@@ -307,7 +307,7 @@ class BreezeAlphaBlack(DesktopTheme):
 	def setDialogPadding(self, newPadding=6):
 		self.setDialogProperty('padding', newPadding)
 
-	def setDialogRadius(self, newRadius=2):
+	def setDialogRadius(self, newRadius=3):
 		self.setDialogProperty('radius', newRadius)
 
 	def renderPanel(self, config):
