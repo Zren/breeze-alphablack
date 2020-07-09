@@ -1,6 +1,6 @@
 <svg
 	id="svg"
-	viewBox="0 0 186 56"
+	viewBox="0 0 172 56"
 	xmlns="http://www.w3.org/2000/svg"
 	xmlns:cc="http://creativecommons.org/ns#"
 	xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -162,7 +162,7 @@
 		inkscape:pageopacity="0.65882353"
 		inkscape:pageshadow="2"
 		inkscape:zoom="8.0"
-		inkscape:cx="93"
+		inkscape:cx="86"
 		inkscape:cy="28"
 		inkscape:document-units="px"
 		inkscape:current-layer="layer1"
@@ -213,7 +213,7 @@
 		/>
 
 		<!-- Tileset -->
-		<g id="tileset" transform="translate(13,6)">
+		<g id="tileset" transform="translate(6,6)">
 			<g id="topleft">
 				<path
 					id="rectTopLeft"
@@ -338,7 +338,7 @@
 		</g>
 
 		<!-- Shadow Tileset -->
-		<g id="shadow-tileset" transform="translate(65,0)">
+		<g id="shadow-tileset" transform="translate(58,0)">
 			<g id="shadow-topleft">
 				<rect
 					id="rectShadowTopLeft-Left"
@@ -550,7 +550,7 @@
 		</g>
 
 		<!-- Mask Tileset -->
-		<g id="mask-tileset" transform="translate(129,6)">
+		<g id="mask-tileset" transform="translate(122,6)">
 			<g id="mask-topleft">
 				<path
 					id="pathMaskTopLeft"
