@@ -52,10 +52,10 @@
     <radialGradient inkscape:collect="always" xlink:href="#linearGradientFadeOut" id="radialGradientBottomRight" cx="56" cy="49" fx="56" fy="49" r="2" gradientUnits="userSpaceOnUse" />
     <radialGradient inkscape:collect="always" xlink:href="#linearGradientFadeOut" id="radialGradientBottomLeft" cx="14" cy="49" fx="14" fy="49" r="2" gradientUnits="userSpaceOnUse"/>
     <radialGradient inkscape:collect="always" xlink:href="#linearGradientFadeOut" id="radialGradientTopLeft" cx="14" cy="7" fx="14" fy="7" r="2" gradientUnits="userSpaceOnUse"/>
-    <radialGradient inkscape:collect="always" xlink:href="#linearGradientFadeOut" id="radialGradient4924" gradientUnits="userSpaceOnUse" gradientTransform="matrix(4.3053928e-7,-0.33333335,0.3333339,4.3054001e-7,-232.15696,14.899586)" cx="23.700001" cy="912.4693" fx="23.700001" fy="912.4693" r="6"/>
-    <radialGradient inkscape:collect="always" xlink:href="#linearGradientFadeOut" id="radialGradient4930" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.33333332,2.4112937e-6,-2.4112795e-6,0.33333136,95.537914,-296.41909)" cx="55.392845" cy="910.26215" fx="55.392845" fy="910.26215" r="6"/>
-    <radialGradient inkscape:collect="always" xlink:href="#linearGradientFadeOut" id="radialGradient4938" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-0.3333334,-1.5267249e-6,1.5267197e-6,-0.33333227,75.046174,365.28628)" cx="9.1428642" cy="948.86188" fx="9.1428642" fy="948.86188" r="6"/>
-    <radialGradient inkscape:collect="always" xlink:href="#linearGradientFadeOut" id="radialGradient4944" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.0353385e-7,0.33333326,-0.33333422,1.0353415e-7,428.53826,30.416558)" cx="55.749981" cy="943.6123" fx="55.749981" fy="943.6123" r="6"/>
+    <radialGradient inkscape:collect="always" xlink:href="#linearGradientFadeOut" id="radialGradientShadowTopLeft" gradientUnits="userSpaceOnUse" gradientTransform="matrix(4.3053928e-7,-0.33333335,0.3333339,4.3054001e-7,-232.15696,14.899586)" cx="23.700001" cy="912.4693" fx="23.700001" fy="912.4693" r="6"/>
+    <radialGradient inkscape:collect="always" xlink:href="#linearGradientFadeOut" id="radialGradientShadowTopRight" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.33333332,2.4112937e-6,-2.4112795e-6,0.33333136,95.537914,-296.41909)" cx="55.392845" cy="910.26215" fx="55.392845" fy="910.26215" r="6"/>
+    <radialGradient inkscape:collect="always" xlink:href="#linearGradientFadeOut" id="radialGradientShadowBottomLeft" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-0.3333334,-1.5267249e-6,1.5267197e-6,-0.33333227,75.046174,365.28628)" cx="9.1428642" cy="948.86188" fx="9.1428642" fy="948.86188" r="6"/>
+    <radialGradient inkscape:collect="always" xlink:href="#linearGradientFadeOut" id="radialGradientShadowBottomRight" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.0353385e-7,0.33333326,-0.33333422,1.0353415e-7,428.53826,30.416558)" cx="55.749981" cy="943.6123" fx="55.749981" fy="943.6123" r="6"/>
     <linearGradient inkscape:collect="always" id="linearGradientFadeOut">
       <stop style="stop-color:#000000;stop-opacity:1;" offset="0" id="stop4291"/>
       <stop style="stop-color:#000000;stop-opacity:0;" offset="1" id="stop4292"/>
@@ -68,8 +68,8 @@
     <linearGradient inkscape:collect="always" xlink:href="#linearGradientFadeOut" id="linearGradientRight" gradientUnits="userSpaceOnUse" x1="55" y1="0" x2="58" y2="0"/>
     <linearGradient inkscape:collect="always" xlink:href="#linearGradientFadeIn" id="linearGradientTop" gradientUnits="userSpaceOnUse" x1="0" y1="5" x2="0" y2="8"/>
     <linearGradient inkscape:collect="always" xlink:href="#linearGradientFadeOut" id="linearGradientBottom" gradientUnits="userSpaceOnUse" x1="0" y1="48" x2="0" y2="51"/>
-    <linearGradient inkscape:collect="always" xlink:href="#linearGradientFadeOut" id="linearGradient4940" gradientUnits="userSpaceOnUse" x1="73" y1="0" x2="70" y2="0"/>
-    <linearGradient inkscape:collect="always" xlink:href="#linearGradientFadeOut" id="linearGradient4946" gradientUnits="userSpaceOnUse" x1="113" y1="0" x2="116" y2="0"/>
+    <linearGradient inkscape:collect="always" xlink:href="#linearGradientFadeOut" id="linearGradientShadowLeft" gradientUnits="userSpaceOnUse" x1="73" y1="0" x2="70" y2="0"/>
+    <linearGradient inkscape:collect="always" xlink:href="#linearGradientFadeOut" id="linearGradientShadowRight" gradientUnits="userSpaceOnUse" x1="113" y1="0" x2="116" y2="0"/>
   </defs>
   <sodipodi:namedview id="base" pagecolor="#b0dba0" bordercolor="#cc0000" borderopacity="1" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:zoom="8" inkscape:cx="65.206603" inkscape:cy="30.095125" inkscape:document-units="px" inkscape:current-layer="layer1" showgrid="true" inkscape:showpageshadow="false" borderlayer="true" units="px" inkscape:window-width="2560" inkscape:window-height="957" inkscape:window-x="0" inkscape:window-y="30" inkscape:window-maximized="1" showguides="true" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0">
     <inkscape:grid type="xygrid" id="grid3336" empspacing="2" originx="0" originy="-91.999978"/>
@@ -145,14 +145,14 @@
     </g>
     <g id="shadow-topleft">
       <rect id="rect4864" x="72" y="0" width="5" height="6" style="opacity:1;fill:url(#linearGradientTop);fill-opacity:1;stroke:none"/>
-      <path id="path4866" d="m 65,0 0,7 6,0 0,-1 1,0 0,-6 -7,0 z" style="opacity:0.6;fill:url(#radialGradient4924);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" inkscape:connector-curvature="0"/>
-      <rect id="rect4868" x="65" y="7" width="6" height="5" style="opacity:1;fill:url(#linearGradient4940);fill-opacity:1;stroke:none"/>
+      <path id="path4866" d="m 65,0 0,7 6,0 0,-1 1,0 0,-6 -7,0 z" style="opacity:0.6;fill:url(#radialGradientShadowTopLeft);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" inkscape:connector-curvature="0"/>
+      <rect id="rect4868" x="65" y="7" width="6" height="5" style="opacity:1;fill:url(#linearGradientShadowLeft);fill-opacity:1;stroke:none"/>
       <rect id="rect4870" x="71" y="6" width="6" height="6" style="fill:none;fill-opacity:1" />
     </g>
     <g id="shadow-topright">
       <rect id="rect4864" x="109" y="0" width="5" height="6" style="opacity:1;fill:url(#linearGradientTop);fill-opacity:1;stroke:none"/>
-      <path id="path4866" d="m 114,0 0,6 1,0 0,1 6,0 0,-7 -7,0 z" style="opacity:0.6;fill:url(#radialGradient4930);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" inkscape:connector-curvature="0"/>
-      <rect id="rect4868" x="115" y="7" width="6" height="5" style="opacity:1;fill:url(#linearGradient4946);fill-opacity:1;stroke:none"/>
+      <path id="path4866" d="m 114,0 0,6 1,0 0,1 6,0 0,-7 -7,0 z" style="opacity:0.6;fill:url(#radialGradientShadowTopRight);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" inkscape:connector-curvature="0"/>
+      <rect id="rect4868" x="115" y="7" width="6" height="5" style="opacity:1;fill:url(#linearGradientShadowRight);fill-opacity:1;stroke:none"/>
       <rect id="rect4870" x="109" y="6" width="6" height="6" style="fill:none;fill-opacity:1" />
     </g>
     <g id="shadow-bottom">
@@ -161,23 +161,23 @@
     </g>
     <g id="shadow-bottomleft">
       <rect id="rect4864" x="72" y="50" width="5" height="6" style="opacity:1;fill:url(#linearGradientBottom);fill-opacity:1;stroke:none"/>
-      <path id="path4866" d="m 65,49 0,7 7,0 0,-6 -1,0 0,-1 -6,0 z" style="opacity:0.6;fill:url(#radialGradient4938);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" inkscape:connector-curvature="0"/>
-      <rect id="rect4868" x="65" y="44" width="6" height="5" style="opacity:1;fill:url(#linearGradient4940);fill-opacity:1;stroke:none"/>
+      <path id="path4866" d="m 65,49 0,7 7,0 0,-6 -1,0 0,-1 -6,0 z" style="opacity:0.6;fill:url(#radialGradientShadowBottomLeft);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" inkscape:connector-curvature="0"/>
+      <rect id="rect4868" x="65" y="44" width="6" height="5" style="opacity:1;fill:url(#linearGradientShadowLeft);fill-opacity:1;stroke:none"/>
       <rect id="rect4870" x="71" y="44" width="6" height="6" style="fill:none;fill-opacity:1" />
     </g>
     <g id="shadow-bottomright">
       <rect id="rect4878" x="109" y="50" width="5" height="6" style="opacity:1;fill:url(#linearGradientBottom);fill-opacity:1;stroke:none"/>
-      <path id="path4880" d="m 115,49 0,1 -1,0 0,6 7,0 0,-7 -6,0 z" style="opacity:0.6;fill:url(#radialGradient4944);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" inkscape:connector-curvature="0"/>
-      <rect id="rect4882" x="115" y="44" width="6" height="5" style="opacity:1;fill:url(#linearGradient4946);fill-opacity:1;stroke:none"/>
+      <path id="path4880" d="m 115,49 0,1 -1,0 0,6 7,0 0,-7 -6,0 z" style="opacity:0.6;fill:url(#radialGradientShadowBottomRight);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" inkscape:connector-curvature="0"/>
+      <rect id="rect4882" x="115" y="44" width="6" height="5" style="opacity:1;fill:url(#linearGradientShadowRight);fill-opacity:1;stroke:none"/>
       <rect id="rect4884" x="109" y="44" width="6" height="6" style="fill:none;fill-opacity:1"/>
     </g>
     <g id="shadow-left">
       <rect id="rect4892" x="71" y="12" width="6" height="32" style="opacity:1;fill:none;fill-opacity:1;stroke:none"/>
-      <rect id="rect4894" x="65" y="12" width="6" height="32" style="opacity:1;fill:url(#linearGradient4940);fill-opacity:1;stroke:none"/>
+      <rect id="rect4894" x="65" y="12" width="6" height="32" style="opacity:1;fill:url(#linearGradientShadowLeft);fill-opacity:1;stroke:none"/>
     </g>
     <g id="shadow-right">
       <rect id="rect4900" x="109" y="12" width="6" height="32" style="opacity:1;fill:none;fill-opacity:1;stroke:none"/>
-      <rect id="rect4902" x="115" y="12" width="6" height="32" style="opacity:1;fill:url(#linearGradient4946);fill-opacity:1;stroke:none"/>
+      <rect id="rect4902" x="115" y="12" width="6" height="32" style="opacity:1;fill:url(#linearGradientShadowRight);fill-opacity:1;stroke:none"/>
     </g>
     <g id="shadow-center">
       <rect id="rect4908" x="77" y="12" width="32" height="32" style="opacity:1;fill:none;fill-opacity:1;stroke:none"/>
