@@ -696,6 +696,7 @@
     </rdf:RDF>
   </metadata>
   <g id="layer1" inkscape:label="Layer 1" inkscape:groupmode="layer">
+    <!-- Hints -->
     <rect
       id="hint-tile-center"
       x="0"
@@ -704,6 +705,8 @@
       height="5"
       style="opacity:1;fill:#ff6600;fill-opacity:1;stroke:none"
     />
+
+    <!-- Tileset -->
     <g id="topleft">
       <path
         id="rect4159"
@@ -799,6 +802,8 @@
         sodipodi:nodetypes="cccccccccssccc"
       />
     </g>
+
+    <!-- Margins -->
     <rect
       id="hint-top-margin"
       x="33"
@@ -831,6 +836,8 @@
       height="{{padding}}"
       style="fill:#ff00ff;fill-opacity:1;stroke:none"
     />
+
+    <!-- Mask Tileset -->
     <g id="mask-topleft">
       <path
         id="path4277"
@@ -923,6 +930,7 @@
   <g id="layer2" inkscape:label="Layer 2" inkscape:groupmode="layer"
     transform="translate(0,-904.36218)"
   >
+    <!-- Shadow Tileset -->
     <g
        id="shadow-top"
        transform="translate(58,0)">
@@ -1251,6 +1259,8 @@
          id="rect4910"
          style="opacity:1;fill:none;fill-opacity:1;stroke:none" />
     </g>
+
+    <!-- Shadow Margins -->
     <rect
        y="904.36218"
        x="91"
@@ -1281,30 +1291,8 @@
        width="4.0000229"
        id="shadow-hint-left-margin"
        style="fill:#ff00ff;fill-opacity:1;stroke:none" />
-    <text
-       id="text4270"
-       y="134.59453"
-       x="195.14162"
-       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:justify;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gill Sans"
-       xml:space="preserve"><tspan
-         y="134.59453"
-         x="195.14162"
-         id="tspan4272"
-         sodipodi:role="line" /></text>
-    <g
-       style="opacity:0.97899996"
-       transform="matrix(-0.75,0,0,0.75,130.30761,670.84135)"
-       id="g3041" />
-    <path
-       style="fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter4258-8)"
-       d="m 127,-13.9996 -12,12.0312498 -7,6.96875 38,0 -7,-6.96875 z"
-       id="path4181"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccccc"
-       mask="url(#mask4270-9)"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"
-       transform="translate(138,846.77637)" />
+
+    <!-- Baloon -->
     <g
        transform="matrix(-1,0,0,-1,586,961.77637)"
        id="balloon-tip-bottom">
