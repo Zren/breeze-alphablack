@@ -978,44 +978,46 @@
         sodipodi:nodetypes="ccccccc"
       />
     </g>
+
+    <!-- Shadow Margins -->
+    <rect
+      id="shadow-hint-top-margin"
+      x="91"
+      y="0"
+      width="4"
+      height="6"
+      style="fill:#ff00ff;fill-opacity:1;stroke:none"
+    />
+    <rect
+      id="shadow-hint-left-margin"
+      x="65"
+      y="26"
+      width="6"
+      height="4"
+      style="fill:#ff00ff;fill-opacity:1;stroke:none"
+    />
+    <rect
+      id="shadow-hint-right-margin"
+      x="115"
+      y="26"
+      width="6"
+      height="4"
+      style="fill:#ff00ff;fill-opacity:1;stroke:none"
+    />
+    <rect
+      id="shadow-hint-bottom-margin"
+      x="91"
+      y="50"
+      width="4"
+      height="6"
+      style="fill:#ff00ff;fill-opacity:1;stroke:none"
+    />
   </g>
 
 
   <g id="layer2" inkscape:label="Layer 2" inkscape:groupmode="layer"
     transform="translate(0,-904.36218)"
   >
-    <!-- Shadow Margins -->
-    <rect
-       y="904.36218"
-       x="91"
-       height="5.9999771"
-       width="4"
-       id="shadow-hint-top-margin"
-       style="fill:#ff00ff;fill-opacity:1;stroke:none" />
-    <rect
-       style="fill:#ff00ff;fill-opacity:1;stroke:none"
-       id="shadow-hint-bottom-margin"
-       width="4"
-       height="6.0000229"
-       x="91"
-       y="954.36218" />
-    <rect
-       transform="matrix(0,1,-1,0,0,0)"
-       style="fill:#ff00ff;fill-opacity:1;stroke:none"
-       id="shadow-hint-right-margin"
-       width="3.9999769"
-       height="5.9999771"
-       x="930.36218"
-       y="-120.99998" />
-    <rect
-       transform="matrix(0,1,-1,0,0,0)"
-       y="-71"
-       x="930.36218"
-       height="6"
-       width="4.0000229"
-       id="shadow-hint-left-margin"
-       style="fill:#ff00ff;fill-opacity:1;stroke:none" />
-
     <!-- Baloon -->
     <g
        transform="matrix(-1,0,0,-1,586,961.77637)"
