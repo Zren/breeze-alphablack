@@ -213,6 +213,7 @@ class BreezeAlphaBlack(DesktopTheme):
 			# (group, key, defaultValue, setterKey)
 			('dialog', 'opacity', 0.9, 'setDialogOpacity'),
 			('dialog', 'padding', 6, 'setDialogPadding'),
+			('dialog', 'radius', 2, 'setDialogRadius'),
 			('panel', 'opacity', 0.9, 'setPanelOpacity'),
 			('panel', 'padding', 2, 'setPanelPadding'),
 			('panel', 'taskStyle', 'inside', 'setTasksSvg'),
@@ -266,17 +267,29 @@ class BreezeAlphaBlack(DesktopTheme):
 		dialogPadding = max(0.001, dialogPadding)
 		return dialogPadding
 
+	def getDialogRadius(self, config):
+		# It'd be a pain to adjust the paths to be perfectly square edge, so just do a really small radius.
+		dialogRadius = float(config.getProp('dialog.radius'))
+		dialogRadius = max(0.001, dialogRadius)
+		return dialogRadius
+
 	def renderDialogBackground(self, config):
 		dialogPadding = self.getDialogPadding(config)
+		dialogRadius = self.getDialogRadius(config)
+		cornerRadius = dialogRadius / 2 # 2 is the default, so use it to scale
 		self.renderTemplate('dialogs/background.svg', **{
 			'{{fillOpacity}}': str(config.getProp('dialog.opacity')),
 			'{{padding}}': str(dialogPadding),
+			'{{cornerRadius}}': str(cornerRadius),
 		})
 
 	def renderPlasmoidHeading(self, config):
 		dialogPadding = self.getDialogPadding(config)
+		dialogRadius = self.getDialogRadius(config)
+		svgScale = dialogRadius / 2 # 2 is the default, so use it to scale the entire thing
 		self.renderTemplate('widgets/plasmoidheading.svg', **{
 			'{{padding}}': str(dialogPadding),
+			'{{cornerRadius}}': str(svgScale),
 		})
 
 	def setDialogProperty(self, key, newValue):
@@ -293,6 +306,9 @@ class BreezeAlphaBlack(DesktopTheme):
 
 	def setDialogPadding(self, newPadding=6):
 		self.setDialogProperty('padding', newPadding)
+
+	def setDialogRadius(self, newRadius=2):
+		self.setDialogProperty('radius', newRadius)
 
 	def renderPanel(self, config):
 		# inFilename = os.path.join(self.themeDir, '_templates/panel-background.svg')
