@@ -829,20 +829,20 @@
     </g>
     <g id="shadow-top">
       <rect
-        id="rectShadowTop-Placeholder"
-        x="77"
-        y="6"
-        width="32"
-        height="6"
-        style="opacity:1;fill:none;fill-opacity:1;stroke:none"
-      />
-      <rect
         id="rectShadowTop-Top"
         x="77"
         y="0"
         width="32"
         height="6"
         style="opacity:0.9;fill:url(#linearGradientShadowTop);fill-opacity:1;stroke:none"
+      />
+      <rect
+        id="rectShadowTop-Placeholder"
+        x="77"
+        y="6"
+        width="32"
+        height="6"
+        style="opacity:1;fill:none;fill-opacity:1;stroke:none"
       />
     </g>
     <g id="shadow-topright">
