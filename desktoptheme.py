@@ -448,6 +448,44 @@ class BreezeAlphaBlack(DesktopTheme):
 		)
 		out['{{shadowTopRightPath}}'] = path
 
+		# shadowBottomLeft (CounterClockwise)
+		# m 0,56 h 9 v -6 c -2,0 -3,-1 -3,-3 h -6 z
+		path = 'm {} h {} v {} c {} {} {} h {} z'.format(
+			# m
+			Point(0, shadowTilesetSize), # point furthest from center
+			# h
+			shadowAndRadius,
+			# v
+			-shadowSize,
+			# c
+			Point(-twoThird, 0),
+			Point(-dialogRadius, -third),
+			Point(-dialogRadius, -dialogRadius),
+			# h
+			-shadowSize,
+			# z
+		)
+		out['{{shadowBottomLeftPath}}'] = path
+
+		# shadowBottomRight (CounterClockwise)
+		# m 56,56 v -9 h -6 c 0,2 -1,3 -3,3 v 6 z
+		path = 'm {} v {} h {} c {} {} {} v {} z'.format(
+			# m
+			Point(shadowTilesetSize, shadowTilesetSize), # point furthest from center
+			# v
+			-shadowAndRadius,
+			# h
+			-shadowSize,
+			# c
+			Point(0, twoThird),
+			Point(-third, dialogRadius),
+			Point(-dialogRadius, dialogRadius),
+			# v
+			shadowSize,
+			# z
+		)
+		out['{{shadowBottomRightPath}}'] = path
+
 		return out
 
 	def getDialogVars(self, config):
