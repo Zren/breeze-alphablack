@@ -59,25 +59,25 @@
 		</style>
 		<linearGradient id="linearGradientFadeIn" inkscape:collect="always">
 			<stop
-				id="stop4272"
+				id="stopEdge"
 				offset="0"
 				style="stop-color:#000000;stop-opacity:0.44444444"
 			/>
 			<stop
-				id="stop4274"
-				offset="0.66666666"
+				id="stopEdgeShadowDone"
+				offset="{{edgeStopDone}}"
 				style="stop-color:#000000;stop-opacity:0;"
 			/>
 		</linearGradient>
 		<linearGradient id="linearGradientShadowCorner" inkscape:collect="always">
 			<stop
-				id="stop4272"
-				offset="0.33333333"
+				id="stopCornerEdge"
+				offset="{{cornerStopA}}"
 				style="stop-color:#000000;stop-opacity:0.44444444"
 			/>
 			<stop
-				id="stop4274"
-				offset="0.77777777"
+				id="stopCornerShadowDone"
+				offset="{{cornerStopB}}"
 				style="stop-color:#000000;stop-opacity:0;"
 			/>
 		</linearGradient>

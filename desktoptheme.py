@@ -401,6 +401,13 @@ class BreezeAlphaBlack(DesktopTheme):
 		out['{{shadowFarShadow}}'] = str(shadowFarShadow)
 		out['{{shadowTilesetSize}}'] = str(shadowTilesetSize)
 
+		edgeStopDone = 2/3 # Default = 0.66
+		cornerStopA = size / shadowEdgeSize # Default = 0.33
+		cornerStopB = (size + shadowSize*edgeStopDone) / shadowEdgeSize # Default = 0.77
+		out['{{edgeStopDone}}'] = str(edgeStopDone)
+		out['{{cornerStopA}}'] = str(cornerStopA)
+		out['{{cornerStopB}}'] = str(cornerStopB)
+
 		# shadowTopLeft (CounterClockwise)
 		# m 0,0 v 9 h 6 c 0,-2 1,-3 3,-3 v -6 z
 		path = 'm {} v {} h {} c {} {} {} v {} z'.format(
