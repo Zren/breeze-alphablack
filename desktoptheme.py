@@ -392,8 +392,13 @@ class BreezeAlphaBlack(DesktopTheme):
 
 		shadowAndRadius = shadowSize + dialogRadius # Default = 9
 		shadowEdgeSize = shadowSize + size # Default = 12
+		shadowFarEdge = shadowEdgeSize + centerSize # Default = 44
+		shadowFarShadow = shadowEdgeSize + centerSize + size # Default = 50
+		shadowTilesetSize = shadowEdgeSize + centerSize + shadowEdgeSize # Default = 56
 		out['{{shadowAndRadius}}'] = str(shadowAndRadius)
 		out['{{shadowEdgeSize}}'] = str(shadowEdgeSize)
+		out['{{shadowFarEdge}}'] = str(shadowFarEdge)
+		out['{{shadowFarShadow}}'] = str(shadowFarShadow)
 
 		shadowThird = shadowSize * 1/3
 		gradient2 = shadowThird # Default = 2
@@ -423,6 +428,25 @@ class BreezeAlphaBlack(DesktopTheme):
 			# z
 		)
 		out['{{shadowTopLeftPath}}'] = path
+
+		# shadowTopRight (CounterClockwise)
+		# m 56,0 h -9 v 6 c 2,0 3,1 3,3 h 6 z
+		path = 'm {} h {} v {} c {} {} {} h {} z'.format(
+			# m
+			Point(shadowTilesetSize, 0), # point furthest from center
+			# h
+			-shadowAndRadius,
+			# v
+			shadowSize,
+			# c
+			Point(twoThird, 0),
+			Point(dialogRadius, third),
+			Point(dialogRadius, dialogRadius),
+			# h
+			shadowSize,
+			# z
+		)
+		out['{{shadowTopRightPath}}'] = path
 
 		return out
 
