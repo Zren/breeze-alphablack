@@ -292,21 +292,21 @@ class BreezeAlphaBlack(DesktopTheme):
 		third = dialogRadius * 1/3
 		twoThird = dialogRadius * 2/3
 
-		# topLeft (CounterClockwise)
-		# m 3,0 c -2,0 -3,1 -3,3 v 3 h 6 v -6 z
-		path = 'm {} c {} {} {} v {} h {} v {} z'.format(
+		# topLeft (Clockwise)
+		# m 6,6 h -6 v -3 c 0,-2 1,-3 3,-3 h 3 z
+		path = 'm {} h {} v {} c {} {} {} h {} z'.format(
 			# m
-			Point(extra, 0),
-			# c
-			Point(-twoThird, 0),
-			Point(-dialogRadius, third),
-			Point(-dialogRadius, dialogRadius),
-			# v
-			extra,
-			# h
-			size,
-			# v
+			Point(size, size), # point touching center
+			# h 
 			-size,
+			# v
+			-extra,
+			# c
+			Point(0, -twoThird),
+			Point(third, -dialogRadius),
+			Point(dialogRadius, -dialogRadius),
+			# h
+			extra,
 			# z
 		)
 		out['{{topLeftPath}}'] = path
