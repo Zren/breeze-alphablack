@@ -289,6 +289,12 @@ class BreezeAlphaBlack(DesktopTheme):
 		dialogRadius = self.getDialogRadius(config) # Default = 3
 		size = max(6, dialogRadius) # Default = 6
 		extra = size - dialogRadius # Default = 3
+		farEdgeOffset = size + centerSize # Default = 38
+
+		out['{{centerSize}}'] = centerSize
+		out['{{edgeSize}}'] = size
+		out['{{extraSize}}'] = extra
+		out['{{farEdgeOffset}}'] = farEdgeOffset
 
 		third = dialogRadius * 1/3
 		twoThird = dialogRadius * 2/3
@@ -316,7 +322,7 @@ class BreezeAlphaBlack(DesktopTheme):
 		# m 38,6 v -6 h 3 c 2,0 3,1 3,3 v 3 z
 		path = 'm {} v {} h {} c {} {} {} v {} z'.format(
 			# m
-			Point(size + centerSize, size), # point touching center
+			Point(farEdgeOffset, size), # point touching center
 			# v 
 			-size,
 			# h
@@ -335,7 +341,7 @@ class BreezeAlphaBlack(DesktopTheme):
 		# m 6,38 v 6 h -3 c -2,0 -3,-1 -3,-3 v -3 z
 		path = 'm {} v {} h {} c {} {} {} v {} z'.format(
 			# m
-			Point(size, size + centerSize), # point touching center
+			Point(size, farEdgeOffset), # point touching center
 			# v 
 			size,
 			# h
@@ -354,7 +360,7 @@ class BreezeAlphaBlack(DesktopTheme):
 		# m 38,38 h 6 v 3 c 0,2 -1,3 -3,3 h -3 z
 		path = 'm {} h {} v {} c {} {} {} h {} z'.format(
 			# m
-			Point(size + centerSize, size + centerSize), # point touching center
+			Point(farEdgeOffset, farEdgeOffset), # point touching center
 			# h
 			size,
 			# v

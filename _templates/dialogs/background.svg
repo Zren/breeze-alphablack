@@ -226,10 +226,10 @@
 				<rect
 					id="rectTop"
 					class="ColorScheme-Background"
-					x="6"
-					y="38"
-					width="32"
-					height="6"
+					x="{{edgeSize}}"
+					y="0"
+					width="{{centerSize}}"
+					height="{{edgeSize}}"
 					style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
 				/>
 			</g>
@@ -246,9 +246,9 @@
 					id="rectLeft"
 					class="ColorScheme-Background"
 					x="0"
-					y="6"
-					width="6"
-					height="32"
+					y="{{edgeSize}}"
+					width="{{edgeSize}}"
+					height="{{centerSize}}"
 					style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
 				/>
 			</g>
@@ -256,10 +256,10 @@
 				<rect
 					id="rectCenter"
 					class="ColorScheme-Background"
-					x="6"
-					y="6"
-					width="32"
-					height="32"
+					x="{{edgeSize}}"
+					y="{{edgeSize}}"
+					width="{{centerSize}}"
+					height="{{centerSize}}"
 					style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
 				/>
 			</g>
@@ -267,10 +267,10 @@
 				<rect
 					id="rectRight"
 					class="ColorScheme-Background"
-					x="38"
-					y="6"
-					width="6"
-					height="32"
+					x="{{farEdgeOffset}}"
+					y="{{edgeSize}}"
+					width="{{edgeSize}}"
+					height="{{centerSize}}"
 					style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
 				/>
 			</g>
@@ -286,10 +286,10 @@
 				<rect
 					id="rectBottom"
 					class="ColorScheme-Background"
-					x="6"
-					y="0"
-					width="32"
-					height="6"
+					x="{{edgeSize}}"
+					y="{{farEdgeOffset}}"
+					width="{{centerSize}}"
+					height="{{edgeSize}}"
 					style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
 				/>
 			</g>
@@ -306,7 +306,7 @@
 			<rect
 				id="hint-top-margin"
 				x="20"
-				y="38"
+				y="{{farEdgeOffset}}"
 				width="4"
 				height="{{padding}}"
 				style="fill:#ff00ff;fill-opacity:1;stroke:none"
@@ -321,7 +321,7 @@
 			/>
 			<rect
 				id="hint-right-margin"
-				x="38"
+				x="{{farEdgeOffset}}"
 				y="20"
 				width="{{padding}}"
 				height="4"
