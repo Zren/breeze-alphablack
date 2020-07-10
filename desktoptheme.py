@@ -389,6 +389,10 @@ class BreezeAlphaBlack(DesktopTheme):
 
 	def renderDialogBackground(self, config):
 		dialogVars = self.getDialogVars(config)
+
+		from pprint import pprint
+		pprint(dialogVars)
+
 		self.renderTemplate('dialogs/background.svg', **dialogVars)
 
 	def renderPlasmoidHeading(self, config):
