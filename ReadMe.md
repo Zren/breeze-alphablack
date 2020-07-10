@@ -53,7 +53,7 @@ where `255,255,255` is your desired RGB color.
 
 #### Window Decorations
 
-Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/settitlebarcolor.py 255,255,255`  
+Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/desktoptheme.py settitlebarcolor 255,255,255`  
 where `255,255,255` is your desired RGB color.
 
 Run `python3 ~/.local/share/plasma/desktoptheme/breeze-alphablack/desktoptheme.py resettitlebarcolors`  

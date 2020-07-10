@@ -722,6 +722,20 @@ def theme_set(args):
 	desktopTheme.configSet(propPath, args.value)
 
 
+def theme_setTitlebarColors(args):
+	def parseColorStr(colorStr):
+		r, g, b = map(int, colorStr.split(','))
+		return "{},{},{}".format(r, g, b)
+
+	argsVars = vars(args)
+	if argsVars.get('bgColor'):
+		bgColor = parseColorStr(argsVars.get('bgColor'))
+		if argsVars.get('textColor'):
+			textColor = parseColorStr(argsVars.get('textColor'))
+			setTitlebarColors(bgColor, textColor)
+		else:
+			setTitlebarColors(bgColor)
+
 def theme_reset(args):
 	desktopTheme = BreezeAlphaBlack()
 	desktopTheme.resetToDefaults()
@@ -732,14 +746,21 @@ def theme_resetTitlebarColors(args):
 def main():
 	import argparse
 
-	parser = argparse.ArgumentParser(prog='desktoptheme', description='Python script to modify a desktop theme.')
+	parser = argparse.ArgumentParser(
+		prog='desktoptheme',
+		description='Python script to modify a desktop theme.',
+		epilog='Note that colors must be [red],[green],[blue] (seperated by commas). [red/green/blue] are integers from 0-255.'
+	)
 	subparsers = parser.add_subparsers()
 
-	def add_subcommand(name, func, *args):
+	def add_subcommand(name, func, *args, description=None):
 		tokens = ['[{}]'.format(arg) for arg in args]
 		tokens = ['python3', 'desktoptheme.py', name] + tokens
 		cmdstr = ' '.join(tokens)
-		parser_subcommand = subparsers.add_parser(name, help=cmdstr)
+		helpstr = cmdstr
+		if description:
+			helpstr += ' - ' + description
+		parser_subcommand = subparsers.add_parser(name, help=helpstr)
 		parser_subcommand.set_defaults(func=func)
 		for arg in args:
 			parser_subcommand.add_argument(arg)
@@ -749,6 +770,8 @@ def main():
 	parser_getall.add_argument('--json', default=False, action='store_true')
 	add_subcommand('get', theme_get, 'section.property')
 	add_subcommand('set', theme_set, 'section.property', 'value')
+	add_subcommand('settitlebarcolor', theme_setTitlebarColors, 'bgColor', description='Eg: 0,0,0')
+	add_subcommand('settitlebarcolors', theme_setTitlebarColors, 'bgColor', 'textColor', description='Eg: 0,0,0 255,255,255')
 	add_subcommand('reset', theme_reset)
 	add_subcommand('resettitlebarcolors', theme_resetTitlebarColors)
 	
