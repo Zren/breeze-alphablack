@@ -305,33 +305,33 @@
 			<!-- Margins -->
 			<rect
 				id="hint-top-margin"
-				x="20"
-				y="{{farEdgeOffset}}"
-				width="4"
+				x="{{marginCenterOffset}}"
+				y="0"
+				width="{{marginThickness}}"
 				height="{{padding}}"
 				style="fill:#ff00ff;fill-opacity:1;stroke:none"
 			/>
 			<rect
 				id="hint-left-margin"
 				x="0"
-				y="20"
+				y="{{marginCenterOffset}}"
 				width="{{padding}}"
-				height="4"
+				height="{{marginThickness}}"
 				style="fill:#ff00ff;fill-opacity:1;stroke:none"
 			/>
 			<rect
 				id="hint-right-margin"
-				x="{{farEdgeOffset}}"
-				y="20"
+				x="{{marginFarOffset}}"
+				y="{{marginCenterOffset}}"
 				width="{{padding}}"
-				height="4"
+				height="{{marginThickness}}"
 				style="fill:#ff00ff;fill-opacity:1;stroke:none"
 			/>
 			<rect
 				id="hint-bottom-margin"
-				x="20"
-				y="0"
-				width="4"
+				x="{{marginCenterOffset}}"
+				y="{{marginFarOffset}}"
+				width="{{marginThickness}}"
 				height="{{padding}}"
 				style="fill:#ff00ff;fill-opacity:1;stroke:none"
 			/>

@@ -285,16 +285,26 @@ class BreezeAlphaBlack(DesktopTheme):
 
 	def calcCorners(self, config):
 		out = {}
+
+		dialogPadding = self.getDialogPadding(config)
+		out['{{padding}}'] = str(dialogPadding)
+
 		centerSize = 32
 		dialogRadius = self.getDialogRadius(config) # Default = 3
 		size = max(6, dialogRadius) # Default = 6
 		extra = size - dialogRadius # Default = 3
 		farEdgeOffset = size + centerSize # Default = 38
+		marginThickness = 4 # This is just a visual cue
+		marginCenterOffset = size + (centerSize/2) - (marginThickness/2) # Default = 20
+		marginFarOffset = size + centerSize + size - dialogPadding
 
-		out['{{centerSize}}'] = centerSize
-		out['{{edgeSize}}'] = size
-		out['{{extraSize}}'] = extra
-		out['{{farEdgeOffset}}'] = farEdgeOffset
+		out['{{centerSize}}'] = str(centerSize)
+		out['{{edgeSize}}'] = str(size)
+		out['{{extraSize}}'] = str(extra)
+		out['{{farEdgeOffset}}'] = str(farEdgeOffset)
+		out['{{marginThickness}}'] = str(marginThickness)
+		out['{{marginCenterOffset}}'] = str(marginCenterOffset)
+		out['{{marginFarOffset}}'] = str(marginFarOffset)
 
 		third = dialogRadius * 1/3
 		twoThird = dialogRadius * 2/3
@@ -378,10 +388,8 @@ class BreezeAlphaBlack(DesktopTheme):
 		return out
 
 	def getDialogVars(self, config):
-		dialogPadding = self.getDialogPadding(config)
 		dialogVars = {
 			'{{fillOpacity}}': str(config.getProp('dialog.opacity')),
-			'{{padding}}': str(dialogPadding),
 		}
 		cornerVars = self.calcCorners(config)
 		dialogVars.update(cornerVars)
