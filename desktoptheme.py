@@ -285,6 +285,7 @@ class BreezeAlphaBlack(DesktopTheme):
 
 	def calcCorners(self, config):
 		out = {}
+		centerSize = 32
 		dialogRadius = self.getDialogRadius(config) # Default = 3
 		size = max(6, dialogRadius) # Default = 6
 		extra = size - dialogRadius # Default = 3
@@ -312,26 +313,60 @@ class BreezeAlphaBlack(DesktopTheme):
 		out['{{topLeftPath}}'] = path
 
 		# topRight (Clockwise)
-		# m 38,0 h 3 c 2,0 3,1 3,3 v 3 h -6 z
-		path = ''
-		a = Point(twoThird, 0)
-		b = Point(dialogRadius, third)
-		c = Point(dialogRadius, dialogRadius)
+		# m 38,6 v -6 h 3 c 2,0 3,1 3,3 v 3 z
+		path = 'm {} v {} h {} c {} {} {} v {} z'.format(
+			# m
+			Point(size + centerSize, size), # point touching center
+			# v 
+			-size,
+			# h
+			extra,
+			# c
+			Point(twoThird, 0),
+			Point(dialogRadius, third),
+			Point(dialogRadius, dialogRadius),
+			# v
+			extra,
+			# z
+		)
 		out['{{topRightPath}}'] = path
 
 		# bottomLeft (Clockwise)
-		# m 0,38 v 3 c 0,2 1,3 3,3 h 3 v -6 z
-		a = Point(0, twoThird)
-		b = Point(third, dialogRadius)
-		c = Point(dialogRadius, dialogRadius)
+		# m 6,38 v 6 h -3 c -2,0 -3,-1 -3,-3 v -3 z
+		path = 'm {} v {} h {} c {} {} {} v {} z'.format(
+			# m
+			Point(size, size + centerSize), # point touching center
+			# v 
+			size,
+			# h
+			-extra,
+			# c
+			Point(-twoThird, 0),
+			Point(-dialogRadius, -third),
+			Point(-dialogRadius, -dialogRadius),
+			# v
+			-extra,
+			# z
+		)
 		out['{{bottomLeftPath}}'] = path
 
-		# bottomRight (CounterClockwise)
+		# bottomRight (Clockwise)
 		# m 38,38 h 6 v 3 c 0,2 -1,3 -3,3 h -3 z
-		path = ''
-		a = Point(0, twoThird)
-		b = Point(-third, dialogRadius)
-		c = Point(-dialogRadius, dialogRadius)
+		path = 'm {} h {} v {} c {} {} {} h {} z'.format(
+			# m
+			Point(size + centerSize, size + centerSize), # point touching center
+			# h
+			size,
+			# v
+			extra,
+			# c
+			Point(0, twoThird),
+			Point(-third, dialogRadius),
+			Point(-dialogRadius, dialogRadius),
+			# h
+			-extra,
+			# z
+		)
 		out['{{bottomRightPath}}'] = path
 
 		return out
