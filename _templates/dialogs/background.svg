@@ -57,7 +57,7 @@
 				stop-color:#3daee9;
 			}
 		</style>
-		<linearGradient id="linearGradientFadeIn" inkscape:collect="always">
+		<linearGradient id="linearGradientShadowEdge" inkscape:collect="always">
 			<stop
 				id="stopEdge"
 				offset="0"
@@ -85,7 +85,7 @@
 			id="linearGradientShadowLeft"
 			gradientUnits="userSpaceOnUse"
 			inkscape:collect="always"
-			xlink:href="#linearGradientFadeIn"
+			xlink:href="#linearGradientShadowEdge"
 			x1="{{shadowSize}}"
 			y1="28"
 			x2="0"
@@ -106,7 +106,7 @@
 			id="linearGradientShadowTop"
 			gradientUnits="userSpaceOnUse"
 			inkscape:collect="always"
-			xlink:href="#linearGradientFadeIn"
+			xlink:href="#linearGradientShadowEdge"
 			x1="28"
 			y1="{{shadowSize}}"
 			x2="28"
@@ -127,7 +127,7 @@
 			id="linearGradientShadowRight"
 			gradientUnits="userSpaceOnUse"
 			inkscape:collect="always"
-			xlink:href="#linearGradientFadeIn"
+			xlink:href="#linearGradientShadowEdge"
 			x1="{{shadowFarShadow}}"
 			y1="28"
 			x2="{{shadowTilesetSize}}"
@@ -137,7 +137,7 @@
 			id="linearGradientShadowBottom"
 			gradientUnits="userSpaceOnUse"
 			inkscape:collect="always"
-			xlink:href="#linearGradientFadeIn"
+			xlink:href="#linearGradientShadowEdge"
 			x1="28"
 			y1="{{shadowFarShadow}}"
 			x2="28"
