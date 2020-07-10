@@ -291,7 +291,7 @@ class BreezeAlphaBlack(DesktopTheme):
 
 		centerSize = 32
 		dialogRadius = self.getDialogRadius(config) # Default = 3
-		size = max(6, dialogRadius) # Default = 6
+		size = dialogRadius # max(6, dialogRadius) # Default = 6
 		extra = size - dialogRadius # Default = 3
 		farEdgeOffset = size + centerSize # Default = 38
 		marginThickness = 4 # This is just a visual cue
@@ -399,16 +399,7 @@ class BreezeAlphaBlack(DesktopTheme):
 		out['{{shadowEdgeSize}}'] = str(shadowEdgeSize)
 		out['{{shadowFarEdge}}'] = str(shadowFarEdge)
 		out['{{shadowFarShadow}}'] = str(shadowFarShadow)
-
-		shadowThird = shadowSize * 1/3
-		gradient2 = shadowThird # Default = 2
-		gradient8 = shadowSize + shadowThird # Default = 8
-		gradient48 = shadowEdgeSize + centerSize + size - shadowThird # Default = 48
-		gradient54 = gradient48 + shadowSize # Default 54
-		out['{{gradient2}}'] = str(gradient2)
-		out['{{gradient8}}'] = str(gradient8)
-		out['{{gradient48}}'] = str(gradient48)
-		out['{{gradient54}}'] = str(gradient54)
+		out['{{shadowTilesetSize}}'] = str(shadowTilesetSize)
 
 		# shadowTopLeft (CounterClockwise)
 		# m 0,0 v 9 h 6 c 0,-2 1,-3 3,-3 v -6 z

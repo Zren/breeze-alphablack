@@ -61,11 +61,23 @@
 			<stop
 				id="stop4272"
 				offset="0"
-				style="stop-color:#000000;stop-opacity:0.66663194"
+				style="stop-color:#000000;stop-opacity:0.44444444"
 			/>
 			<stop
 				id="stop4274"
-				offset="1"
+				offset="0.66666666"
+				style="stop-color:#000000;stop-opacity:0;"
+			/>
+		</linearGradient>
+		<linearGradient id="linearGradientShadowCorner" inkscape:collect="always">
+			<stop
+				id="stop4272"
+				offset="0.33333333"
+				style="stop-color:#000000;stop-opacity:0.44444444"
+			/>
+			<stop
+				id="stop4274"
+				offset="0.77777777"
 				style="stop-color:#000000;stop-opacity:0;"
 			/>
 		</linearGradient>
@@ -74,21 +86,21 @@
 			gradientUnits="userSpaceOnUse"
 			inkscape:collect="always"
 			xlink:href="#linearGradientFadeIn"
-			x1="{{gradient8}}"
+			x1="{{shadowSize}}"
 			y1="28"
-			x2="{{gradient2}}"
+			x2="0"
 			y2="28"
 		/>
 		<radialGradient
 			id="radialGradientShadowTopLeft"
 			gradientUnits="userSpaceOnUse"
 			inkscape:collect="always"
-			xlink:href="#linearGradientFadeIn"
-			cx="{{gradient8}}"
-			cy="{{gradient8}}"
-			fx="{{gradient8}}"
-			fy="{{gradient8}}"
-			r="{{shadowSize}}"
+			xlink:href="#linearGradientShadowCorner"
+			cx="{{shadowEdgeSize}}"
+			cy="{{shadowEdgeSize}}"
+			fx="{{shadowEdgeSize}}"
+			fy="{{shadowEdgeSize}}"
+			r="{{shadowEdgeSize}}"
 		/>
 		<linearGradient
 			id="linearGradientShadowTop"
@@ -96,29 +108,29 @@
 			inkscape:collect="always"
 			xlink:href="#linearGradientFadeIn"
 			x1="28"
-			y1="{{gradient8}}"
+			y1="{{shadowSize}}"
 			x2="28"
-			y2="{{gradient2}}"
+			y2="0"
 		/>
 		<radialGradient
 			id="radialGradientShadowTopRight"
 			gradientUnits="userSpaceOnUse"
 			inkscape:collect="always"
-			xlink:href="#linearGradientFadeIn"
-			cx="{{gradient48}}"
-			cy="{{gradient8}}"
-			fx="{{gradient48}}"
-			fy="{{gradient8}}"
-			r="{{shadowSize}}"
+			xlink:href="#linearGradientShadowCorner"
+			cx="{{shadowFarEdge}}"
+			cy="{{shadowEdgeSize}}"
+			fx="{{shadowFarEdge}}"
+			fy="{{shadowEdgeSize}}"
+			r="{{shadowEdgeSize}}"
 		/>
 		<linearGradient
 			id="linearGradientShadowRight"
 			gradientUnits="userSpaceOnUse"
 			inkscape:collect="always"
 			xlink:href="#linearGradientFadeIn"
-			x1="{{gradient48}}"
+			x1="{{shadowFarShadow}}"
 			y1="28"
-			x2="{{gradient54}}"
+			x2="{{shadowTilesetSize}}"
 			y2="28"
 		/>
 		<linearGradient
@@ -127,31 +139,31 @@
 			inkscape:collect="always"
 			xlink:href="#linearGradientFadeIn"
 			x1="28"
-			y1="{{gradient48}}"
+			y1="{{shadowFarShadow}}"
 			x2="28"
-			y2="{{gradient54}}"
+			y2="{{shadowTilesetSize}}"
 		/>
 		<radialGradient
 			id="radialGradientShadowBottomLeft"
 			gradientUnits="userSpaceOnUse"
 			inkscape:collect="always"
-			xlink:href="#linearGradientFadeIn"
-			cx="{{gradient8}}"
-			cy="{{gradient48}}"
-			fx="{{gradient8}}"
-			fy="{{gradient48}}"
-			r="{{shadowSize}}"
+			xlink:href="#linearGradientShadowCorner"
+			cx="{{shadowEdgeSize}}"
+			cy="{{shadowFarEdge}}"
+			fx="{{shadowEdgeSize}}"
+			fy="{{shadowFarEdge}}"
+			r="{{shadowEdgeSize}}"
 		/>
 		<radialGradient
 			id="radialGradientShadowBottomRight"
 			gradientUnits="userSpaceOnUse"
 			inkscape:collect="always"
-			xlink:href="#linearGradientFadeIn"
-			cx="{{gradient48}}"
-			cy="{{gradient48}}"
-			fx="{{gradient48}}"
-			fy="{{gradient48}}"
-			r="{{shadowSize}}"
+			xlink:href="#linearGradientShadowCorner"
+			cx="{{shadowFarEdge}}"
+			cy="{{shadowFarEdge}}"
+			fx="{{shadowFarEdge}}"
+			fy="{{shadowFarEdge}}"
+			r="{{shadowEdgeSize}}"
 		/>
 	</defs>
 	<sodipodi:namedview
