@@ -6,7 +6,7 @@ https://store.kde.org/p/1084931/
 
 ## Screenshots
 
-![](https://cn.pling.com/img//hive/content-pre1/175800-1.png)
+![](https://cdn.pling.com/img/f/1/e/1/7f50888757a024f34ef3906c0948817605b3.png)
 
 ## Install
 
