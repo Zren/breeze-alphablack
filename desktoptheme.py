@@ -6,6 +6,16 @@ import glob
 import time
 import shutil
 
+
+class Point:
+	def __init__(self, x, y):
+		self.x = x
+		self.y = y
+
+	def __str__(self):
+		return '{},{}'.format(self.x, self.y)
+
+
 # KDE rc files differences:
 #     Keys are cAsE sensitive
 #     No spaces around the =
@@ -273,24 +283,76 @@ class BreezeAlphaBlack(DesktopTheme):
 		dialogRadius = max(0.001, dialogRadius)
 		return dialogRadius
 
-	def renderDialogBackground(self, config):
+	def calcCorners(self, config):
+		out = {}
+		dialogRadius = self.getDialogRadius(config) # Default = 3
+		size = max(6, dialogRadius) # Default = 6
+		extra = size - dialogRadius # Default = 3
+
+		third = dialogRadius * 1/3
+		twoThird = dialogRadius * 2/3
+
+		# topLeft (CounterClockwise)
+		# m 3,0 c -2,0 -3,1 -3,3 v 3 h 6 v -6 z
+		path = 'm {} c {} {} {} v {} h {} v {} z'.format(
+			# m
+			Point(extra, 0),
+			# c
+			Point(-twoThird, 0),
+			Point(-dialogRadius, third),
+			Point(-dialogRadius, dialogRadius),
+			# v
+			extra,
+			# h
+			size,
+			# v
+			-size,
+			# z
+		)
+		out['{{topLeftPath}}'] = path
+
+		# topRight (Clockwise)
+		# m 38,0 h 3 c 2,0 3,1 3,3 v 3 h -6 z
+		path = ''
+		a = Point(twoThird, 0)
+		b = Point(dialogRadius, third)
+		c = Point(dialogRadius, dialogRadius)
+		out['{{topRightPath}}'] = path
+
+		# bottomLeft (Clockwise)
+		# m 0,38 v 3 c 0,2 1,3 3,3 h 3 v -6 z
+		a = Point(0, twoThird)
+		b = Point(third, dialogRadius)
+		c = Point(dialogRadius, dialogRadius)
+		out['{{bottomLeftPath}}'] = path
+
+		# bottomRight (CounterClockwise)
+		# m 38,38 h 6 v 3 c 0,2 -1,3 -3,3 h -3 z
+		path = ''
+		a = Point(0, twoThird)
+		b = Point(-third, dialogRadius)
+		c = Point(-dialogRadius, dialogRadius)
+		out['{{bottomRightPath}}'] = path
+
+		return out
+
+	def getDialogVars(self, config):
 		dialogPadding = self.getDialogPadding(config)
-		dialogRadius = self.getDialogRadius(config)
-		cornerRadius = dialogRadius / 2 # 2 is the default, so use it to scale
-		self.renderTemplate('dialogs/background.svg', **{
+		dialogVars = {
 			'{{fillOpacity}}': str(config.getProp('dialog.opacity')),
 			'{{padding}}': str(dialogPadding),
-			'{{cornerRadius}}': str(cornerRadius),
-		})
+		}
+		cornerVars = self.calcCorners(config)
+		dialogVars.update(cornerVars)
+		return dialogVars
+
+	def renderDialogBackground(self, config):
+		dialogVars = self.getDialogVars(config)
+		self.renderTemplate('dialogs/background.svg', **dialogVars)
 
 	def renderPlasmoidHeading(self, config):
-		dialogPadding = self.getDialogPadding(config)
-		dialogRadius = self.getDialogRadius(config)
-		svgScale = dialogRadius / 3 # 3 is the default radius, so use it to scale the entire thing
-		self.renderTemplate('widgets/plasmoidheading.svg', **{
-			'{{padding}}': str(dialogPadding),
-			'{{cornerRadius}}': str(svgScale),
-		})
+		dialogVars = self.getDialogVars(config)
+		self.renderTemplate('widgets/plasmoidheading.svg', **dialogVars)
 
 	def setDialogProperty(self, key, newValue):
 		config = self.themeConfig()
