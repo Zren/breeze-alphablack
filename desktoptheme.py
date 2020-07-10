@@ -405,6 +405,25 @@ class BreezeAlphaBlack(DesktopTheme):
 		out['{{gradient48}}'] = str(gradient48)
 		out['{{gradient54}}'] = str(gradient54)
 
+		# shadowTopLeft (CounterClockwise)
+		# m 0,0 v 9 h 6 c 0,-2 1,-3 3,-3 v -6 z
+		path = 'm {} v {} h {} c {} {} {} v {} z'.format(
+			# m
+			Point(0, 0), # point furthest from center
+			# v
+			shadowAndRadius,
+			# h
+			shadowSize,
+			# c
+			Point(0, -twoThird),
+			Point(third, -dialogRadius),
+			Point(dialogRadius, -dialogRadius),
+			# v
+			-shadowSize,
+			# z
+		)
+		out['{{shadowTopLeftPath}}'] = path
+
 		return out
 
 	def getDialogVars(self, config):
