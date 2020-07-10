@@ -309,6 +309,7 @@ class BreezeAlphaBlack(DesktopTheme):
 		third = dialogRadius * 1/3
 		twoThird = dialogRadius * 2/3
 
+		#--- Background+Mask Tileset
 		# topLeft (Clockwise)
 		# m 6,6 h -6 v -3 c 0,-2 1,-3 3,-3 h 3 z
 		path = 'm {} h {} v {} c {} {} {} h {} z'.format(
@@ -384,6 +385,25 @@ class BreezeAlphaBlack(DesktopTheme):
 			# z
 		)
 		out['{{bottomRightPath}}'] = path
+
+		#--- Shadow Tileset
+		shadowSize = 6
+		out['{{shadowSize}}'] = str(shadowSize)
+
+		shadowAndRadius = shadowSize + dialogRadius # Default = 9
+		shadowEdgeSize = shadowSize + size # Default = 12
+		out['{{shadowAndRadius}}'] = str(shadowAndRadius)
+		out['{{shadowEdgeSize}}'] = str(shadowEdgeSize)
+
+		shadowThird = shadowSize * 1/3
+		gradient2 = shadowThird # Default = 2
+		gradient8 = shadowSize + shadowThird # Default = 8
+		gradient48 = shadowEdgeSize + centerSize + size - shadowThird # Default = 48
+		gradient54 = gradient48 + shadowSize # Default 54
+		out['{{gradient2}}'] = str(gradient2)
+		out['{{gradient8}}'] = str(gradient8)
+		out['{{gradient48}}'] = str(gradient48)
+		out['{{gradient54}}'] = str(gradient54)
 
 		return out
 
