@@ -610,6 +610,7 @@ class BreezeAlphaBlack(DesktopTheme):
 			'Colors:View',
 			'Colors:Window',
 			'Colors:Complementary',
+			'Colors:Header',
 		]
 		def applyToGroups(groups, key, value):
 			for group in groups:
@@ -618,6 +619,9 @@ class BreezeAlphaBlack(DesktopTheme):
 		colors['Colors:Button']['BackgroundNormal'] = compColor
 		colors['Colors:Button']['BackgroundAlternate'] = altColor
 		colors['Colors:Button']['ForegroundNormal'] = textColor
+		colors['Colors:Header']['BackgroundNormal'] = accentColor
+		colors['Colors:Header']['BackgroundAlternate'] = altColor
+		colors['Colors:Header']['ForegroundNormal'] = textColor
 		colors['Colors:View']['BackgroundNormal'] = accentColor
 		colors['Colors:View']['BackgroundAlternate'] = altColor
 		colors['Colors:View']['ForegroundNormal'] = textColor
