@@ -587,7 +587,8 @@ class BreezeAlphaBlack(DesktopTheme):
 	def _applyColors(self, accentColor='0,0,0', textColor='239,240,241', highlightColor='61,174,230'):
 		altColor = deltaColor(accentColor, 23)
 		compColor = deltaColor(accentColor, 17)
-		focusColor = hoverEffect(highlightColor, -31, -28, 25) # 61,174,230 => 30,146,255
+		compFocusColor = hoverEffect(highlightColor, -31, -28, 25) # 61,174,230 => 30,146,255
+		focusColor = highlightColor
 		hoverColor = highlightColor
 		selectionColor = highlightColor
 		selectionAltColor = hoverEffect(selectionColor, -13, -36, -47) # 61,174,230 => 48,138,183
@@ -595,6 +596,7 @@ class BreezeAlphaBlack(DesktopTheme):
 		print('BackgroundNormal: {}'.format(accentColor))
 		print('BackgroundAlternate: {}'.format(altColor))
 		print('Complementary.BackgroundNormal: {}'.format(compColor))
+		print('Complementary.DecorationFocus: {}'.format(compFocusColor))
 		print('DecorationFocus: {}'.format(focusColor))
 		print('DecorationHover: {}'.format(hoverColor))
 		print('Selection.BackgroundNormal: {}'.format(selectionColor))
@@ -612,6 +614,7 @@ class BreezeAlphaBlack(DesktopTheme):
 			'Colors:Complementary',
 			'Colors:Header',
 		]
+		allButComplementaryGroup = [g for g in allColorGroups if g != 'Colors:Complementary']
 		def applyToGroups(groups, key, value):
 			for group in groups:
 				colors[group][key] = value
@@ -633,7 +636,8 @@ class BreezeAlphaBlack(DesktopTheme):
 		colors['Colors:Complementary']['ForegroundNormal'] = textColor
 
 		# Focus
-		applyToGroups(allColorGroups, 'DecorationFocus', focusColor)
+		applyToGroups(allButComplementaryGroup, 'DecorationFocus', focusColor)
+		colors['Colors:Complementary']['DecorationFocus'] = compFocusColor
 
 		# Hover
 		applyToGroups(allColorGroups, 'DecorationHover', hoverColor)
