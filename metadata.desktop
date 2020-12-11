@@ -13,3 +13,9 @@ X-KDE-PluginInfo-Website=https://github.com/Zren/breeze-alphablack
 X-Plasma-API=5.0
 
 X-KPackage-Dependencies=kns://plasmoids.knsrc/api.kde-look.org/1237963
+
+[ContrastEffect]
+enabled=true
+contrast=0.2
+intensity=0.4
+saturation=1.7
