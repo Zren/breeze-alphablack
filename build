@@ -9,6 +9,7 @@ rm ${plasmoidName}-v*.zip
 filename=${plasmoidName}-v${plasmoidVersion}.zip
 zip -r $filename \
 	_templates \
+	dialogs \
 	widgets \
 	colors \
 	desktoptheme.py \
