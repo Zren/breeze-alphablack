@@ -1,3 +1,11 @@
+## v18 - December 11 2020
+
+* Fix pale popups caused by the Background Contrast Desktop Effect (Issue #21). Added `ContrastEffect` properties in `metadata.desktop` in an attempt to fix it, however the proper fix was to ship a pre-generated `dialogs/background.svg`.
+* Refactor `background.svg` to add `dialog.radius` which doesn't really work well.
+* Fix `resettitlebarcolors` mentioned in AlphaBlackControl's Issue 2.
+* Only use blue shifted DecorationFocus for Complementary colors (Issue #20)
+* Set Header color group to fix white `plasmoidheading.svg` in Plasma 5.20
+
 ## v17 - June 16 2020
 
 * Added `widgets/plasmoidheading.svg` to show the solid notification heading like Breeze. It's only displayed if the current theme has the svg, it does not inherit this svg.
