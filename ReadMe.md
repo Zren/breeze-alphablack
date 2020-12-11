@@ -21,7 +21,7 @@ https://store.kde.org/p/1084931/
 
 ![](https://i.imgur.com/TYxCBnc.jpg)
 
-v10 introduced an accompying widget to easily change the theme's accent color, panel opacity, or change the taskbar to look a bit more like Windows 10.
+v10 introduced an accompanying widget to easily change the theme's accent color, panel opacity, or change the taskbar to look a bit more like Windows 10.
 
 You can [download the widget here](https://store.kde.org/p/1237963/), or install it via the GUI:
 
