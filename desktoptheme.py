@@ -102,32 +102,15 @@ def applyColorSchemeTitlebarColors(kdeglobals, colorScheme):
 
 
 def scanForColorScheme(colorSchemeName):
-	def testColorSchemeName(colorScheme, colorSchemeName):
-		return colorScheme['General'].get('Name', '') == colorSchemeName
-
-	def scanColorSchemeDir(colorSchemeDir):	
+	def scanColorSchemeDir(colorSchemeDir):
 		colorSchemeFilename = colorSchemeName + '.colors'
 		dirFilenames = os.listdir(colorSchemeDir)
 
-		# First check to see if the obvious filename exists.
 		if colorSchemeFilename in dirFilenames:
-			# If so, move it to the front.
-			dirFilenames.insert(0, dirFilenames.pop(dirFilenames.index(colorSchemeFilename)))
-
-		# Scan folder for the correct color scheme
-		for filename in os.listdir(colorSchemeDir):
-			colorSchemeFilepath = os.path.join(colorSchemeDir, filename)
+			colorSchemeFilepath = os.path.join(colorSchemeDir, colorSchemeFilename)
 			# print(colorSchemeFilepath)
-
-			if not filename.endswith('.colors'):
-				continue
-
-			if not os.path.isfile(colorSchemeFilepath):
-				continue
-
 			colorScheme = KdeConfig(colorSchemeFilepath)
-			if testColorSchemeName(colorScheme, colorSchemeName):
-				return colorScheme
+			return colorScheme
 
 		# Color scheme was not found in this dir
 		return None
