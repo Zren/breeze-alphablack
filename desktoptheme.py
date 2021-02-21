@@ -212,6 +212,7 @@ class BreezeAlphaBlack(DesktopTheme):
 			('panel', 'padding', 2, 'setPanelPadding'),
 			('panel', 'radius', 3, 'setPanelRadius'),
 			('panel', 'taskStyle', 'inside', 'setTasksSvg'),
+			('panel', 'thickpadding', 8, 'setPanelThickPadding'),
 			('theme', 'accentColor', '0,0,0', 'setAccentColor'),
 			('theme', 'highlightColor', '61,174,230', 'setHighlightColor'),
 			('theme', 'textColor', '239,240,241', 'setTextColor'),
@@ -269,6 +270,10 @@ class BreezeAlphaBlack(DesktopTheme):
 	def getDialogRadius(self, config, section='dialog'):
 		# It'd be a pain to adjust the paths to be perfectly square edge, so just do a really small radius.
 		return self.getNonZero(config, section, 'radius')
+
+	def getPanelThickPadding(self, config, section='panel'):
+		# Plasma doesn't like a padding of 0, so just use a really small number (which is rounded to 0).
+		return self.getNonZero(config, section, 'thickpadding')
 
 	def calcCorners(self, padding, radius):
 		out = {}
@@ -481,6 +486,7 @@ class BreezeAlphaBlack(DesktopTheme):
 			'{{fillOpacity}}': str(dialogOpacity),
 			'{{shadowOpacity}}': str(shadowOpacity),
 			'{{noDialogPadding}}': '<rect id="hint-no-border-padding"></rect>' if noDialogPadding else '',
+			'{{thickPadding}}': '0', # Overriden for panel.
 		}
 
 		dialogPadding = self.getDialogPadding(config, section)
@@ -517,7 +523,9 @@ class BreezeAlphaBlack(DesktopTheme):
 		self.setDialogProperty('radius', newRadius)
 
 	def getPanelVars(self, config):
-		return self.getDialogVars(config, section='panel')
+		panelVars = self.getDialogVars(config, section='panel')
+		panelVars['{{thickPadding}}'] = str(self.getPanelThickPadding(config, section='panel'))
+		return panelVars
 
 	def renderPanel(self, config):
 		panelVars = self.getPanelVars(config)
@@ -540,6 +548,9 @@ class BreezeAlphaBlack(DesktopTheme):
 
 	def setPanelRadius(self, newRadius=3):
 		self.setPanelProperty('radius', newRadius)
+
+	def setPanelThickPadding(self, newPadding=8):
+		self.setPanelProperty('thickpadding', newPadding)
 
 	def renderWidgetBackground(self, config):
 		# Breeze's widget/background.svg

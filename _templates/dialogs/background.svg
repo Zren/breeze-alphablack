@@ -219,9 +219,17 @@
 			id="hint-tile-center"
 			x="0"
 			y="0"
-			width="5"
-			height="5"
+			width="4"
+			height="4"
 			style="opacity:1;fill:#ff6600;fill-opacity:1;stroke:none"
+		/>
+		<rect
+			id="thick-center"
+			x="0"
+			y="5"
+			width="4"
+			height="4"
+			style="fill:#800080;fill-opacity:1;stroke:none"
 		/>
 
 		<!-- Tileset -->
@@ -346,6 +354,40 @@
 				width="{{marginThickness}}"
 				height="{{padding}}"
 				style="fill:#ff00ff;fill-opacity:1;stroke:none"
+			/>
+
+			<!-- Thick Margins -->
+			<rect
+				id="thick-hint-top-margin"
+				x="{{marginCenterOffset}}"
+				y="0"
+				width="1"
+				height="{{thickPadding}}"
+				style="fill:#800080;fill-opacity:1;stroke:none"
+			/>
+			<rect
+				id="thick-hint-left-margin"
+				x="0"
+				y="{{marginCenterOffset}}"
+				width="{{thickPadding}}"
+				height="1"
+				style="fill:#800080;fill-opacity:1;stroke:none"
+			/>
+			<rect
+				id="thick-hint-right-margin"
+				x="{{marginFarOffset}}"
+				y="{{marginCenterOffset}}"
+				width="{{thickPadding}}"
+				height="1"
+				style="fill:#800080;fill-opacity:1;stroke:none"
+			/>
+			<rect
+				id="thick-hint-bottom-margin"
+				x="{{marginCenterOffset}}"
+				y="{{marginFarOffset}}"
+				width="1"
+				height="{{thickPadding}}"
+				style="fill:#800080;fill-opacity:1;stroke:none"
 			/>
 		</g>
 
