@@ -559,6 +559,40 @@
 				height="{{shadowSize}}"
 				style="fill:#ff00ff;fill-opacity:1;stroke:none"
 			/>
+
+			<!-- Shadow Inset -->
+			<rect
+				id="shadow-hint-top-inset"
+				x="29"
+				y="0"
+				width="{{marginThickness}}"
+				height="{{shadowSize}}"
+				style="fill:#00ff00;fill-opacity:1;stroke:none"
+			/>
+			<rect
+				id="shadow-hint-left-inset"
+				x="0"
+				y="29"
+				width="{{shadowSize}}"
+				height="{{marginThickness}}"
+				style="fill:#00ff00;fill-opacity:1;stroke:none"
+			/>
+			<rect
+				id="shadow-hint-right-inset"
+				x="44"
+				y="29"
+				width="{{shadowSize}}"
+				height="{{marginThickness}}"
+				style="fill:#00ff00;fill-opacity:1;stroke:none"
+			/>
+			<rect
+				id="shadow-hint-bottom-inset"
+				x="29"
+				y="44"
+				width="{{marginThickness}}"
+				height="{{shadowSize}}"
+				style="fill:#00ff00;fill-opacity:1;stroke:none"
+			/>
 		</g>
 
 		<!-- Mask Tileset -->
