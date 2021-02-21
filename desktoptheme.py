@@ -511,12 +511,13 @@ class BreezeAlphaBlack(DesktopTheme):
 		# inFilename = os.path.join(self.themeDir, '_templates/panel-background.svg')
 		# outFilename = os.path.join(self.themeDir, 'widgets/panel-background.svgz')
 		# buildFromTemplate(inFilename, outFilename, **{
+		panelPadding = config.getProp('panel.padding')
 		panelOpacity = config.getProp('panel.opacity')
 		noPanelPadding = config.getint('panel', 'padding') == 0
 		shadowOpacity = 1 if float(panelOpacity) >= 0.3 else 0
 		self.renderTemplate('widgets/panel-background.svg', **{
 			'{{panelOpacity}}': str(panelOpacity),
-			'{{panelPadding}}': str(config.getProp('panel.padding')),
+			'{{panelPadding}}': str(panelPadding),
 			'{{noPanelPadding}}': '<rect id="hint-no-border-padding"></rect>' if noPanelPadding else '',
 			'{{shadowOpacity}}': str(shadowOpacity),
 		})
@@ -765,7 +766,6 @@ def main():
 	add_subcommand('settitlebarcolors', theme_setTitlebarColors, 'bgColor', 'textColor', description='Eg: 0,0,0 255,255,255')
 	add_subcommand('reset', theme_reset)
 	add_subcommand('resettitlebarcolors', theme_resetTitlebarColors)
-	
 
 	args = parser.parse_args()
 
