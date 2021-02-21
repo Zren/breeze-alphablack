@@ -5,6 +5,7 @@ import sys, os
 import glob
 import time
 import shutil
+from pprint import pprint
 
 
 class Point:
@@ -209,6 +210,7 @@ class BreezeAlphaBlack(DesktopTheme):
 			('dialog', 'radius', 3, 'setDialogRadius'),
 			('panel', 'opacity', 0.9, 'setPanelOpacity'),
 			('panel', 'padding', 2, 'setPanelPadding'),
+			('panel', 'radius', 3, 'setPanelRadius'),
 			('panel', 'taskStyle', 'inside', 'setTasksSvg'),
 			('theme', 'accentColor', '0,0,0', 'setAccentColor'),
 			('theme', 'highlightColor', '61,174,230', 'setHighlightColor'),
@@ -254,32 +256,32 @@ class BreezeAlphaBlack(DesktopTheme):
 						line = line.replace(a, b)
 					fout.write(line)
 
-	def getDialogPadding(self, config):
+
+	def getNonZero(self, config, section, key):
+		value = float(config.get(section, key))
+		value = max(0.001, value)
+		return value
+
+	def getDialogPadding(self, config, section='dialog'):
 		# Plasma doesn't like a padding of 0, so just use a really small number (which is rounded to 0).
-		dialogPadding = float(config.getProp('dialog.padding'))
-		dialogPadding = max(0.001, dialogPadding)
-		return dialogPadding
+		return self.getNonZero(config, section, 'padding')
 
-	def getDialogRadius(self, config):
+	def getDialogRadius(self, config, section='dialog'):
 		# It'd be a pain to adjust the paths to be perfectly square edge, so just do a really small radius.
-		dialogRadius = float(config.getProp('dialog.radius'))
-		dialogRadius = max(0.001, dialogRadius)
-		return dialogRadius
+		return self.getNonZero(config, section, 'radius')
 
-	def calcCorners(self, config):
+	def calcCorners(self, padding, radius):
 		out = {}
-
-		dialogPadding = self.getDialogPadding(config)
-		out['{{padding}}'] = str(dialogPadding)
+		out['{{padding}}'] = str(padding)
 
 		centerSize = 32
-		dialogRadius = self.getDialogRadius(config) # Default = 3
-		size = dialogRadius # max(6, dialogRadius) # Default = 6
-		extra = size - dialogRadius # Default = 3
+		# radius (Default = 3)
+		size = radius # max(6, radius) # Default = 6
+		extra = size - radius # Default = 3
 		farEdgeOffset = size + centerSize # Default = 38
 		marginThickness = 4 # This is just a visual cue
 		marginCenterOffset = size + (centerSize/2) - (marginThickness/2) # Default = 20
-		marginFarOffset = size + centerSize + size - dialogPadding
+		marginFarOffset = size + centerSize + size - padding
 
 		out['{{centerSize}}'] = str(centerSize)
 		out['{{edgeSize}}'] = str(size)
@@ -289,8 +291,8 @@ class BreezeAlphaBlack(DesktopTheme):
 		out['{{marginCenterOffset}}'] = str(marginCenterOffset)
 		out['{{marginFarOffset}}'] = str(marginFarOffset)
 
-		third = dialogRadius * 1/3
-		twoThird = dialogRadius * 2/3
+		third = radius * 1/3
+		twoThird = radius * 2/3
 
 		#--- Background+Mask Tileset
 		# topLeft (Clockwise)
@@ -304,8 +306,8 @@ class BreezeAlphaBlack(DesktopTheme):
 			-extra,
 			# c
 			Point(0, -twoThird),
-			Point(third, -dialogRadius),
-			Point(dialogRadius, -dialogRadius),
+			Point(third, -radius),
+			Point(radius, -radius),
 			# h
 			extra,
 			# z
@@ -323,8 +325,8 @@ class BreezeAlphaBlack(DesktopTheme):
 			extra,
 			# c
 			Point(twoThird, 0),
-			Point(dialogRadius, third),
-			Point(dialogRadius, dialogRadius),
+			Point(radius, third),
+			Point(radius, radius),
 			# v
 			extra,
 			# z
@@ -342,8 +344,8 @@ class BreezeAlphaBlack(DesktopTheme):
 			-extra,
 			# c
 			Point(-twoThird, 0),
-			Point(-dialogRadius, -third),
-			Point(-dialogRadius, -dialogRadius),
+			Point(-radius, -third),
+			Point(-radius, -radius),
 			# v
 			-extra,
 			# z
@@ -361,8 +363,8 @@ class BreezeAlphaBlack(DesktopTheme):
 			extra,
 			# c
 			Point(0, twoThird),
-			Point(-third, dialogRadius),
-			Point(-dialogRadius, dialogRadius),
+			Point(-third, radius),
+			Point(-radius, radius),
 			# h
 			-extra,
 			# z
@@ -373,7 +375,7 @@ class BreezeAlphaBlack(DesktopTheme):
 		shadowSize = 6
 		out['{{shadowSize}}'] = str(shadowSize)
 
-		shadowAndRadius = shadowSize + dialogRadius # Default = 9
+		shadowAndRadius = shadowSize + radius # Default = 9
 		shadowEdgeSize = shadowSize + size # Default = 12
 		shadowFarEdge = shadowEdgeSize + centerSize # Default = 44
 		shadowFarShadow = shadowEdgeSize + centerSize + size # Default = 50
@@ -402,8 +404,8 @@ class BreezeAlphaBlack(DesktopTheme):
 			shadowSize,
 			# c
 			Point(0, -twoThird),
-			Point(third, -dialogRadius),
-			Point(dialogRadius, -dialogRadius),
+			Point(third, -radius),
+			Point(radius, -radius),
 			# v
 			-shadowSize,
 			# z
@@ -421,8 +423,8 @@ class BreezeAlphaBlack(DesktopTheme):
 			shadowSize,
 			# c
 			Point(twoThird, 0),
-			Point(dialogRadius, third),
-			Point(dialogRadius, dialogRadius),
+			Point(radius, third),
+			Point(radius, radius),
 			# h
 			shadowSize,
 			# z
@@ -440,8 +442,8 @@ class BreezeAlphaBlack(DesktopTheme):
 			-shadowSize,
 			# c
 			Point(-twoThird, 0),
-			Point(-dialogRadius, -third),
-			Point(-dialogRadius, -dialogRadius),
+			Point(-radius, -third),
+			Point(-radius, -radius),
 			# h
 			-shadowSize,
 			# z
@@ -459,8 +461,8 @@ class BreezeAlphaBlack(DesktopTheme):
 			-shadowSize,
 			# c
 			Point(0, twoThird),
-			Point(-third, dialogRadius),
-			Point(-dialogRadius, dialogRadius),
+			Point(-third, radius),
+			Point(-radius, radius),
 			# v
 			shadowSize,
 			# z
@@ -469,20 +471,27 @@ class BreezeAlphaBlack(DesktopTheme):
 
 		return out
 
-	def getDialogVars(self, config):
+	def getDialogVars(self, config, section='dialog'):
+		dialogPadding = config.get(section, 'padding')
+		noDialogPadding = config.getint(section, 'padding') == 0
+		dialogOpacity = config.get(section, 'opacity')
+		shadowOpacity = 1 if float(dialogOpacity) >= 0.3 else 0
+
 		dialogVars = {
-			'{{fillOpacity}}': str(config.getProp('dialog.opacity')),
+			'{{fillOpacity}}': str(dialogOpacity),
+			'{{shadowOpacity}}': str(shadowOpacity),
+			'{{noDialogPadding}}': '<rect id="hint-no-border-padding"></rect>' if noDialogPadding else '',
 		}
-		cornerVars = self.calcCorners(config)
+
+		dialogPadding = self.getDialogPadding(config, section)
+		dialogRadius = self.getDialogRadius(config, section)
+		cornerVars = self.calcCorners(dialogPadding, dialogRadius)
 		dialogVars.update(cornerVars)
 		return dialogVars
 
 	def renderDialogBackground(self, config):
 		dialogVars = self.getDialogVars(config)
-
-		from pprint import pprint
 		pprint(dialogVars)
-
 		self.renderTemplate('dialogs/background.svg', **dialogVars)
 
 	def renderPlasmoidHeading(self, config):
@@ -507,38 +516,30 @@ class BreezeAlphaBlack(DesktopTheme):
 	def setDialogRadius(self, newRadius=3):
 		self.setDialogProperty('radius', newRadius)
 
+	def getPanelVars(self, config):
+		return self.getDialogVars(config, section='panel')
+
 	def renderPanel(self, config):
-		# inFilename = os.path.join(self.themeDir, '_templates/panel-background.svg')
-		# outFilename = os.path.join(self.themeDir, 'widgets/panel-background.svgz')
-		# buildFromTemplate(inFilename, outFilename, **{
-		panelPadding = config.getProp('panel.padding')
-		panelOpacity = config.getProp('panel.opacity')
-		noPanelPadding = config.getint('panel', 'padding') == 0
-		shadowOpacity = 1 if float(panelOpacity) >= 0.3 else 0
-		self.renderTemplate('widgets/panel-background.svg', **{
-			'{{panelOpacity}}': str(panelOpacity),
-			'{{panelPadding}}': str(panelPadding),
-			'{{noPanelPadding}}': '<rect id="hint-no-border-padding"></rect>' if noPanelPadding else '',
-			'{{shadowOpacity}}': str(shadowOpacity),
-		})
-		print('noPanelPadding', noPanelPadding)
-		print('shadowOpacity', shadowOpacity)
+		panelVars = self.getPanelVars(config)
+		pprint(panelVars)
+		self.renderTemplate('widgets/panel-background.svg', **panelVars)
+
+	def setPanelProperty(self, key, newValue):
+		config = self.themeConfig()
+		config.set('panel', key, newValue)
+		self.renderPanel(config)
+		config.save()
+		self.clearCache() # Only necessary for setPanelPadding
+		self.reloadTheme()
 
 	def setPanelOpacity(self, newOpacity=0.9):
-		config = self.themeConfig()
-		config.set('panel', 'opacity', newOpacity)
-		self.renderPanel(config)
-		config.save()
-		self.clearCache() # Not really necessary
-		self.reloadTheme()
+		self.setPanelProperty('opacity', newOpacity)
 
 	def setPanelPadding(self, newPadding=2):
-		config = self.themeConfig()
-		config.set('panel', 'padding', newPadding)
-		self.renderPanel(config)
-		config.save()
-		self.clearCache() # Necessary
-		self.reloadTheme()
+		self.setPanelProperty('padding', newPadding)
+
+	def setPanelRadius(self, newRadius=3):
+		self.setPanelProperty('radius', newRadius)
 
 	def renderWidgetBackground(self, config):
 		# Breeze's widget/background.svg
