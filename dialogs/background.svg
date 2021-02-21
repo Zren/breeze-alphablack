@@ -529,7 +529,7 @@
 			<!-- Shadow Margins -->
 			<rect
 				id="shadow-hint-top-margin"
-				x="26"
+				x="23"
 				y="0"
 				width="4"
 				height="6"
@@ -538,23 +538,23 @@
 			<rect
 				id="shadow-hint-left-margin"
 				x="0"
-				y="26"
+				y="23"
 				width="6"
 				height="4"
 				style="fill:#ff00ff;fill-opacity:1;stroke:none"
 			/>
 			<rect
 				id="shadow-hint-right-margin"
-				x="50"
-				y="26"
+				x="44"
+				y="23"
 				width="6"
 				height="4"
 				style="fill:#ff00ff;fill-opacity:1;stroke:none"
 			/>
 			<rect
 				id="shadow-hint-bottom-margin"
-				x="26"
-				y="50"
+				x="23"
+				y="44"
 				width="4"
 				height="6"
 				style="fill:#ff00ff;fill-opacity:1;stroke:none"
