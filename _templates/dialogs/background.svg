@@ -393,6 +393,165 @@
 			/>
 		</g>
 
+		<!-- South Tileset -->
+		<g id="south-tileset" transform="translate(6,6)">
+			<g id="south-topleft">
+				<path
+					id="south-rectTopLeft"
+					class="ColorScheme-Background"
+					d="{{topLeftPath}}"
+					style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
+				/>
+			</g>
+			<g id="south-top">
+				<rect
+					id="south-rectTop"
+					class="ColorScheme-Background"
+					x="{{edgeSize}}"
+					y="0"
+					width="{{centerSize}}"
+					height="{{edgeSize}}"
+					style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
+				/>
+			</g>
+			<g id="south-topright">
+				<path
+					id="south-rectRight"
+					class="ColorScheme-Background"
+					d="{{topRightPath}}"
+					style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
+				/>
+			</g>
+			<g id="south-left">
+				<rect
+					id="south-rectLeft"
+					class="ColorScheme-Background"
+					x="0"
+					y="{{edgeSize}}"
+					width="{{edgeSize}}"
+					height="{{centerSize}}"
+					style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
+				/>
+			</g>
+			<g id="south-center">
+				<rect
+					id="south-rectCenter"
+					class="ColorScheme-Background"
+					x="{{edgeSize}}"
+					y="{{edgeSize}}"
+					width="{{centerSize}}"
+					height="{{centerSize}}"
+					style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
+				/>
+			</g>
+			<g id="south-right">
+				<rect
+					id="south-rectRight"
+					class="ColorScheme-Background"
+					x="{{farEdgeOffset}}"
+					y="{{edgeSize}}"
+					width="{{edgeSize}}"
+					height="{{centerSize}}"
+					style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
+				/>
+			</g>
+			<g id="south-bottomleft">
+				<path
+					id="south-pathBottomLeft"
+					class="ColorScheme-Background"
+					d="{{bottomLeftPath}}"
+					style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
+				/>
+			</g>
+			<g id="south-bottom">
+				<rect
+					id="south-rectBottom"
+					class="ColorScheme-Background"
+					x="{{edgeSize}}"
+					y="{{farEdgeOffset}}"
+					width="{{centerSize}}"
+					height="{{edgeSize}}"
+					style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
+				/>
+			</g>
+			<g id="south-bottomright">
+				<path
+					id="south-rectBottomRight"
+					class="ColorScheme-Background"
+					d="{{bottomRightPath}}"
+					style="opacity:{{fillOpacity}};fill:currentColor;fill-opacity:1;stroke:none"
+				/>
+			</g>
+
+			<!-- Margins -->
+			<rect
+				id="south-hint-top-margin"
+				x="{{marginCenterOffset}}"
+				y="0"
+				width="{{marginThickness}}"
+				height="{{padding}}"
+				style="fill:#ff00ff;fill-opacity:1;stroke:none"
+			/>
+			<rect
+				id="south-hint-left-margin"
+				x="0"
+				y="{{marginCenterOffset}}"
+				width="0.001"
+				height="{{marginThickness}}"
+				style="fill:#ff00ff;fill-opacity:1;stroke:none"
+			/>
+			<rect
+				id="south-hint-right-margin"
+				x="{{marginFarOffset}}"
+				y="{{marginCenterOffset}}"
+				width="0.001"
+				height="{{marginThickness}}"
+				style="fill:#ff00ff;fill-opacity:1;stroke:none"
+			/>
+			<rect
+				id="south-hint-bottom-margin"
+				x="{{marginCenterOffset}}"
+				y="{{marginFarOffset}}"
+				width="{{marginThickness}}"
+				height="0.001"
+				style="fill:#ff00ff;fill-opacity:1;stroke:none"
+			/>
+
+			<!-- Thick Margins -->
+			<rect
+				id="south-thick-hint-top-margin"
+				x="{{thickMarginCenterOffset}}"
+				y="0"
+				width="{{marginThickness}}"
+				height="{{thickPadding}}"
+				style="fill:#800080;fill-opacity:1;stroke:none"
+			/>
+			<rect
+				id="south-thick-hint-left-margin"
+				x="0"
+				y="{{thickMarginCenterOffset}}"
+				width="{{thickPadding}}"
+				height="{{marginThickness}}"
+				style="fill:#800080;fill-opacity:1;stroke:none"
+			/>
+			<rect
+				id="south-thick-hint-right-margin"
+				x="{{thickMarginFarOffset}}"
+				y="{{thickMarginCenterOffset}}"
+				width="{{thickPadding}}"
+				height="{{marginThickness}}"
+				style="fill:#800080;fill-opacity:1;stroke:none"
+			/>
+			<rect
+				id="south-thick-hint-bottom-margin"
+				x="{{thickMarginCenterOffset}}"
+				y="{{thickMarginFarOffset}}"
+				width="{{marginThickness}}"
+				height="{{thickPadding}}"
+				style="fill:#800080;fill-opacity:1;stroke:none"
+			/>
+		</g>
+
 		<!-- Shadow Tileset -->
 		<g id="shadow-tileset" transform="translate(58,0)">
 			<g id="shadow-topleft" style="opacity:{{shadowOpacity}}">
