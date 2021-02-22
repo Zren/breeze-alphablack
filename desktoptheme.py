@@ -272,9 +272,19 @@ class BreezeAlphaBlack(DesktopTheme):
 
 	def getPanelThickPadding(self, config, section='panel'):
 		if section == 'dialog':
+			# Is not actually implemented.
 			return 0
 		else:
-			# Plasma doesn't like a padding of 0, so just use a really small number (which is rounded to 0).
+			# Note: The Panel.qml code in the desktop shell package defines an upper limit for
+			# the thick margins. The panel must fit a smallMedium (22px) icon.
+			# * https://invent.kde.org/plasma/plasma-desktop/-/blob/master/desktoppackage/contents/views/Panel.qml
+			# * https://invent.kde.org/frameworks/kiconthemes/blob/master/src/kiconloader.h#L149
+			# * /usr/share/plasma/shells/org.kde.plasma.desktop/contents/views/Panel.qml
+			# So a 24px panel will have a maximum padding of (24-22)/2 = 1px
+			#      30px panel will have a maximum padding of (30-22)/2 = 4px
+			#      38px panel will have a maximum padding of (38-22)/2 = 8px
+			#      64px panel will have a maximum padding of (64-22)/2 = 21px
+			# So a panel needs to be 38px tall to actually have a thick padding of 8px (Breeze's default).
 			return self.getNonZero(config, section, 'thickpadding')
 
 	def calcCorners(self, padding, thickPadding, radius):
