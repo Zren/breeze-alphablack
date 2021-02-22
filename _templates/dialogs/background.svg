@@ -231,6 +231,8 @@
 			height="4"
 			style="fill:#800080;fill-opacity:1;stroke:none"
 		/>
+		{{noDialogPadding}}
+
 
 		<!-- Tileset -->
 		<g id="tileset" transform="translate(6,6)">
@@ -359,33 +361,33 @@
 			<!-- Thick Margins -->
 			<rect
 				id="thick-hint-top-margin"
-				x="{{marginCenterOffset}}"
+				x="{{thickMarginCenterOffset}}"
 				y="0"
-				width="1"
+				width="{{marginThickness}}"
 				height="{{thickPadding}}"
 				style="fill:#800080;fill-opacity:1;stroke:none"
 			/>
 			<rect
 				id="thick-hint-left-margin"
 				x="0"
-				y="{{marginCenterOffset}}"
+				y="{{thickMarginCenterOffset}}"
 				width="{{thickPadding}}"
-				height="1"
+				height="{{marginThickness}}"
 				style="fill:#800080;fill-opacity:1;stroke:none"
 			/>
 			<rect
 				id="thick-hint-right-margin"
-				x="{{marginFarOffset}}"
-				y="{{marginCenterOffset}}"
+				x="{{thickMarginFarOffset}}"
+				y="{{thickMarginCenterOffset}}"
 				width="{{thickPadding}}"
-				height="1"
+				height="{{marginThickness}}"
 				style="fill:#800080;fill-opacity:1;stroke:none"
 			/>
 			<rect
 				id="thick-hint-bottom-margin"
-				x="{{marginCenterOffset}}"
-				y="{{marginFarOffset}}"
-				width="1"
+				x="{{thickMarginCenterOffset}}"
+				y="{{thickMarginFarOffset}}"
+				width="{{marginThickness}}"
 				height="{{thickPadding}}"
 				style="fill:#800080;fill-opacity:1;stroke:none"
 			/>
@@ -393,7 +395,7 @@
 
 		<!-- Shadow Tileset -->
 		<g id="shadow-tileset" transform="translate(58,0)">
-			<g id="shadow-topleft">
+			<g id="shadow-topleft" style="opacity:{{shadowOpacity}}">
 				<rect
 					id="rectShadowTopLeft-Left"
 					x="0"
@@ -416,7 +418,7 @@
 					style="fill:url(#linearGradientShadowTop);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0.9"
 				/>
 			</g>
-			<g id="shadow-top">
+			<g id="shadow-top" style="opacity:{{shadowOpacity}}">
 				<rect
 					id="rectShadowTop-Top"
 					x="{{shadowEdgeSize}}"
@@ -434,7 +436,7 @@
 					style="opacity:1;fill:none;fill-opacity:1;stroke:none"
 				/>
 			</g>
-			<g id="shadow-topright">
+			<g id="shadow-topright" style="opacity:{{shadowOpacity}}">
 				<rect
 					id="rectShadowTopRight-Top"
 					x="{{shadowFarEdge}}"
@@ -457,7 +459,7 @@
 					style="fill:url(#linearGradientShadowRight);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0.9"
 				/>
 			</g>
-			<g id="shadow-left">
+			<g id="shadow-left" style="opacity:{{shadowOpacity}}">
 				<rect
 					id="rectShadowLeft-Left"
 					x="0"
@@ -475,7 +477,7 @@
 					style="opacity:1;fill:none;fill-opacity:1;stroke:none"
 				/>
 			</g>
-			<g id="shadow-center">
+			<g id="shadow-center" style="opacity:{{shadowOpacity}}">
 				<rect
 					id="rectShadowCenter-Placeholder"
 					x="{{shadowEdgeSize}}"
@@ -485,7 +487,7 @@
 					style="opacity:1;fill:none;fill-opacity:1;stroke:none"
 				/>
 			</g>
-			<g id="shadow-right">
+			<g id="shadow-right" style="opacity:{{shadowOpacity}}">
 				<rect
 					id="rectShadowRight-Right"
 					x="{{shadowFarShadow}}"
@@ -503,7 +505,7 @@
 					style="opacity:1;fill:none;fill-opacity:1;stroke:none"
 				/>
 			</g>
-			<g id="shadow-bottomleft">
+			<g id="shadow-bottomleft" style="opacity:{{shadowOpacity}}">
 				<rect
 					id="rectShadowBottomLeft-Left"
 					x="0"
@@ -526,7 +528,7 @@
 					style="fill:url(#linearGradientShadowBottom);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0.9"
 				/>
 			</g>
-			<g id="shadow-bottom">
+			<g id="shadow-bottom" style="opacity:{{shadowOpacity}}">
 				<rect
 					id="rectShadowBottom-Bottom"
 					x="{{shadowEdgeSize}}"
@@ -544,7 +546,7 @@
 					style="opacity:1;fill:none;fill-opacity:1;stroke:none"
 				/>
 			</g>
-			<g id="shadow-bottomright">
+			<g id="shadow-bottomright" style="opacity:{{shadowOpacity}}">
 				<rect
 					id="rectShadowBottomRight-Bottom"
 					x="{{shadowFarEdge}}"

@@ -219,10 +219,20 @@
 			id="hint-tile-center"
 			x="0"
 			y="0"
-			width="5"
-			height="5"
+			width="4"
+			height="4"
 			style="opacity:1;fill:#ff6600;fill-opacity:1;stroke:none"
 		/>
+		<rect
+			id="thick-center"
+			x="0"
+			y="5"
+			width="4"
+			height="4"
+			style="fill:#800080;fill-opacity:1;stroke:none"
+		/>
+		
+
 
 		<!-- Tileset -->
 		<g id="tileset" transform="translate(6,6)">
@@ -347,11 +357,45 @@
 				height="6.0"
 				style="fill:#ff00ff;fill-opacity:1;stroke:none"
 			/>
+
+			<!-- Thick Margins -->
+			<rect
+				id="thick-hint-top-margin"
+				x="21.0"
+				y="0"
+				width="4"
+				height="0"
+				style="fill:#800080;fill-opacity:1;stroke:none"
+			/>
+			<rect
+				id="thick-hint-left-margin"
+				x="0"
+				y="21.0"
+				width="0"
+				height="4"
+				style="fill:#800080;fill-opacity:1;stroke:none"
+			/>
+			<rect
+				id="thick-hint-right-margin"
+				x="38.0"
+				y="21.0"
+				width="0"
+				height="4"
+				style="fill:#800080;fill-opacity:1;stroke:none"
+			/>
+			<rect
+				id="thick-hint-bottom-margin"
+				x="21.0"
+				y="38.0"
+				width="4"
+				height="0"
+				style="fill:#800080;fill-opacity:1;stroke:none"
+			/>
 		</g>
 
 		<!-- Shadow Tileset -->
 		<g id="shadow-tileset" transform="translate(58,0)">
-			<g id="shadow-topleft">
+			<g id="shadow-topleft" style="opacity:1">
 				<rect
 					id="rectShadowTopLeft-Left"
 					x="0"
@@ -374,7 +418,7 @@
 					style="fill:url(#linearGradientShadowTop);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0.9"
 				/>
 			</g>
-			<g id="shadow-top">
+			<g id="shadow-top" style="opacity:1">
 				<rect
 					id="rectShadowTop-Top"
 					x="9.0"
@@ -392,7 +436,7 @@
 					style="opacity:1;fill:none;fill-opacity:1;stroke:none"
 				/>
 			</g>
-			<g id="shadow-topright">
+			<g id="shadow-topright" style="opacity:1">
 				<rect
 					id="rectShadowTopRight-Top"
 					x="41.0"
@@ -415,7 +459,7 @@
 					style="fill:url(#linearGradientShadowRight);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0.9"
 				/>
 			</g>
-			<g id="shadow-left">
+			<g id="shadow-left" style="opacity:1">
 				<rect
 					id="rectShadowLeft-Left"
 					x="0"
@@ -433,7 +477,7 @@
 					style="opacity:1;fill:none;fill-opacity:1;stroke:none"
 				/>
 			</g>
-			<g id="shadow-center">
+			<g id="shadow-center" style="opacity:1">
 				<rect
 					id="rectShadowCenter-Placeholder"
 					x="9.0"
@@ -443,7 +487,7 @@
 					style="opacity:1;fill:none;fill-opacity:1;stroke:none"
 				/>
 			</g>
-			<g id="shadow-right">
+			<g id="shadow-right" style="opacity:1">
 				<rect
 					id="rectShadowRight-Right"
 					x="44.0"
@@ -461,7 +505,7 @@
 					style="opacity:1;fill:none;fill-opacity:1;stroke:none"
 				/>
 			</g>
-			<g id="shadow-bottomleft">
+			<g id="shadow-bottomleft" style="opacity:1">
 				<rect
 					id="rectShadowBottomLeft-Left"
 					x="0"
@@ -484,7 +528,7 @@
 					style="fill:url(#linearGradientShadowBottom);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0.9"
 				/>
 			</g>
-			<g id="shadow-bottom">
+			<g id="shadow-bottom" style="opacity:1">
 				<rect
 					id="rectShadowBottom-Bottom"
 					x="9.0"
@@ -502,7 +546,7 @@
 					style="opacity:1;fill:none;fill-opacity:1;stroke:none"
 				/>
 			</g>
-			<g id="shadow-bottomright">
+			<g id="shadow-bottomright" style="opacity:1">
 				<rect
 					id="rectShadowBottomRight-Bottom"
 					x="41.0"
