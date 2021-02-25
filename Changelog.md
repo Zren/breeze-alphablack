@@ -1,3 +1,8 @@
+## v19 - February 25 2021
+
+* Refactor `panel-background.svg` to reuse the `dialog/background.svg`.
+* Add thick margins to the panel svg to support Plasma 5.21's Margin Separator widgets. A 24px panel will have a 1px thick margin. A 30px panel will have a 4px thick margin. A 38px panel will have a 8px thick margin.
+
 ## v18 - December 11 2020
 
 * Fix pale popups caused by the Background Contrast Desktop Effect (Issue #21). Added `ContrastEffect` properties in `metadata.desktop` in an attempt to fix it, however the proper fix was to ship a pre-generated `dialogs/background.svg`.
