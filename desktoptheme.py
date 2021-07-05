@@ -174,17 +174,23 @@ class DesktopTheme:
 			# after each change.
 			return
 
-		# Switch to another theme and back to apply the changes to breeze-alphablack.
-		filename = os.path.abspath(os.path.expanduser('~/.config/plasmarc'))
-		plasmarc = KdeConfig(filename)
+		try:
+			import dbus
+			bus = dbus.SessionBus()
+			obj = bus.get_object('org.kde.plasmashell', '/PlasmaShell')
+			obj.evaluateScript('theme="breeze-dark";theme="' + self.themeName + '"')
+		except:
+			# Switch to another theme and back to apply the changes to breeze-alphablack.
+			filename = os.path.abspath(os.path.expanduser('~/.config/plasmarc'))
+			plasmarc = KdeConfig(filename)
 
-		# Make sure we're not already in the process of changing the theme.
-		if plasmarc['Theme']['name'] == self.themeName:
-			plasmarc['Theme']['name'] = 'breeze-dark'
+			# Make sure we're not already in the process of changing the theme.
+			if plasmarc['Theme']['name'] == self.themeName:
+				plasmarc['Theme']['name'] = 'breeze-dark'
+				plasmarc.save()
+				time.sleep(1)
+			plasmarc['Theme']['name'] = self.themeName
 			plasmarc.save()
-			time.sleep(1)
-		plasmarc['Theme']['name'] = self.themeName
-		plasmarc.save()
 
 	def clearCache(self):
 		wildcardPath='plasma-svgelements-{}_*'.format(self.themeName)
