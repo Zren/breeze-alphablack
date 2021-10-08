@@ -5,6 +5,7 @@ import sys, os
 import glob
 import time
 import shutil
+import re
 from pprint import pprint
 
 
@@ -21,8 +22,7 @@ class Point:
 #     Keys are cAsE sensitive
 #     No spaces around the =
 #     [Sections can have spaces and : colons]
-# Also (NOT FIXED):
-#     Can have [Sub][Sections]
+#     Parses [Sub][Sections] as "Sub][Sections", but cannot have comments on the [Section] line
 class KdeConfig(configparser.ConfigParser):
 	def __init__(self, filename):
 		super().__init__()
@@ -30,6 +30,9 @@ class KdeConfig(configparser.ConfigParser):
 		# Keep case sensitive keys
 		# http://stackoverflow.com/questions/19359556/configparser-reads-capital-keys-and-make-them-lower-case
 		self.optionxform = str
+
+		# Parse SubSections as "Sub][Sections"
+		self.SECTCRE = re.compile(r"\[(?P<header>.+?)]\w*$")
 
 		self.filename = filename
 		self.read(self.filename)
@@ -51,9 +54,13 @@ class KdeConfig(configparser.ConfigParser):
 		if not self.has_option(section, option):
 			self.set(section, option, value)
 
-	def save(self):	
+	def save(self):
 		with open(self.filename, 'w') as fp:
 			self.write(fp, space_around_delimiters=False)
+
+class KdeGlobalsConfig(KdeConfig):
+	def __init__(self):
+		super().__init__(os.path.abspath(os.path.expanduser('~/.config/kdeglobals')))
 
 def limit(minVal, val, maxVal):
 	return min(max(minVal, val), maxVal)
@@ -132,8 +139,7 @@ def scanForColorScheme(colorSchemeName):
 	return None
 
 def resetTitlebarColors():
-	kdeglobalsFilename = os.path.abspath(os.path.expanduser('~/.config/kdeglobals'))
-	kdeglobals = KdeConfig(kdeglobalsFilename)
+	kdeglobals = KdeGlobalsConfig()
 
 	colorSchemeName = kdeglobals['General'].get('ColorScheme', 'Breeze')
 
