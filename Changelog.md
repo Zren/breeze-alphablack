@@ -1,3 +1,8 @@
+## v20 - October 9 2021
+
+* Parse `[Sub][Sections]` in kdeglobals to fix `desktoptheme.py` commands.
+* Use dbus plasma script to quickly change theme faster.
+
 ## v19 - February 25 2021
 
 * Refactor `panel-background.svg` to reuse the `dialog/background.svg`.
