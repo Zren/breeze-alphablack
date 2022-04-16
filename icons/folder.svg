@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" version="1.1">
+	<defs>
+		<style type="text/css" id="current-color-scheme">
+			.ColorScheme-Text { color: #dfdfdf; }
+		</style>
+	</defs>
+	<g id="folder-open-symbolic">
+		<rect style="opacity:0" x="0" y="0" width="16" height="16"></rect>
+		<path class="ColorScheme-Text" style="opacity:.35;fill:currentColor" d="M 2,1 C 2,1 1,1 1,2 V 5 C 1,4 2,4 2,4 H 7 L 9,6 H 14 C 14,6 15,6 15,7 V 4 C 15,3 14,3 14,3 H 9 L 7,1 Z"/>
+		<path class="ColorScheme-Text" style="fill:currentColor" d="M 2,5 C 2,5 1,5 1,6 V 13 C 1,13 1,14 2,14 H 14 C 14,14 15,14 15,13 V 8 C 15,7 14,7 14,7 H 9 L 7,5 Z"/>
+	</g>
+	<g id="folder-documents-symbolic">
+		<rect style="opacity:0" x="0" y="0" width="16" height="16"></rect>
+		<path class="ColorScheme-Text" style="fill:currentColor" d="M 3,1 C 2.446,1 2,1.446 2,2 V 15 C 2,15.554 2.446,16 3,16 H 13 C 13.554,16 14,15.554 14,15 V 5 L 10,1 Z"/>
+	</g>
+	<g id="folder-download-symbolic">
+		<rect style="opacity:0" x="0" y="0" width="16" height="16"></rect>
+		<path class="ColorScheme-Text" style="fill:currentColor" d="M 10,0 V 6 H 12.5 L 8,13 3.5,6 H 6 V 0 Z M 2,14 H 14 V 16 H 2 Z"/>
+	</g>
+	<g id="folder-music-symbolic">
+		<rect style="opacity:0" x="0" y="0" width="16" height="16"></rect>
+		<path class="ColorScheme-Text" style="fill:currentColor" d="M 5,1 C 5,1 5,1 5,2 V 9.19 C 4.68,9.07 4.36,9 4,9 2.34,9 1,10.34 1,12 1,13.66 2.34,15 4,15 5.66,15 7,13.66 7,12 V 5 H 13 V 9.19 C 12.68,9.07 12.36,9 12,9 10.34,9 9,10.34 9,12 9,13.66 10.34,15 12,15 13.66,15 15,13.66 15,12 V 1 C 15,1 15,1 14,1 Z"/>
+	</g>
+	<g id="folder-pictures-symbolic">
+		<rect style="opacity:0" x="0" y="0" width="16" height="16"></rect>
+		<path class="ColorScheme-Text" style="fill:currentColor" d="M 2,2 C 1,2 1,3 1,3 V 13 C 1,14 2,14 2,14 H 14 C 14,14 15,14 15,13 V 3 C 15,2 14,2 14,2 Z M 5.5,6.56 8.81,10.31 10.94,8.25 13,10.31 V 12 H 3 V 9.5 Z"/>
+	</g>
+	<g id="folder-videos-symbolic">
+		<rect style="opacity:0" x="0" y="0" width="16" height="16"></rect>
+		<path class="ColorScheme-Text" style="fill:currentColor" d="M 2,3 H 11 C 12,3 12,4 12,4 V 12 C 12,13 11,13 11,13 H 2 C 2,13 1,13 1,12 V 4 C 1,4 1,3 2,3 Z M 16,4 V 12 L 11,8 Z"/>
+	</g>
+</svg>
